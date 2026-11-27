@@ -56,6 +56,15 @@ targets:
         LSRequiresIPhoneOS: true
         ITSAppUsesNonExemptEncryption: false
         UIApplicationSupportsIndirectInputEvents: true
+        UIAppFonts:
+          - PlayfairDisplay-Bold.ttf
+          - PlayfairDisplay-ExtraBold.ttf
+          - PlayfairDisplay-BoldItalic.ttf
+          - PlayfairDisplay-ExtraBoldItalic.ttf
+          - AtkinsonHyperlegibleNext-Regular.ttf
+          - AtkinsonHyperlegibleNext-Bold.ttf
+          - AtkinsonHyperlegibleNext-Italic.ttf
+          - AtkinsonHyperlegibleNext-BoldItalic.ttf
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
         UILaunchScreen:

@@ -7,17 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C8C6E7F40E096A189AF9669 /* PocketWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C1618BE9C361B2F092549 /* PocketWatch.swift */; };
 		117841E61C5DF72F200D4160 /* ContrarrelojCore in Frameworks */ = {isa = PBXBuildFile; productRef = EF864F15FFD04FB168FCA3F1 /* ContrarrelojCore */; };
+		2334294519C0DE6F28FAE5F1 /* FontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B325272F972063E51EFF4C /* FontTests.swift */; };
+		25A08F2D97D0798BB7237B4B /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC7F11FAE3B7C614F49BA53 /* Palette.swift */; };
+		301B5739AAD6668F4E7A3976 /* AtkinsonHyperlegibleNext-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2ED38D357EB5C5411E21B8A /* AtkinsonHyperlegibleNext-Italic.ttf */; };
 		3FAA2B316256F973B846CFBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F82363721F9B1317682CBE3 /* Assets.xcassets */; };
+		51897999240B5C766F308152 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2F8B3758BD1BBB72134458 /* Typography.swift */; };
+		5763294D96AC6AE7BF019A7F /* Exports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8240DC624013FE8EB6E3E /* Exports.swift */; };
 		588AB865B60153D85ED8EF3E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = EE30E171602B02E20A980559 /* Localizable.xcstrings */; };
 		629B58C40A25D973766720FD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B77CD48B2D45DB10BB403E04 /* FirebaseAnalytics */; };
+		6530B5B9B57BACBDF7A9E18B /* PlayfairDisplay-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4FCEEE9F0743E71630BDFF9 /* PlayfairDisplay-ExtraBoldItalic.ttf */; };
+		6D6A086589CB77AB1F8DDA74 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88D438DD8A03516B3C6EF0CA /* PlayfairDisplay-Bold.ttf */; };
+		7400A2730A6E676DC96A109F /* PlayfairDisplay-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8585CFBF12668B7DBBD28DD0 /* PlayfairDisplay-BoldItalic.ttf */; };
+		7BD7BCE6A80AE09B4D9849C5 /* PlayfairDisplay-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9CA42A39F79CFFC4B6E8405 /* PlayfairDisplay-ExtraBold.ttf */; };
 		7C43D2663A7B14D2AB1A1B11 /* SmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EFB3DCDDEF59F978E12C5E /* SmokeTests.swift */; };
+		93597320554E5DB31CAC78B7 /* PaperCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919973B9BEECFB4F779941F7 /* PaperCard.swift */; };
+		96BFA632560E603625D3B9BB /* ContrastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C321D6B9BE59D7757FA7FB2 /* ContrastTests.swift */; };
+		A0FC2E128098054B6CE51A68 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9872A74FF59F76AD29A6F67E /* Buttons.swift */; };
 		A7D444E09492FCC04C1D77E6 /* IntegrationSmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15AA9E5F461651D522C880B /* IntegrationSmokeTests.swift */; };
+		AEC9DF2AB2D46D1CE6F08908 /* AtkinsonHyperlegibleNext-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2356A2F64359D285377288F6 /* AtkinsonHyperlegibleNext-Bold.ttf */; };
 		C0D63E51930B6AD93955EDE3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B54B54FD2CA22EA77030D675 /* FirebaseAuth */; };
+		C1328821256623ABF1103F49 /* AtkinsonHyperlegibleNext-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8E6CEBA1EFF10287DD45F09 /* AtkinsonHyperlegibleNext-Regular.ttf */; };
 		C5B86D9FB1B5450164BAE9FF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FC6B17CDEF805967FBEE4371 /* FirebaseFirestore */; };
 		CA7C24FA3E70785B0AB3969B /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8155989BF88E6969C717E343 /* LaunchTests.swift */; };
+		D3AFE765D040AAED04ED79F6 /* ComponentRenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AD9EC02BB4C6C9AEBFD346 /* ComponentRenderTests.swift */; };
+		D8DE42D2BEFD9A31080854F4 /* OFL-AtkinsonHyperlegibleNext.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0B353FF468FFEB983046F02D /* OFL-AtkinsonHyperlegibleNext.txt */; };
+		EB5931A3B1B2DF4B50F737E1 /* AtkinsonHyperlegibleNext-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13DFE1737A0B46A8F375AD18 /* AtkinsonHyperlegibleNext-BoldItalic.ttf */; };
 		F6D7A4EB357AC08F18E737E1 /* ContrarrelojApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545F1CD75C1CA7ADA8C0C0AB /* ContrarrelojApp.swift */; };
 		FB893A3BAB784B70FFD61756 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = FF395E7FBF31AB364260A61B /* GoogleSignIn */; };
+		FBD7C7943717A5038158389D /* OFL-PlayfairDisplay.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6553484030752632C9F2A765 /* OFL-PlayfairDisplay.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,16 +64,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B353FF468FFEB983046F02D /* OFL-AtkinsonHyperlegibleNext.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-AtkinsonHyperlegibleNext.txt"; sourceTree = "<group>"; };
+		0C321D6B9BE59D7757FA7FB2 /* ContrastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrastTests.swift; sourceTree = "<group>"; };
+		0ED8240DC624013FE8EB6E3E /* Exports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exports.swift; sourceTree = "<group>"; };
+		13DFE1737A0B46A8F375AD18 /* AtkinsonHyperlegibleNext-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegibleNext-BoldItalic.ttf"; sourceTree = "<group>"; };
+		2356A2F64359D285377288F6 /* AtkinsonHyperlegibleNext-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegibleNext-Bold.ttf"; sourceTree = "<group>"; };
+		28B325272F972063E51EFF4C /* FontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTests.swift; sourceTree = "<group>"; };
+		3EC7F11FAE3B7C614F49BA53 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		3F2F8B3758BD1BBB72134458 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		43224CC19047DD12968CDAFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		458C1618BE9C361B2F092549 /* PocketWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketWatch.swift; sourceTree = "<group>"; };
 		45EFB3DCDDEF59F978E12C5E /* SmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeTests.swift; sourceTree = "<group>"; };
 		545F1CD75C1CA7ADA8C0C0AB /* ContrarrelojApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrarrelojApp.swift; sourceTree = "<group>"; };
+		6553484030752632C9F2A765 /* OFL-PlayfairDisplay.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-PlayfairDisplay.txt"; sourceTree = "<group>"; };
+		72AD9EC02BB4C6C9AEBFD346 /* ComponentRenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentRenderTests.swift; sourceTree = "<group>"; };
 		7F82363721F9B1317682CBE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8155989BF88E6969C717E343 /* LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTests.swift; sourceTree = "<group>"; };
+		8585CFBF12668B7DBBD28DD0 /* PlayfairDisplay-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-BoldItalic.ttf"; sourceTree = "<group>"; };
+		88D438DD8A03516B3C6EF0CA /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		919973B9BEECFB4F779941F7 /* PaperCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperCard.swift; sourceTree = "<group>"; };
+		9872A74FF59F76AD29A6F67E /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		9A1895268EB23B77308F72A5 /* Contrarreloj.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Contrarreloj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A064067AB0FE4FAB00460108 /* ContrarrelojUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ContrarrelojUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15AA9E5F461651D522C880B /* IntegrationSmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationSmokeTests.swift; sourceTree = "<group>"; };
 		A895091BF45B0963CDA08346 /* ContrarrelojTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ContrarrelojTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9CA42A39F79CFFC4B6E8405 /* PlayfairDisplay-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBold.ttf"; sourceTree = "<group>"; };
+		B2ED38D357EB5C5411E21B8A /* AtkinsonHyperlegibleNext-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegibleNext-Italic.ttf"; sourceTree = "<group>"; };
 		BF5C168397232A3A331C1CA0 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		D4FCEEE9F0743E71630BDFF9 /* PlayfairDisplay-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		D8E6CEBA1EFF10287DD45F09 /* AtkinsonHyperlegibleNext-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegibleNext-Regular.ttf"; sourceTree = "<group>"; };
 		E2EF39B1DDDFC5A19DF17B28 /* ContrarrelojCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ContrarrelojCore; path = Packages/ContrarrelojCore; sourceTree = SOURCE_ROOT; };
 		EE30E171602B02E20A980559 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F4B75A99661F54491E6A46E4 /* ContrarrelojIntegrationTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ContrarrelojIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +114,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0213A495CCE0DEED5EB607CA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2356A2F64359D285377288F6 /* AtkinsonHyperlegibleNext-Bold.ttf */,
+				13DFE1737A0B46A8F375AD18 /* AtkinsonHyperlegibleNext-BoldItalic.ttf */,
+				B2ED38D357EB5C5411E21B8A /* AtkinsonHyperlegibleNext-Italic.ttf */,
+				D8E6CEBA1EFF10287DD45F09 /* AtkinsonHyperlegibleNext-Regular.ttf */,
+				0B353FF468FFEB983046F02D /* OFL-AtkinsonHyperlegibleNext.txt */,
+				6553484030752632C9F2A765 /* OFL-PlayfairDisplay.txt */,
+				88D438DD8A03516B3C6EF0CA /* PlayfairDisplay-Bold.ttf */,
+				8585CFBF12668B7DBBD28DD0 /* PlayfairDisplay-BoldItalic.ttf */,
+				A9CA42A39F79CFFC4B6E8405 /* PlayfairDisplay-ExtraBold.ttf */,
+				D4FCEEE9F0743E71630BDFF9 /* PlayfairDisplay-ExtraBoldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		09B55603079324B1FB7FB91B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				0ED8240DC624013FE8EB6E3E /* Exports.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		292B21904483B0211926F0B4 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				45EFB3DCDDEF59F978E12C5E /* SmokeTests.swift */,
+				FC7628567B156CDAF56734B3 /* Design */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -112,7 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				545F1CD75C1CA7ADA8C0C0AB /* ContrarrelojApp.swift */,
+				D68701829913F8AB31C615C4 /* Design */,
 				C771E24E797AEC76C5DC2F5E /* Resources */,
+				09B55603079324B1FB7FB91B /* Support */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -123,8 +189,21 @@
 				7F82363721F9B1317682CBE3 /* Assets.xcassets */,
 				43224CC19047DD12968CDAFB /* Info.plist */,
 				EE30E171602B02E20A980559 /* Localizable.xcstrings */,
+				0213A495CCE0DEED5EB607CA /* Fonts */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D68701829913F8AB31C615C4 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				9872A74FF59F76AD29A6F67E /* Buttons.swift */,
+				3EC7F11FAE3B7C614F49BA53 /* Palette.swift */,
+				919973B9BEECFB4F779941F7 /* PaperCard.swift */,
+				458C1618BE9C361B2F092549 /* PocketWatch.swift */,
+				3F2F8B3758BD1BBB72134458 /* Typography.swift */,
+			);
+			path = Design;
 			sourceTree = "<group>";
 		};
 		D89C9041B12AA0A26FFA372A = {
@@ -157,6 +236,16 @@
 				A064067AB0FE4FAB00460108 /* ContrarrelojUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FC7628567B156CDAF56734B3 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				72AD9EC02BB4C6C9AEBFD346 /* ComponentRenderTests.swift */,
+				0C321D6B9BE59D7757FA7FB2 /* ContrastTests.swift */,
+				28B325272F972063E51EFF4C /* FontTests.swift */,
+			);
+			path = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,7 +387,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FAA2B316256F973B846CFBD /* Assets.xcassets in Resources */,
+				AEC9DF2AB2D46D1CE6F08908 /* AtkinsonHyperlegibleNext-Bold.ttf in Resources */,
+				EB5931A3B1B2DF4B50F737E1 /* AtkinsonHyperlegibleNext-BoldItalic.ttf in Resources */,
+				301B5739AAD6668F4E7A3976 /* AtkinsonHyperlegibleNext-Italic.ttf in Resources */,
+				C1328821256623ABF1103F49 /* AtkinsonHyperlegibleNext-Regular.ttf in Resources */,
 				588AB865B60153D85ED8EF3E /* Localizable.xcstrings in Resources */,
+				D8DE42D2BEFD9A31080854F4 /* OFL-AtkinsonHyperlegibleNext.txt in Resources */,
+				FBD7C7943717A5038158389D /* OFL-PlayfairDisplay.txt in Resources */,
+				6D6A086589CB77AB1F8DDA74 /* PlayfairDisplay-Bold.ttf in Resources */,
+				7400A2730A6E676DC96A109F /* PlayfairDisplay-BoldItalic.ttf in Resources */,
+				7BD7BCE6A80AE09B4D9849C5 /* PlayfairDisplay-ExtraBold.ttf in Resources */,
+				6530B5B9B57BACBDF7A9E18B /* PlayfairDisplay-ExtraBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +438,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3AFE765D040AAED04ED79F6 /* ComponentRenderTests.swift in Sources */,
+				96BFA632560E603625D3B9BB /* ContrastTests.swift in Sources */,
+				2334294519C0DE6F28FAE5F1 /* FontTests.swift in Sources */,
 				7C43D2663A7B14D2AB1A1B11 /* SmokeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +449,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0FC2E128098054B6CE51A68 /* Buttons.swift in Sources */,
 				F6D7A4EB357AC08F18E737E1 /* ContrarrelojApp.swift in Sources */,
+				5763294D96AC6AE7BF019A7F /* Exports.swift in Sources */,
+				25A08F2D97D0798BB7237B4B /* Palette.swift in Sources */,
+				93597320554E5DB31CAC78B7 /* PaperCard.swift in Sources */,
+				0C8C6E7F40E096A189AF9669 /* PocketWatch.swift in Sources */,
+				51897999240B5C766F308152 /* Typography.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,5 +20,10 @@ xcodebuild test -quiet \
   "${only[@]}"
 rc=$?
 set -e
-"$REPO_ROOT/scripts/summarize-results.sh" "$bundle"
+summary=$("$REPO_ROOT/scripts/summarize-results.sh" "$bundle")
+echo "$summary"
+if [ "$rc" -eq 0 ] && echo "$summary" | grep -q "total 0,"; then
+  echo "no test ran: check the -only-testing names (suites are Swift types)" >&2
+  rc=1
+fi
 exit $rc
