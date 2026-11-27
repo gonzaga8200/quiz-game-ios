@@ -28,7 +28,7 @@ struct RootView: View {
                 .tag(AppTab.settings)
         }
         .tint(Color.accentOnGround)
-        .overlay(alignment: .bottomLeading) { FakeMailBadge() }
+        .overlay(alignment: .bottomLeading) { if !env.play.isPresented { FakeMailBadge() } }
         .sheet(isPresented: $showPrivacy) {
             NavigationStack { PrivacyScreen() }
         }
