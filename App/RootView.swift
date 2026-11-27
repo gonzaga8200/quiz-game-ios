@@ -19,7 +19,7 @@ struct RootView: View {
                 .tabItem { Label("Categorías", systemImage: "square.grid.2x2") }
                 .tag(AppTab.categories)
             if env.firebaseAvailable {
-                tabContent(TabPlaceholder(title: "Ranking"), screen: "Ranking")
+                tabContent(RankingScreen(), screen: "Ranking")
                     .tabItem { Label("Ranking", systemImage: "trophy") }
                     .tag(AppTab.ranking)
             }
@@ -28,6 +28,7 @@ struct RootView: View {
                 .tag(AppTab.settings)
         }
         .tint(Color.accentOnGround)
+        .overlay(alignment: .bottomLeading) { FakeMailBadge() }
         .sheet(isPresented: $showPrivacy) {
             NavigationStack { TabPlaceholder(title: "Política de privacidad") }
         }
