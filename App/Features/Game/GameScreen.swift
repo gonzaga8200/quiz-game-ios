@@ -13,6 +13,8 @@ struct GameScreen: View {
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var fx = GameFx()
     @State private var reporting: ReportTarget?
+    /// The report mail, opened once its sheet has gone (presenting it on a leaving sheet drops it).
+    @State private var pendingMail: MailDraft?
     @State private var confirmExit = false
     @AccessibilityFocusState private var questionFocused: Bool
 
@@ -44,13 +46,19 @@ struct GameScreen: View {
         } message: {
             Text("La partida no se guardará ni contará para el ranking.")
         }
-        .sheet(item: $reporting, onDismiss: { session.resume() }) { target in
+        .sheet(item: $reporting, onDismiss: {
+            if let draft = pendingMail {
+                pendingMail = nil
+                Task { _ = await env.mail.compose(draft) }
+            }
+            session.resume()
+        }) { target in
             ReportQuestionSheet(
                 target: target,
                 onSend: {
-                    reporting = nil
                     env.analytics.track(.questionReport(target.category, target.difficulty))
-                    Task { _ = await env.mail.compose(questionReportDraft(id: target.id, text: target.text)) }
+                    pendingMail = questionReportDraft(id: target.id, text: target.text)
+                    reporting = nil
                 },
                 onCancel: { reporting = nil }
             )

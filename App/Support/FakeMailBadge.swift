@@ -7,11 +7,15 @@ struct FakeMailBadge: View {
 
     var body: some View {
         if let fake = env.mail as? FakeMailComposer, let draft = fake.drafts.last {
-            Text(verbatim: draft.subject)
-                .font(.caption2)
-                .padding(4)
-                .background(.yellow)
-                .accessibilityIdentifier("fakeMail.subject")
+            VStack(alignment: .leading, spacing: 0) {
+                Text(verbatim: draft.subject)
+                    .accessibilityIdentifier("fakeMail.subject")
+                Text(verbatim: fake.openedOverSheet.last == true ? "overSheet: yes" : "overSheet: no")
+                    .accessibilityIdentifier("fakeMail.overSheet")
+            }
+            .font(.caption2)
+            .padding(4)
+            .background(.yellow)
         }
     }
 }

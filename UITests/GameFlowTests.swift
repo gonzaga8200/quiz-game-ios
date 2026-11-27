@@ -69,6 +69,8 @@ final class GameFlowTests: XCTestCase {
         app.buttons["Abrir mi correo"].tap()
         let subject = app.staticTexts["fakeMail.subject"].waitToAppear()
         XCTAssertTrue(subject.label.hasPrefix("Pregunta con respuesta incorrecta (pregunta prueba-"))
+        XCTAssertEqual(app.staticTexts["fakeMail.overSheet"].label, "overSheet: no",
+                       "mail must open once the report sheet has gone, or the composer is dropped")
     }
 
     func testExitAsksForConfirmation() {
