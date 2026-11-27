@@ -14,6 +14,8 @@ final class PlayCoordinator {
 
     private(set) var setup: GameSetup?
     private(set) var phase: Phase = .loading
+    /// Saving to the ranking (competitive games only; nil in arcade).
+    private(set) var submission: SubmissionState?
     var isPresented: Bool { setup != nil }
 
     @ObservationIgnored private unowned let env: AppEnvironment
@@ -45,6 +47,13 @@ final class PlayCoordinator {
         setup = nil
         phase = .loading
     }
+
+    func trackShare(_ method: String) {
+        guard let setup else { return }
+        env.analytics.track(.share(method: method, mode: setup.mode))
+    }
+
+    func retrySubmission() {}
 
     func sceneDidEnterBackground() {
         if case .playing(let session) = phase { session.appDidEnterBackground() }

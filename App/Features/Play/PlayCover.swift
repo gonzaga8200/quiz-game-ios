@@ -26,7 +26,10 @@ struct PlayCover: View {
             case .playing(let session):
                 GameScreen(session: session, onExit: { play.close() })
             case .finished(let report):
-                ReportPlaceholder(report: report)
+                if let setup = play.setup {
+                    ReportScreen(report: report, setup: setup, submission: play.submission, onRetry: { play.retrySubmission() },
+                                 onShared: { play.trackShare($0) }, onAgain: { play.playAgain() }, onMenu: { play.close() })
+                }
             }
         }
         .overlay(alignment: .bottomLeading) { FakeMailBadge() }

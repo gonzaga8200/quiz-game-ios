@@ -24,3 +24,22 @@ extension XCUIElement {
         return self
     }
 }
+
+extension XCUIApplication {
+    /// Plays the 6-question "tiny" arcade game to the end, answering right or wrong every time.
+    func playTinyGame(right: Bool) {
+        buttons["home.playArcade"].waitToAppear().tap()
+        otherElements["game.screen"].waitToAppear()
+        let label = right ? "Correcta" : "Falsa uno"
+        for index in 0..<6 {
+            let question = staticTexts["question.text"].waitToAppear()
+            let previous = question.label
+            buttons.matching(NSPredicate(format: "label CONTAINS %@", label)).firstMatch.waitToAppear().tap()
+            if index < 5 {
+                let changed = XCTNSPredicateExpectation(predicate: NSPredicate(format: "label != %@", previous), object: question)
+                XCTAssertEqual(XCTWaiter().wait(for: [changed], timeout: 5), .completed)
+            }
+        }
+        otherElements["report.screen"].waitToAppear()
+    }
+}

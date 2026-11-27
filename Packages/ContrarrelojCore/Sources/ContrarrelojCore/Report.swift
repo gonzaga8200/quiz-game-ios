@@ -14,6 +14,22 @@ public struct ReportRow: Codable, Equatable, Sendable {
     public let explanation: String
     /// Net points this question changed the score by (base + bonus - penalty).
     public let net: Int
+
+    public init(
+        id: String, text: String, category: QuizCategory, difficulty: Difficulty, timeMs: Double, result: ResultKind,
+        chosenAnswer: String?, correctAnswer: String, explanation: String, net: Int
+    ) {
+        self.id = id
+        self.text = text
+        self.category = category
+        self.difficulty = difficulty
+        self.timeMs = timeMs
+        self.result = result
+        self.chosenAnswer = chosenAnswer
+        self.correctAnswer = correctAnswer
+        self.explanation = explanation
+        self.net = net
+    }
 }
 
 public struct ComboBonusLine: Codable, Equatable, Sendable {
@@ -22,6 +38,12 @@ public struct ComboBonusLine: Codable, Equatable, Sendable {
     /// How many times it was earned during the game.
     public let count: Int
     public let points: Int
+
+    public init(streak: Int, count: Int, points: Int) {
+        self.streak = streak
+        self.count = count
+        self.points = points
+    }
 }
 
 public struct ReportBreakdown: Codable, Equatable, Sendable {
@@ -31,6 +53,18 @@ public struct ReportBreakdown: Codable, Equatable, Sendable {
     public let wrongPenalty: Int
     public let skipPenalty: Int
     public let penaltyTotal: Int
+
+    public init(
+        correctPoints: Int, comboBonuses: [ComboBonusLine], comboBonusTotal: Int, wrongPenalty: Int, skipPenalty: Int,
+        penaltyTotal: Int
+    ) {
+        self.correctPoints = correctPoints
+        self.comboBonuses = comboBonuses
+        self.comboBonusTotal = comboBonusTotal
+        self.wrongPenalty = wrongPenalty
+        self.skipPenalty = skipPenalty
+        self.penaltyTotal = penaltyTotal
+    }
 }
 
 public struct GameReport: Codable, Equatable, Sendable {
@@ -48,6 +82,25 @@ public struct GameReport: Codable, Equatable, Sendable {
     /// Set when the game was limited to one category.
     public let category: QuizCategory?
     public let celebration: Celebration
+
+    public init(
+        points: Int, correct: Int, wrong: Int, skipped: Int, bestStreak: Int, breakdown: ReportBreakdown,
+        rows: [ReportRow], finishReason: FinishReason, duration: GameDuration, filter: DifficultyFilter,
+        category: QuizCategory?, celebration: Celebration
+    ) {
+        self.points = points
+        self.correct = correct
+        self.wrong = wrong
+        self.skipped = skipped
+        self.bestStreak = bestStreak
+        self.breakdown = breakdown
+        self.rows = rows
+        self.finishReason = finishReason
+        self.duration = duration
+        self.filter = filter
+        self.category = category
+        self.celebration = celebration
+    }
 }
 
 public struct ReportInput {

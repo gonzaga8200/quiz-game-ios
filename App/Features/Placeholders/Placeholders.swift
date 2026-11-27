@@ -2,21 +2,6 @@ import SwiftUI
 
 // Temporary screens of the shell (Task 14), replaced one by one in Tasks 15 to 20.
 
-struct ReportPlaceholder: View {
-    @Environment(AppEnvironment.self) private var env
-    let report: GameReport
-    var body: some View {
-        VStack(spacing: 12) {
-            Text(verbatim: "\(report.points)")
-            Button("Jugar de nuevo") { env.play.playAgain() }.buttonStyle(PrimaryButtonStyle())
-            Button("Volver al menú") { env.play.close() }.buttonStyle(SecondaryButtonStyle())
-        }
-        .padding()
-        .accessibilityElement(children: .contain)
-        .accessibilityIdentifier("report.screen")
-    }
-}
-
 struct HomePlaceholder: View {
     @Environment(AppEnvironment.self) private var env
     var body: some View {
