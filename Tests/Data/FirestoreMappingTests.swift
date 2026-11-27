@@ -66,4 +66,33 @@ struct FirestoreMappingTests {
         data["points"] = 15 * 17 + 1
         #expect(FirestoreMapping.rankingEntry(data) == nil)
     }
+
+    /// Firestore hands numbers over as NSNumber, and Swift lets NSNumber 0 and 1 pass `is Bool`:
+    /// a 0 or a 1 must still read as an integer (no wrong answers, the first option…).
+    @Test func zeroAndOneFromFirestoreAreIntegers() throws {
+        var entry = FirestoreMapping.submissionData(submission)
+        entry["createdAt"] = Timestamp(date: Date(timeIntervalSince1970: 1_800_000_000))
+        entry["points"] = NSNumber(value: Int64(14))
+        entry["correct"] = NSNumber(value: Int64(1))
+        entry["wrong"] = NSNumber(value: Int64(0))
+        entry["skipped"] = NSNumber(value: Int64(1))
+        entry["duration"] = NSNumber(value: Int64(120))
+        let read = try #require(FirestoreMapping.rankingEntry(entry))
+        #expect(read.correct == 1)
+        #expect(read.wrong == 0)
+        #expect(read.skipped == 1)
+
+        for index in [0, 1] {
+            let question = FirestoreMapping.question(id: "capital-francia",
+                                                     data: questionData(["correctIndex": NSNumber(value: Int64(index))]))
+            let correctIndex: Int? = question?.correctIndex
+            #expect(correctIndex == index, "correctIndex \(index)")
+        }
+    }
+
+    @Test func booleansAreNotIntegers() {
+        #expect(FirestoreMapping.question(id: "capital-francia", data: questionData(["correctIndex": true])) == nil)
+        #expect(FirestoreMapping.question(id: "capital-francia", data: questionData(["correctIndex": NSNumber(value: false)])) == nil)
+        #expect(FirestoreMapping.question(id: "capital-francia", data: questionData(["correctIndex": kCFBooleanTrue as Any])) == nil)
+    }
 }

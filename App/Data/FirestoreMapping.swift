@@ -87,8 +87,10 @@ nonisolated enum FirestoreMapping {
     }
 
     /// An integral number (Firestore may hand back Int64 or a whole Double); nil otherwise.
+    /// Firestore numbers arrive as NSNumber. A boolean is told apart by its CFBoolean type only:
+    /// `is Bool` is also true for an NSNumber holding 0 or 1, which are valid integers here.
     private static func integer(_ value: Any?) -> Int? {
-        guard let number = value as? NSNumber, !(value is Bool), CFGetTypeID(number) != CFBooleanGetTypeID() else { return nil }
+        guard let number = value as? NSNumber, CFGetTypeID(number) != CFBooleanGetTypeID() else { return nil }
         let double = number.doubleValue
         guard double.rounded() == double, abs(double) < 9_007_199_254_740_992 else { return nil }
         return number.intValue
