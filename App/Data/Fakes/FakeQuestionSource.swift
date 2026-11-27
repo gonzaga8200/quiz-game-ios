@@ -4,11 +4,22 @@ nonisolated enum FakeRemoteError: Error, Equatable {
     case offline
 }
 
-/// How a fake answers: a value, an error, or never (until cancelled).
+/// Waits without ever noticing cancellation, like Firebase's completion-handler APIs (a Firestore
+/// read on a bad connection, a write queued while offline).
+nonisolated func uncancellableWait(seconds: Double) async {
+    await withCheckedContinuation { (continuation: CheckedContinuation<Void, Never>) in
+        DispatchQueue.global().asyncAfter(deadline: .now() + seconds) { continuation.resume() }
+    }
+}
+
+/// How a fake answers: a value, an error, never (until cancelled), a value after a while, or an
+/// error after a wait that ignores cancellation.
 nonisolated enum FakeReply<T: Sendable>: Sendable {
     case success(T)
     case failure(FakeRemoteError)
     case hang
+    case delayed(T, seconds: Double)
+    case stall(seconds: Double)
 
     func resolve() async throws -> T {
         switch self {
@@ -16,6 +27,12 @@ nonisolated enum FakeReply<T: Sendable>: Sendable {
         case .failure(let error): throw error
         case .hang:
             try await Task.sleep(for: .seconds(3_600))
+            throw FakeRemoteError.offline
+        case .delayed(let value, let seconds):
+            try await Task.sleep(for: .seconds(seconds))
+            return value
+        case .stall(let seconds):
+            await uncancellableWait(seconds: seconds)
             throw FakeRemoteError.offline
         }
     }

@@ -83,6 +83,7 @@
 		82E6A7F117E63E55460D4679 /* EmulatorSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F425B15E886869E5378416E /* EmulatorSupport.swift */; };
 		84722E79F78026EE809C6DF7 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F5CEC9306568AFF06E3E /* QuestionBank.swift */; };
 		84B0C0DBDC67CF38A44369E1 /* SoundPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D9C0FE08A5EF71AECB131 /* SoundPreference.swift */; };
+		8A2D14160A490311C9AA77A8 /* TimeoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F521A522DA3C4D50691735E /* TimeoutTests.swift */; };
 		8B22D7A0563221579357619B /* CategoryCopyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9AAD2BA4BCE0B8E01DB3A3 /* CategoryCopyTests.swift */; };
 		8C4E539019F4F4B5E8347B45 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFB90EE692601007EBC946E /* HUD.swift */; };
 		93597320554E5DB31CAC78B7 /* PaperCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919973B9BEECFB4F779941F7 /* PaperCard.swift */; };
@@ -190,6 +191,7 @@
 		175693AE4AEFA5B06AA2CDAD /* app-utils.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "app-utils.json"; sourceTree = "<group>"; };
 		1E068A61698631B3F0931789 /* Confetti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Confetti.swift; sourceTree = "<group>"; };
 		1E88A7ABB3E36840BBB3F227 /* StatusBarBackdrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarBackdrop.swift; sourceTree = "<group>"; };
+		1F521A522DA3C4D50691735E /* TimeoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeoutTests.swift; sourceTree = "<group>"; };
 		21632EACFF3AB84A3A9DC02B /* ManualScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualScheduler.swift; sourceTree = "<group>"; };
 		2356A2F64359D285377288F6 /* AtkinsonHyperlegibleNext-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegibleNext-Bold.ttf"; sourceTree = "<group>"; };
 		24AFEA8218A3655A4127A724 /* Timeout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeout.swift; sourceTree = "<group>"; };
@@ -662,6 +664,7 @@
 				C9FBE2A1777DD6AEE8E404E3 /* LocalStoresTests.swift */,
 				F084C4361B8E9F84DC2E16E8 /* QuestionBankTests.swift */,
 				8FCB1CD705D70F35832170C5 /* RankingServiceTests.swift */,
+				1F521A522DA3C4D50691735E /* TimeoutTests.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -1079,6 +1082,7 @@
 				7C43D2663A7B14D2AB1A1B11 /* SmokeTests.swift in Sources */,
 				F6816C52ACAAECBC85FF40F3 /* SynthTests.swift in Sources */,
 				580BE27211FF006F9176449F /* TestResources.swift in Sources */,
+				8A2D14160A490311C9AA77A8 /* TimeoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

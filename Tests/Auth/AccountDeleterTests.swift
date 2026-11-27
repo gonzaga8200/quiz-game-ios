@@ -6,13 +6,15 @@ import Testing
 nonisolated private final class LoggingRankingStore: RankingStore, @unchecked Sendable {
     let log: EventLog
     let failDelete: Bool
+    let stallDelete: Bool
     private let lock = NSLock()
     private var _boards: [String] = []
     var boards: [String] { lock.withLock { _boards } }
 
-    init(log: EventLog, failDelete: Bool = false) {
+    init(log: EventLog, failDelete: Bool = false, stallDelete: Bool = false) {
         self.log = log
         self.failDelete = failDelete
+        self.stallDelete = stallDelete
     }
 
     func getBestPoints(board: String, uid: String) async throws -> Int? { nil }
@@ -21,6 +23,7 @@ nonisolated private final class LoggingRankingStore: RankingStore, @unchecked Se
     func topEntries(board: String) async throws -> [RankingEntry] { [] }
     func deleteEntries(uid: String, boards: [String]) async throws {
         log.append("deleteEntries:\(uid)")
+        if stallDelete { await uncancellableWait(seconds: 2) }
         if failDelete { throw FakeRemoteError.offline }
         lock.withLock { _boards = boards }
     }
@@ -33,6 +36,21 @@ struct AccountDeleterTests {
         let auth = FakeAuthService(log: log)
         auth.user = AuthUser(uid: "ana", displayName: "Ana", photoURL: nil, provider: provider)
         return (auth, LoggingRankingStore(log: log, failDelete: failDelete), log)
+    }
+
+    /// Offline, Firestore queues the batch and never answers: give up after 10 s and keep the account.
+    @Test func deletionGivesUpWhenTheServerNeverAnswers() async throws {
+        let log = EventLog()
+        let auth = FakeAuthService(log: log)
+        auth.user = AuthUser(uid: "ana", displayName: "Ana", photoURL: nil, provider: .google)
+        let ranking = LoggingRankingStore(log: log, stallDelete: true)
+        let start = ContinuousClock.now
+        await #expect(throws: TimeoutError.self) {
+            _ = try await AccountDeleter(auth: auth, ranking: ranking, timeout: .seconds(10), sleep: { _ in }).delete()
+        }
+        #expect(ContinuousClock.now - start < .seconds(1))
+        #expect(!log.events.contains("deleteUser"))
+        #expect(auth.user != nil)
     }
 
     @Test func deletesEntriesBeforeUser() async throws {

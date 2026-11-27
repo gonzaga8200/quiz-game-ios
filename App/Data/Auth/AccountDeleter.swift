@@ -11,12 +11,18 @@ nonisolated enum AccountDeletionError: Error, Equatable {
 struct AccountDeleter {
     let auth: any AuthService
     let ranking: any RankingStore
+    var timeout: Duration = .seconds(10)
+    var sleep: Sleeper = realSleeper
 
     /// Returns the provider of the deleted account, for the `account_deleted` event.
     func delete() async throws -> AuthProvider {
         guard let user = auth.user else { throw AccountDeletionError.notSignedIn }
         let proof = try await auth.reauthenticate()
-        try await ranking.deleteEntries(uid: user.uid, boards: allBoards.map(\.id))
+        // Offline, Firestore queues the batch and never answers: give up so the player can retry.
+        let ranking = ranking
+        let uid = user.uid
+        let boards = allBoards.map(\.id)
+        try await withTimeout(timeout, sleep: sleep) { try await ranking.deleteEntries(uid: uid, boards: boards) }
         switch proof.provider {
         case .apple:
             do {
