@@ -1,0 +1,20 @@
+Copyright (c) 2026 Gonzalo Moreno Minguito. All rights reserved.
+
+This software and everything in this repository, including the source code, the design, the
+texts, the illustrations and the questions and explanations of the game (together, "the Work"),
+is the exclusive property of Gonzalo Moreno Minguito. The Work is not open source.
+
+No permission is granted to copy, reproduce, modify, merge, publish, distribute, sublicense,
+sell or create derivative works from the Work, in whole or in part, or to present it as your own,
+without the prior written permission of the copyright holder.
+
+You may, without asking: play the game on its official website or in its official app, read the
+source code to learn from it, and quote short excerpts with attribution.
+
+Third-party components (such as Firebase, Google Sign-In and the Playfair Display and Atkinson
+Hyperlegible Next fonts) are not part of the Work and keep their own licenses.
+
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH THE WORK OR ITS USE.

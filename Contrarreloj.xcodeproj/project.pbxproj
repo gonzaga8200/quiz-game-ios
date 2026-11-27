@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		117841E61C5DF72F200D4160 /* ContrarrelojCore in Frameworks */ = {isa = PBXBuildFile; productRef = EF864F15FFD04FB168FCA3F1 /* ContrarrelojCore */; };
+		3FAA2B316256F973B846CFBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F82363721F9B1317682CBE3 /* Assets.xcassets */; };
+		588AB865B60153D85ED8EF3E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = EE30E171602B02E20A980559 /* Localizable.xcstrings */; };
+		629B58C40A25D973766720FD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B77CD48B2D45DB10BB403E04 /* FirebaseAnalytics */; };
+		7C43D2663A7B14D2AB1A1B11 /* SmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EFB3DCDDEF59F978E12C5E /* SmokeTests.swift */; };
+		A7D444E09492FCC04C1D77E6 /* IntegrationSmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15AA9E5F461651D522C880B /* IntegrationSmokeTests.swift */; };
+		C0D63E51930B6AD93955EDE3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B54B54FD2CA22EA77030D675 /* FirebaseAuth */; };
+		C5B86D9FB1B5450164BAE9FF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FC6B17CDEF805967FBEE4371 /* FirebaseFirestore */; };
+		CA7C24FA3E70785B0AB3969B /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8155989BF88E6969C717E343 /* LaunchTests.swift */; };
+		F6D7A4EB357AC08F18E737E1 /* ContrarrelojApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545F1CD75C1CA7ADA8C0C0AB /* ContrarrelojApp.swift */; };
+		FB893A3BAB784B70FFD61756 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = FF395E7FBF31AB364260A61B /* GoogleSignIn */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C42B0042A989E0B266CB3B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 122354C1E9241FFBF1699D99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8D1E9B0701EEFF5B5FDCE97;
+			remoteInfo = Contrarreloj;
+		};
+		DE74440C56D1F8CDE8377069 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 122354C1E9241FFBF1699D99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8D1E9B0701EEFF5B5FDCE97;
+			remoteInfo = Contrarreloj;
+		};
+		E58429C3E3C870A6040397F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 122354C1E9241FFBF1699D99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8D1E9B0701EEFF5B5FDCE97;
+			remoteInfo = Contrarreloj;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		43224CC19047DD12968CDAFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		45EFB3DCDDEF59F978E12C5E /* SmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeTests.swift; sourceTree = "<group>"; };
+		545F1CD75C1CA7ADA8C0C0AB /* ContrarrelojApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrarrelojApp.swift; sourceTree = "<group>"; };
+		7F82363721F9B1317682CBE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8155989BF88E6969C717E343 /* LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTests.swift; sourceTree = "<group>"; };
+		9A1895268EB23B77308F72A5 /* Contrarreloj.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Contrarreloj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A064067AB0FE4FAB00460108 /* ContrarrelojUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ContrarrelojUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A15AA9E5F461651D522C880B /* IntegrationSmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationSmokeTests.swift; sourceTree = "<group>"; };
+		A895091BF45B0963CDA08346 /* ContrarrelojTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ContrarrelojTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5C168397232A3A331C1CA0 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		E2EF39B1DDDFC5A19DF17B28 /* ContrarrelojCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ContrarrelojCore; path = Packages/ContrarrelojCore; sourceTree = SOURCE_ROOT; };
+		EE30E171602B02E20A980559 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		F4B75A99661F54491E6A46E4 /* ContrarrelojIntegrationTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ContrarrelojIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F3B1ABBBA294DB0B6D4D8A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				117841E61C5DF72F200D4160 /* ContrarrelojCore in Frameworks */,
+				C0D63E51930B6AD93955EDE3 /* FirebaseAuth in Frameworks */,
+				C5B86D9FB1B5450164BAE9FF /* FirebaseFirestore in Frameworks */,
+				629B58C40A25D973766720FD /* FirebaseAnalytics in Frameworks */,
+				FB893A3BAB784B70FFD61756 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		292B21904483B0211926F0B4 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BF5C168397232A3A331C1CA0 /* Base.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		4BDEB90A2646AC432BE81212 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				45EFB3DCDDEF59F978E12C5E /* SmokeTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		5B5EF090B286843D13232758 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				E2EF39B1DDDFC5A19DF17B28 /* ContrarrelojCore */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		65BEE596AAB31D44EEE5C405 /* IntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				A15AA9E5F461651D522C880B /* IntegrationSmokeTests.swift */,
+			);
+			path = IntegrationTests;
+			sourceTree = "<group>";
+		};
+		C44154C129E8FA14D99EF65E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				545F1CD75C1CA7ADA8C0C0AB /* ContrarrelojApp.swift */,
+				C771E24E797AEC76C5DC2F5E /* Resources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C771E24E797AEC76C5DC2F5E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7F82363721F9B1317682CBE3 /* Assets.xcassets */,
+				43224CC19047DD12968CDAFB /* Info.plist */,
+				EE30E171602B02E20A980559 /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D89C9041B12AA0A26FFA372A = {
+			isa = PBXGroup;
+			children = (
+				C44154C129E8FA14D99EF65E /* App */,
+				292B21904483B0211926F0B4 /* Config */,
+				65BEE596AAB31D44EEE5C405 /* IntegrationTests */,
+				5B5EF090B286843D13232758 /* Packages */,
+				4BDEB90A2646AC432BE81212 /* Tests */,
+				E094F2B37303030B29E2EDF2 /* UITests */,
+				E32FB7F0E83DD96D408A2AEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E094F2B37303030B29E2EDF2 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				8155989BF88E6969C717E343 /* LaunchTests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		E32FB7F0E83DD96D408A2AEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A1895268EB23B77308F72A5 /* Contrarreloj.app */,
+				F4B75A99661F54491E6A46E4 /* ContrarrelojIntegrationTests.xctest */,
+				A895091BF45B0963CDA08346 /* ContrarrelojTests.xctest */,
+				A064067AB0FE4FAB00460108 /* ContrarrelojUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2698227871CCC8E990791C40 /* ContrarrelojTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDE8F04E65D6BBF248D74932 /* Build configuration list for PBXNativeTarget "ContrarrelojTests" */;
+			buildPhases = (
+				9EE6B758858F270C65BC360A /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A434741100380B9B1F22D42A /* PBXTargetDependency */,
+			);
+			name = ContrarrelojTests;
+			packageProductDependencies = (
+			);
+			productName = ContrarrelojTests;
+			productReference = A895091BF45B0963CDA08346 /* ContrarrelojTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B8AAC3FA3DB5A19B25D00515 /* ContrarrelojIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87B0AECE4010D7266005CA99 /* Build configuration list for PBXNativeTarget "ContrarrelojIntegrationTests" */;
+			buildPhases = (
+				B97BE325EA89B00265BFD18F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3B654F22CD297769682C0B4 /* PBXTargetDependency */,
+			);
+			name = ContrarrelojIntegrationTests;
+			packageProductDependencies = (
+			);
+			productName = ContrarrelojIntegrationTests;
+			productReference = F4B75A99661F54491E6A46E4 /* ContrarrelojIntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C8D1E9B0701EEFF5B5FDCE97 /* Contrarreloj */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 687F13A96A0C5773A156901B /* Build configuration list for PBXNativeTarget "Contrarreloj" */;
+			buildPhases = (
+				AE4690D0EAA2C41DD4E47D0A /* Sources */,
+				E34432D46FD62AEA23846D30 /* Resources */,
+				6F3B1ABBBA294DB0B6D4D8A7 /* Frameworks */,
+				FDF25D1DBB13A9EAECCF137F /* Copy Firebase configuration if present */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Contrarreloj;
+			packageProductDependencies = (
+				EF864F15FFD04FB168FCA3F1 /* ContrarrelojCore */,
+				B54B54FD2CA22EA77030D675 /* FirebaseAuth */,
+				FC6B17CDEF805967FBEE4371 /* FirebaseFirestore */,
+				B77CD48B2D45DB10BB403E04 /* FirebaseAnalytics */,
+				FF395E7FBF31AB364260A61B /* GoogleSignIn */,
+			);
+			productName = Contrarreloj;
+			productReference = 9A1895268EB23B77308F72A5 /* Contrarreloj.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6B8DFF5F571D3153128ABDB /* ContrarrelojUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55A09E44B00D833C8993C7DA /* Build configuration list for PBXNativeTarget "ContrarrelojUITests" */;
+			buildPhases = (
+				8108FCFE080090FADB5C1165 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				368604423CE0CF47AF7528D3 /* PBXTargetDependency */,
+			);
+			name = ContrarrelojUITests;
+			packageProductDependencies = (
+			);
+			productName = ContrarrelojUITests;
+			productReference = A064067AB0FE4FAB00460108 /* ContrarrelojUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		122354C1E9241FFBF1699D99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					2698227871CCC8E990791C40 = {
+						ProvisioningStyle = Automatic;
+					};
+					B8AAC3FA3DB5A19B25D00515 = {
+						ProvisioningStyle = Automatic;
+					};
+					C8D1E9B0701EEFF5B5FDCE97 = {
+						ProvisioningStyle = Automatic;
+					};
+					E6B8DFF5F571D3153128ABDB = {
+						ProvisioningStyle = Automatic;
+						TestTargetID = C8D1E9B0701EEFF5B5FDCE97;
+					};
+				};
+			};
+			buildConfigurationList = 9D69A0E1075E11D1844392EB /* Build configuration list for PBXProject "Contrarreloj" */;
+			developmentRegion = es;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				es,
+			);
+			mainGroup = D89C9041B12AA0A26FFA372A;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AEF3EFE98C2CA72B7095DE99 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8B9423A4E18B0A607DEB114B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				AEB5043F2A826870499C0501 /* XCLocalSwiftPackageReference "Packages/ContrarrelojCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E32FB7F0E83DD96D408A2AEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8D1E9B0701EEFF5B5FDCE97 /* Contrarreloj */,
+				2698227871CCC8E990791C40 /* ContrarrelojTests */,
+				E6B8DFF5F571D3153128ABDB /* ContrarrelojUITests */,
+				B8AAC3FA3DB5A19B25D00515 /* ContrarrelojIntegrationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E34432D46FD62AEA23846D30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FAA2B316256F973B846CFBD /* Assets.xcassets in Resources */,
+				588AB865B60153D85ED8EF3E /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FDF25D1DBB13A9EAECCF137F /* Copy Firebase configuration if present */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Firebase configuration if present";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# The real GoogleService-Info.plist is git-ignored. Without it the app runs arcade-only.\nSRC=\"${SRCROOT}/Config/GoogleService-Info.plist\"\nDST=\"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleService-Info.plist\"\nif [ -f \"$SRC\" ]; then cp \"$SRC\" \"$DST\"; else rm -f \"$DST\"; fi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8108FCFE080090FADB5C1165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA7C24FA3E70785B0AB3969B /* LaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EE6B758858F270C65BC360A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C43D2663A7B14D2AB1A1B11 /* SmokeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4690D0EAA2C41DD4E47D0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D7A4EB357AC08F18E737E1 /* ContrarrelojApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B97BE325EA89B00265BFD18F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7D444E09492FCC04C1D77E6 /* IntegrationSmokeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		368604423CE0CF47AF7528D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8D1E9B0701EEFF5B5FDCE97 /* Contrarreloj */;
+			targetProxy = E58429C3E3C870A6040397F4 /* PBXContainerItemProxy */;
+		};
+		A434741100380B9B1F22D42A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8D1E9B0701EEFF5B5FDCE97 /* Contrarreloj */;
+			targetProxy = 6C42B0042A989E0B266CB3B2 /* PBXContainerItemProxy */;
+		};
+		B3B654F22CD297769682C0B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8D1E9B0701EEFF5B5FDCE97 /* Contrarreloj */;
+			targetProxy = DE74440C56D1F8CDE8377069 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1426BF3F2998237B95FDD41D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.contrarrelojquiz.app.uitests;
+				SDKROOT = iphoneos;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Contrarreloj;
+			};
+			name = Debug;
+		};
+		1F31C5AC749CEB13C74FBE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.contrarrelojquiz.app.tests;
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contrarreloj.app/Contrarreloj";
+			};
+			name = Release;
+		};
+		24F80618AF8993A1563B4648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5C168397232A3A331C1CA0 /* Base.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F1CA660A287BB2BEBD2C645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.contrarrelojquiz.app.uitests;
+				SDKROOT = iphoneos;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Contrarreloj;
+			};
+			name = Release;
+		};
+		7983EC2A34A324858039D294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.contrarrelojquiz.app.tests;
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contrarreloj.app/Contrarreloj";
+			};
+			name = Debug;
+		};
+		B595A82E2337530AF08AB424 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/Contrarreloj.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = App/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.contrarrelojquiz.app;
+				PRODUCT_NAME = Contrarreloj;
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D310C47BD713E046E84BAB9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5C168397232A3A331C1CA0 /* Base.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D7A0DE6B216918036C43F29A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.contrarrelojquiz.app.integrationtests;
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contrarreloj.app/Contrarreloj";
+			};
+			name = Debug;
+		};
+		EC77EDE000A18E92FEF699B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/Contrarreloj.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = App/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.contrarrelojquiz.app;
+				PRODUCT_NAME = Contrarreloj;
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEEF0E17715298DE3CEB5053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.contrarrelojquiz.app.integrationtests;
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contrarreloj.app/Contrarreloj";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55A09E44B00D833C8993C7DA /* Build configuration list for PBXNativeTarget "ContrarrelojUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1426BF3F2998237B95FDD41D /* Debug */,
+				2F1CA660A287BB2BEBD2C645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		687F13A96A0C5773A156901B /* Build configuration list for PBXNativeTarget "Contrarreloj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC77EDE000A18E92FEF699B7 /* Debug */,
+				B595A82E2337530AF08AB424 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		87B0AECE4010D7266005CA99 /* Build configuration list for PBXNativeTarget "ContrarrelojIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7A0DE6B216918036C43F29A /* Debug */,
+				FEEF0E17715298DE3CEB5053 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9D69A0E1075E11D1844392EB /* Build configuration list for PBXProject "Contrarreloj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F80618AF8993A1563B4648 /* Debug */,
+				D310C47BD713E046E84BAB9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BDE8F04E65D6BBF248D74932 /* Build configuration list for PBXNativeTarget "ContrarrelojTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7983EC2A34A324858039D294 /* Debug */,
+				1F31C5AC749CEB13C74FBE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		AEB5043F2A826870499C0501 /* XCLocalSwiftPackageReference "Packages/ContrarrelojCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/ContrarrelojCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8B9423A4E18B0A607DEB114B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.1.0;
+			};
+		};
+		AEF3EFE98C2CA72B7095DE99 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B54B54FD2CA22EA77030D675 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEF3EFE98C2CA72B7095DE99 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B77CD48B2D45DB10BB403E04 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEF3EFE98C2CA72B7095DE99 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		EF864F15FFD04FB168FCA3F1 /* ContrarrelojCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ContrarrelojCore;
+		};
+		FC6B17CDEF805967FBEE4371 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEF3EFE98C2CA72B7095DE99 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FF395E7FBF31AB364260A61B /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B9423A4E18B0A607DEB114B /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 122354C1E9241FFBF1699D99 /* Project object */;
+}

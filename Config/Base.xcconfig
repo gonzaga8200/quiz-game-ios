@@ -1,0 +1,15 @@
+// Shared build settings for every configuration of the app.
+
+MARKETING_VERSION = 1.0.0
+CURRENT_PROJECT_VERSION = 1
+
+// URL scheme Google Sign-In returns to. The real value is the REVERSED_CLIENT_ID of
+// Config/GoogleService-Info.plist and lives in Config/Secrets.xcconfig (git-ignored, written by
+// scripts/make-secrets.sh). Without it the app builds and runs without Google sign-in.
+GOOGLE_REVERSED_CLIENT_ID = com.contrarrelojquiz.app.no-google-config
+
+// Sign in with Apple needs a paid Apple Developer team. Set this to NO in Secrets.xcconfig to
+// build for a device with a free (personal) team: the entitlement is then left out.
+ENABLE_APPLE_SIGN_IN = YES
+
+#include? "Secrets.xcconfig"

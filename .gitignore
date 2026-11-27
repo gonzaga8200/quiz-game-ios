@@ -1,0 +1,17 @@
+# Xcode
+DerivedData/
+build/
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# macOS
+.DS_Store
+
+# Local Firebase configuration and secrets: never commit them (see README > Firebase)
+Config/GoogleService-Info.plist
+Config/Secrets.xcconfig

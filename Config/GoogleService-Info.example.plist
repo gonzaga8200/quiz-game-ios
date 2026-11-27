@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Shape of the real Config/GoogleService-Info.plist, which is git-ignored. Download the real one
+  for the iOS app "Contrarreloj iOS" of the Firebase project contrarreloj-quiz (see README).
+-->
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>example-api-key</string>
+	<key>BUNDLE_ID</key>
+	<string>com.contrarrelojquiz.app</string>
+	<key>CLIENT_ID</key>
+	<string>000000000000-example.apps.googleusercontent.com</string>
+	<key>GCM_SENDER_ID</key>
+	<string>000000000000</string>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:000000000000:ios:0000000000000000000000</string>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>PROJECT_ID</key>
+	<string>contrarreloj-quiz</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.000000000000-example</string>
+	<key>STORAGE_BUCKET</key>
+	<string>contrarreloj-quiz.firebasestorage.app</string>
+</dict>
+</plist>

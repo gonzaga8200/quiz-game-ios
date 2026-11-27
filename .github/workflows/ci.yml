@@ -1,0 +1,41 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: build and test
+    runs-on: macos-26
+    timeout-minutes: 75
+    env:
+      IOS_VERSION: latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select the newest Xcode 26
+        run: |
+          XCODE=$(ls -d /Applications/Xcode_26*.app | sort -V | tail -1)
+          echo "Using $XCODE"
+          echo "DEVELOPER_DIR=$XCODE/Contents/Developer" >> "$GITHUB_ENV"
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generated project is up to date
+        run: scripts/generate.sh && git diff --exit-code -- Contrarreloj.xcodeproj App/Resources/Info.plist
+
+      - name: Core tests (parity with the web)
+        run: scripts/test-core.sh
+
+      - name: App unit tests
+        run: scripts/test-app.sh
+
+      - name: UI tests (iPhone)
+        run: scripts/test-ui.sh iphone
