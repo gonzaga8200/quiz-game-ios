@@ -15,13 +15,14 @@ enum GameFixtures {
         }
     }
 
-    /// Plays `rights` correct answers (7 points each, plus combo bonuses) and returns the report.
+    /// Plays `rights` correct answers and returns the report. The questions have the first difficulty
+    /// the filter lets through (medio = 7 points each, plus combo bonuses).
     static func report(
         rights: Int, duration: GameDuration = .short, filter: DifficultyFilter = .medium, category: QuizCategory? = nil
     ) -> GameReport {
         var now = 0.0
         let game = Game(GameConfig(
-            questions: bank(.medium, count: max(rights, 1), category: category), filter: filter, duration: duration,
+            questions: bank(filter.difficulties.first!, count: max(rights, 1), category: category), filter: filter, duration: duration,
             category: category, seen: nil, rng: mulberry32(seed: 1), now: { now }
         ))
         game.start()
