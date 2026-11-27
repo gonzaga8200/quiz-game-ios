@@ -44,4 +44,17 @@ final class CategoriesTests: XCTestCase {
         app.buttons["categories.playAll"].waitToAppear().tap()
         app.otherElements["game.screen"].waitToAppear()
     }
+
+    func testCategoriesShowLoadingWhileTheBankLoads() {
+        let app = launchApp(["-bank", "slow"])
+        app.tab("Categorías").waitToAppear().tap()
+        app.staticTexts["Cargando preguntas…"].waitToAppear(2)
+        let science = app.buttons["categories.card.ciencias"]
+        if science.exists {
+            XCTAssertFalse(science.label.contains("0 preguntas en el juego"), "no count before the bank loads")
+        }
+        let loaded = XCTNSPredicateExpectation(predicate: NSPredicate(format: "label CONTAINS '2 preguntas en el juego'"),
+                                               object: science)
+        XCTAssertEqual(XCTWaiter().wait(for: [loaded], timeout: 10), .completed)
+    }
 }

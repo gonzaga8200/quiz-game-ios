@@ -100,6 +100,8 @@ final class AppEnvironment {
         let remote: (any RemoteQuestionSource)? = switch options.bank {
         case "tiny": FakeQuestionSource(count: .success(tiny.count), fetch: .success(RemoteBank(questions: tiny, documentCount: tiny.count)))
         case "failing": FakeQuestionSource(count: .failure(.offline), fetch: .failure(.offline))
+        case "slow": FakeQuestionSource(count: .delayed(tiny.count, seconds: 3),
+                                        fetch: .delayed(RemoteBank(questions: tiny, documentCount: tiny.count), seconds: 3))
         default: nil
         }
         let available = !options.noFirebase

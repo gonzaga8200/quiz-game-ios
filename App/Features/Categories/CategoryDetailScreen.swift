@@ -4,15 +4,16 @@ import SwiftUI
 /// explanation (the same stable selection as the web, easiest first), and an arcade game of it.
 struct CategoryDetailScreen: View {
     let category: QuizCategory
-    let questions: [Question]
+    /// nil while the bank loads.
+    let questions: [Question]?
     @Environment(AppEnvironment.self) private var env
 
     private static let showcaseSize = 20
 
     var body: some View {
         let text = copy(for: category)
-        let items = pickShowcase(questions, category: category, count: Self.showcaseSize)
-        let total = countActiveByCategory(questions)[category] ?? 0
+        let items = questions.map { pickShowcase($0, category: category, count: Self.showcaseSize) } ?? []
+        let total = questions.map { countActiveByCategory($0)[category] ?? 0 }
         let lower = category.rawValue.lowercased()
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
@@ -22,8 +23,12 @@ struct CategoryDetailScreen: View {
                     .accessibilityAddTraits(.isHeader)
                 Text(verbatim: text.intro[0]).font(.reading(.body))
                 Text(verbatim: text.intro[1]).font(.reading(.body))
-                Text("En el juego hay \(total) preguntas de \(lower). Aquí ves \(items.count), de las más fáciles a las más difíciles.")
-                    .font(.reading(.body, weight: .bold))
+                if let total {
+                    Text("En el juego hay \(total) preguntas de \(lower). Aquí ves \(items.count), de las más fáciles a las más difíciles.")
+                        .font(.reading(.body, weight: .bold))
+                } else {
+                    ProgressView { Text("Cargando preguntas…") }.frame(maxWidth: .infinity)
+                }
                 playButton(lower)
 
                 if !items.isEmpty {
