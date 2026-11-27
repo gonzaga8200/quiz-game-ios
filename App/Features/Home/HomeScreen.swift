@@ -9,6 +9,7 @@ enum HomeRoute: Hashable {
 struct HomeScreen: View {
     @Environment(AppEnvironment.self) private var env
     @Environment(\.horizontalSizeClass) private var horizontalSize
+    @Environment(\.dynamicTypeSize) private var typeSize
     @State private var path: [HomeRoute] = []
     @State private var signingIn = false
     @State private var openSetupAfterSignIn = false
@@ -19,7 +20,9 @@ struct HomeScreen: View {
             ScrollView {
                 VStack(spacing: 24) {
                     playerBar
-                    if horizontalSize == .regular {
+                    // Side by side on wide screens, except at the largest text sizes, where the
+                    // right-hand column would be too narrow for the text.
+                    if horizontalSize == .regular && !typeSize.isAccessibilitySize {
                         HStack(alignment: .center, spacing: 48) {
                             hero.frame(maxWidth: .infinity)
                             VStack(spacing: 24) { actions; social }.frame(maxWidth: 420)

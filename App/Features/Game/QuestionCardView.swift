@@ -8,22 +8,25 @@ struct QuestionCardView: View {
     let onAnswer: (Int) -> Void
     var fillHeight = true
     @AccessibilityFocusState.Binding var questionFocused: Bool
+    @Environment(\.dynamicTypeSize) private var typeSize
 
     private var level: Int { (Difficulty.allCases.firstIndex(of: question.difficulty) ?? 0) + 1 }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            HStack(spacing: 8) {
-                tag(Text(verbatim: question.category.rawValue).accessibilityIdentifier("question.category"))
-                tag(HStack(spacing: 6) {
-                    DifficultyPips(level: level)
-                        .frame(width: 42, height: 6)
-                        .accessibilityHidden(true)
-                    Text(verbatim: question.difficulty.rawValue)
+            if typeSize.isAccessibilitySize {
+                // Largest text sizes: one tag per line, clear of the bookmark.
+                VStack(alignment: .leading, spacing: 6) {
+                    categoryTag
+                    difficultyTag
                 }
-                .accessibilityElement(children: .ignore)
-                .accessibilityLabel(Text("Dificultad: \(question.difficulty.rawValue)")))
-                Spacer(minLength: 0)
+                .padding(.trailing, 40)
+            } else {
+                HStack(spacing: 8) {
+                    categoryTag
+                    difficultyTag
+                    Spacer(minLength: 0)
+                }
             }
 
             Spacer(minLength: 0).frame(maxHeight: fillHeight ? .infinity : 0)
@@ -78,6 +81,21 @@ struct QuestionCardView: View {
         }
     }
 
+    private var categoryTag: some View {
+        tag(Text(verbatim: question.category.rawValue).accessibilityIdentifier("question.category"))
+    }
+
+    private var difficultyTag: some View {
+        tag(HStack(spacing: 6) {
+            DifficultyPips(level: level)
+                .frame(width: 42, height: 6)
+                .accessibilityHidden(true)
+            Text(verbatim: question.difficulty.rawValue)
+        }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(Text("Dificultad: \(question.difficulty.rawValue)")))
+    }
+
     /// One answer slot, written out instead of a `ForEach` (see GameScreen.scrolls).
     @ViewBuilder private func answer(_ index: Int) -> some View {
         if question.options.indices.contains(index) {
@@ -111,6 +129,8 @@ struct QuestionCardView: View {
     private func tag(_ content: some View) -> some View {
         content
             .font(.reading(.footnote, weight: .bold))
+            .lineLimit(1)
+            .minimumScaleFactor(0.6)
             .padding(.horizontal, 8)
             .padding(.vertical, 4)
             .background(Color.papelOscuro, in: Capsule())

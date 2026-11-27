@@ -125,12 +125,14 @@ struct GameScreen: View {
         } label: {
             Image(systemName: "xmark")
                 .font(.headline.weight(.bold))
+                .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
                 .frame(width: 44, height: 44)
                 .background(Color.groundRaised, in: Circle())
                 .overlay(Circle().strokeBorder(Color.groundBorder, lineWidth: 1))
         }
         .foregroundStyle(Color.onGround)
         .accessibilityLabel(Text("Abandonar la partida"))
+        .accessibilityShowsLargeContentViewer()
         .accessibilityIdentifier("exitGame")
     }
 
@@ -140,12 +142,15 @@ struct GameScreen: View {
             session.pause()
             reporting = ReportTarget(id: q.id, text: q.text, category: q.category, difficulty: q.difficulty)
         } label: {
-            Image(systemName: "flag").font(.body.weight(.semibold)).frame(width: 44, height: 44)
+            Image(systemName: "flag").font(.body.weight(.semibold))
+                .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
+                .frame(width: 44, height: 44)
                 .overlay(Circle().strokeBorder(Color.groundBorder, lineWidth: 1))
         }
         .foregroundStyle(Color.onGroundSoft)
         .disabled(session.question == nil || session.feedback != nil)
         .accessibilityLabel(Text("Reportar esta pregunta"))
+        .accessibilityShowsLargeContentViewer()
         .accessibilityIdentifier("reportQuestion")
     }
 
@@ -155,11 +160,14 @@ struct GameScreen: View {
             sound.isMuted.toggle()
         } label: {
             Image(systemName: sound.isMuted ? "speaker.slash" : "speaker.wave.2")
-                .font(.body.weight(.semibold)).frame(width: 44, height: 44)
+                .font(.body.weight(.semibold))
+                .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
+                .frame(width: 44, height: 44)
                 .overlay(Circle().strokeBorder(Color.groundBorder, lineWidth: 1))
         }
         .foregroundStyle(Color.onGroundSoft)
         .accessibilityLabel(Text(sound.isMuted ? "Activar el sonido" : "Silenciar el sonido"))
+        .accessibilityShowsLargeContentViewer()
         .accessibilityIdentifier("soundToggle")
     }
 

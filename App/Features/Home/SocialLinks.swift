@@ -21,6 +21,8 @@ struct SocialLinks: View {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(verbatim: network.name).font(.reading(.body, weight: .bold))
                     Text(verbatim: network.handle).font(.reading(.subheadline))
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.6)
                     if showBlurb { Text(verbatim: network.blurb).font(.reading(.footnote)) }
                 }
                 Spacer(minLength: 0)

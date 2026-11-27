@@ -7,6 +7,7 @@ struct HUD: View {
     let fx: GameFx
     let wide: Bool
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.dynamicTypeSize) private var typeSize
 
     private var durationMs: Double { session.setup.duration.milliseconds }
     private var progress: Double { 1 - session.remainingMs / durationMs }
@@ -23,6 +24,23 @@ struct HUD: View {
                     comboHint
                 }
                 .padding(20)
+            } else if typeSize.isAccessibilitySize {
+                // Largest text sizes: clock on one row, score and streak on the next.
+                VStack(alignment: .leading, spacing: 6) {
+                    HStack(spacing: 10) {
+                        PocketWatch(progress: progress, urgent: urgent).frame(width: 40)
+                        clockText(size: 40)
+                        Spacer(minLength: 0)
+                    }
+                    HStack(spacing: 12) {
+                        scoreTile
+                        streakTile
+                        Spacer(minLength: 0)
+                    }
+                    comboHint
+                }
+                .padding(.horizontal, 14)
+                .padding(.vertical, 8)
             } else {
                 VStack(spacing: 6) {
                     HStack(spacing: 12) {
@@ -44,22 +62,31 @@ struct HUD: View {
     }
 
     private func clockText(size: CGFloat) -> some View {
-        Text(verbatim: clock)
+        let pulse: CGFloat = urgent && !reduceMotion && Int(session.remainingMs / 500) % 2 == 0 ? 1.06 : 1
+        return Text(verbatim: clock)
             .font(.display(size: size, relativeTo: .title, weight: .heavy))
             .monospacedDigit()
             .foregroundStyle(urgent ? Color.errorOnGround : Color.accentOnGround)
-            .scaleEffect(urgent && !reduceMotion && Int(session.remainingMs / 500) % 2 == 0 ? 1.06 : 1)
-            .animation(reduceMotion ? nil : .easeInOut(duration: 0.25), value: Int(session.remainingMs / 500))
+            // Always its full width: with Playfair's figures SwiftUI measured some times ("0:58")
+            // a hair narrower than it draws them, and the clock showed "0:…".
+            .fixedSize()
+            .layoutPriority(1)
+            // Only the urgent pulse animates, not the text's frame.
+            .animation(reduceMotion ? nil : .easeInOut(duration: 0.25)) { $0.scaleEffect(pulse) }
             .accessibilityLabel(Text("Tiempo restante: \(clock)"))
             .accessibilityIdentifier("hud.clock")
+    }
+
+    private func tileLabel(_ title: LocalizedStringKey) -> some View {
+        Text(title).font(.reading(.caption, weight: .bold)).foregroundStyle(Color.onGroundSoft)
             .lineLimit(1)
             .minimumScaleFactor(0.6)
+            .accessibilityHidden(true)
     }
 
     private var scoreTile: some View {
         VStack(spacing: 0) {
-            Text("Puntos").font(.reading(.caption, weight: .bold)).foregroundStyle(Color.onGroundSoft)
-                .accessibilityHidden(true)
+            tileLabel("Puntos")
             Text(verbatim: "\(session.snapshot.score)")
                 .font(.display(.title2, weight: .heavy))
                 .monospacedDigit()
@@ -85,8 +112,7 @@ struct HUD: View {
         let streak = session.snapshot.streak
         let hot = streak >= GameFx.cheerFrom
         return VStack(spacing: 0) {
-            Text("Racha").font(.reading(.caption, weight: .bold)).foregroundStyle(Color.onGroundSoft)
-                .accessibilityHidden(true)
+            tileLabel("Racha")
             HStack(spacing: 2) {
                 if hot { Image(systemName: "flame.fill").foregroundStyle(Color.oroClaro) }
                 Text(verbatim: "\(streak)").font(.display(.title2, weight: .heavy)).monospacedDigit()
