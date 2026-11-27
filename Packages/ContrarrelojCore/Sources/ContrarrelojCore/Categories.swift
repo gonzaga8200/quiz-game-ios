@@ -1,5 +1,5 @@
 /// The seven categories, in the web's order. Port of `core/constants.ts` and `core/categories.ts`.
-public enum Category: String, CaseIterable, Codable, Sendable {
+public enum QuizCategory: String, CaseIterable, Codable, Sendable {
     case artAndLiterature = "Arte y Literatura"
     case historyAndGeography = "Historia y Geografía"
     case sports = "Deportes"
@@ -23,7 +23,7 @@ public enum Category: String, CaseIterable, Codable, Sendable {
 
     /// The category for a URL slug, or nil for anything that is not exactly one of them.
     public init?(urlSlug: String) {
-        guard let match = Category.allCases.first(where: { $0.urlSlug == urlSlug }) else { return nil }
+        guard let match = QuizCategory.allCases.first(where: { $0.urlSlug == urlSlug }) else { return nil }
         self = match
     }
 }
@@ -31,9 +31,9 @@ public enum Category: String, CaseIterable, Codable, Sendable {
 /// What the setup and ranking screens offer: every category ("Aleatorio") or a single one.
 public enum CategoryChoice: Hashable, Sendable {
     case random
-    case only(Category)
+    case only(QuizCategory)
 
-    public var category: Category? {
+    public var category: QuizCategory? {
         switch self {
         case .random: nil
         case .only(let category): category

@@ -17,7 +17,7 @@ import Testing
 }
 
 @Test func namesAndOrderMatchWeb() {
-    #expect(Category.allCases.map(\.rawValue) == [
+    #expect(QuizCategory.allCases.map(\.rawValue) == [
         "Arte y Literatura", "Historia y Geografía", "Deportes", "Cine y televisión",
         "Ciencias", "Lengua e Idiomas", "Música",
     ])
@@ -27,15 +27,15 @@ import Testing
 }
 
 @Test func slugsRoundTrip() {
-    #expect(Category.allCases.map(\.urlSlug) == [
+    #expect(QuizCategory.allCases.map(\.urlSlug) == [
         "arte-y-literatura", "historia-y-geografia", "deportes", "cine-y-television",
         "ciencias", "lengua-e-idiomas", "musica",
     ])
-    for category in Category.allCases {
-        #expect(Category(urlSlug: category.urlSlug) == category)
+    for category in QuizCategory.allCases {
+        #expect(QuizCategory(urlSlug: category.urlSlug) == category)
     }
-    #expect(Category(urlSlug: "trivial") == nil)
-    #expect(Category(urlSlug: "Ciencias") == nil)
+    #expect(QuizCategory(urlSlug: "trivial") == nil)
+    #expect(QuizCategory(urlSlug: "Ciencias") == nil)
 }
 
 @Test func filtersLetThroughTheirDifficulties() {

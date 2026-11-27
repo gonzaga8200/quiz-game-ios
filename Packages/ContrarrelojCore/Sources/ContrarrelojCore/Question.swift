@@ -7,7 +7,7 @@ public struct Question: Codable, Hashable, Sendable {
     public let text: String
     public let options: [String]
     public let correctIndex: Int
-    public let category: Category
+    public let category: QuizCategory
     public let difficulty: Difficulty
     public let explanation: String
     public let source: String?
@@ -16,7 +16,7 @@ public struct Question: Codable, Hashable, Sendable {
     public let status: QuestionStatus
 
     public init(
-        id: String, text: String, options: [String], correctIndex: Int, category: Category,
+        id: String, text: String, options: [String], correctIndex: Int, category: QuizCategory,
         difficulty: Difficulty, explanation: String, source: String?, createdAt: String, status: QuestionStatus
     ) {
         self.id = id
@@ -69,7 +69,7 @@ public struct Question: Codable, Hashable, Sendable {
             text: try c.decode(String.self, forKey: .text),
             options: try c.decode([String].self, forKey: .options),
             correctIndex: try c.decode(Int.self, forKey: .correctIndex),
-            category: try c.decode(Category.self, forKey: .category),
+            category: try c.decode(QuizCategory.self, forKey: .category),
             difficulty: try c.decode(Difficulty.self, forKey: .difficulty),
             explanation: try c.decode(String.self, forKey: .explanation),
             source: try c.decodeIfPresent(String.self, forKey: .source),

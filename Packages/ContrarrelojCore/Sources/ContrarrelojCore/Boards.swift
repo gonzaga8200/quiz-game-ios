@@ -4,11 +4,11 @@ public struct Board: Hashable, Sendable {
     public let duration: GameDuration
     public let filter: DifficultyFilter
     /// Absent on the boards of games that mix every category.
-    public let category: Category?
+    public let category: QuizCategory?
 }
 
 /// `60_aleatorio` for games that mix every category, `60_aleatorio_ciencias` for one category.
-public func boardId(_ duration: GameDuration, _ filter: DifficultyFilter, _ category: Category?) -> String {
+public func boardId(_ duration: GameDuration, _ filter: DifficultyFilter, _ category: QuizCategory?) -> String {
     let base = "\(duration.rawValue)_\(filter.slug)"
     guard let category else { return base }
     return "\(base)_\(category.urlSlug)"
@@ -18,7 +18,7 @@ public func boardId(_ duration: GameDuration, _ filter: DifficultyFilter, _ cate
 public let allBoards: [Board] = GameDuration.allCases.flatMap { duration in
     DifficultyFilter.allCases.flatMap { filter in
         [Board(id: boardId(duration, filter, nil), duration: duration, filter: filter, category: nil)]
-            + Category.allCases.map { category in
+            + QuizCategory.allCases.map { category in
                 Board(id: boardId(duration, filter, category), duration: duration, filter: filter, category: category)
             }
     }

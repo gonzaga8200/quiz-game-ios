@@ -10,7 +10,7 @@ private struct QueuesFixture: Decodable {
     struct Case: Decodable {
         let seed: UInt32
         let filter: DifficultyFilter
-        let category: Category?
+        let category: QuizCategory?
         let seen: Bool
         let queue: [Entry]
     }

@@ -7,13 +7,13 @@ public struct PlayableQuestion: Hashable, Sendable {
     public let text: String
     public let options: [String]
     public let correctIndex: Int
-    public let category: Category
+    public let category: QuizCategory
     public let difficulty: Difficulty
     public let explanation: String
     public let source: String?
 
     public init(
-        id: String, text: String, options: [String], correctIndex: Int, category: Category,
+        id: String, text: String, options: [String], correctIndex: Int, category: QuizCategory,
         difficulty: Difficulty, explanation: String, source: String?
     ) {
         self.id = id
@@ -113,7 +113,7 @@ public func buildQueue(
     _ questions: [Question],
     filter: DifficultyFilter,
     rng: Rng,
-    category: Category? = nil,
+    category: QuizCategory? = nil,
     seen: [String: Int]? = nil
 ) -> [PlayableQuestion] {
     let allowed = Set(filter.difficulties)
