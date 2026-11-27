@@ -15,6 +15,8 @@ struct LaunchOptions {
     var rankingFake: String?
     /// `accepted`, `rejected` or `unset` (UI tests default to `rejected`, so the card stays away).
     var consent: String?
+    /// Longer answer feedback, so a UI test can observe the 600 ms states (stamp, ticks).
+    var feedbackMs: Int?
 
     static let current = LaunchOptions(arguments: ProcessInfo.processInfo.arguments)
 
@@ -34,6 +36,7 @@ struct LaunchOptions {
             case "-fakeUser": fakeUser = value().flatMap(AuthProvider.init(rawValue:))
             case "-rankingFake": rankingFake = value()
             case "-consent": consent = value()
+            case "-feedbackMs": feedbackMs = value().flatMap { Int($0) }
             default: break
             }
             index += 1

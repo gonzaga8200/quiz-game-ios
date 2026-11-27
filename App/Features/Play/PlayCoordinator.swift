@@ -83,7 +83,8 @@ final class PlayCoordinator {
                     player.play(.end)
                     self?.finish(report)
                 }
-            )
+            ),
+            feedback: .milliseconds(env.options.feedbackMs ?? 600)
         )
         phase = .playing(session)
         env.analytics.track(.gameStart(setup))

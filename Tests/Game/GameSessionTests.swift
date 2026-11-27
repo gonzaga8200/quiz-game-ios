@@ -236,3 +236,16 @@ struct GameSessionTests {
         #expect(clock.pending == 0)
     }
 }
+
+extension GameSessionTests {
+    @Test func repeatedAnnouncementsAreCountedSoVoiceOverRepeatsThem() async {
+        let clock = ManualScheduler(), rec = Recorder()
+        let s = await make(clock: clock, recorder: rec)
+        s.answer(right(s))
+        let first = s.announcementCount
+        await clock.advance(600)
+        s.answer(right(s))
+        #expect(s.announcement == "Correcto. 7 puntos.")
+        #expect(s.announcementCount == first + 1)
+    }
+}

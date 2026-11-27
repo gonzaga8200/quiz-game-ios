@@ -24,10 +24,11 @@ struct PlayCover: View {
                 .frame(maxWidth: 520)
                 .padding()
             case .playing(let session):
-                GamePlaceholder(session: session)
+                GameScreen(session: session, onExit: { play.close() })
             case .finished(let report):
                 ReportPlaceholder(report: report)
             }
         }
+        .overlay(alignment: .bottomLeading) { FakeMailBadge() }
     }
 }

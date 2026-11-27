@@ -1,8 +1,9 @@
 import Foundation
 import Observation
 
-/// What the screen shows for the ~600 ms after an answer.
-struct AnswerFeedback: Equatable {
+/// What the screen shows for the ~600 ms after an answer. Nonisolated: SwiftUI compares it on its
+/// async render thread (iOS 26).
+nonisolated struct AnswerFeedback: Equatable, Sendable {
     let chosenIndex: Int
     let correctIndex: Int
     let correct: Bool
@@ -55,7 +56,11 @@ final class GameSession {
     private(set) var feedback: AnswerFeedback?
     private(set) var report: GameReport?
     /// What VoiceOver should say: the result of an answer, the cost of a skip, the time left.
-    private(set) var announcement = ""
+    private(set) var announcement = "" {
+        didSet { if !announcement.isEmpty { announcementCount += 1 } }
+    }
+    /// Grows with every announcement, so the same text said twice in a row is still posted.
+    private(set) var announcementCount = 0
     private(set) var isPaused = false
 
     @ObservationIgnored private let game: Game

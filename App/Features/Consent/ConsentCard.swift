@@ -26,9 +26,8 @@ struct ConsentCard: View {
         .font(.reading(.subheadline))
         .foregroundStyle(Color.cardText)
         .padding(16)
-        .background(Color.card, in: RoundedRectangle(cornerRadius: 12))
+        .background(RoundedRectangle(cornerRadius: 12).fill(Color.card).shadow(color: .black.opacity(0.35), radius: 12, y: 6))
         .overlay(RoundedRectangle(cornerRadius: 12).strokeBorder(Color.oroSombra, lineWidth: 2))
-        .shadow(color: .black.opacity(0.35), radius: 12, y: 6)
         .frame(maxWidth: 560)
         .accessibilityElement(children: .contain)
     }
