@@ -14,7 +14,7 @@ struct QuestionCardView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack(spacing: 8) {
-                tag(Text(verbatim: question.category.rawValue))
+                tag(Text(verbatim: question.category.rawValue).accessibilityIdentifier("question.category"))
                 tag(HStack(spacing: 6) {
                     DifficultyPips(level: level)
                         .frame(width: 42, height: 6)

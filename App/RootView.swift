@@ -15,7 +15,7 @@ struct RootView: View {
             tabContent(HomeScreen(), screen: "Inicio")
                 .tabItem { Label("Jugar", systemImage: "stopwatch") }
                 .tag(AppTab.play)
-            tabContent(TabPlaceholder(title: "Categorías"), screen: "Categorías")
+            tabContent(CategoriesScreen(), screen: "Categorías")
                 .tabItem { Label("Categorías", systemImage: "square.grid.2x2") }
                 .tag(AppTab.categories)
             if env.firebaseAvailable {
