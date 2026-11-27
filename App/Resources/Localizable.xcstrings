@@ -1,6 +1,30 @@
 {
-  "sourceLanguage" : "es",
-  "strings" : {
+  "sourceLanguage": "es",
+  "strings": {
+    "%lld puntos": {
+      "extractionState": "manual",
+      "localizations": {
+        "es": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld punto"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld puntos"
+                }
+              }
+            }
+          }
+        }
+      },
+      "comment": "A number of points"
+    }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }

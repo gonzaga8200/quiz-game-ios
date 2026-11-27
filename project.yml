@@ -126,6 +126,9 @@ targets:
     platform: iOS
     sources:
       - path: Tests
+      # Parity fixtures generated from the web (Tools/parity), shared with the core package.
+      - path: Packages/ContrarrelojCore/Tests/ContrarrelojCoreTests/Fixtures/app-utils.json
+        buildPhase: resources
     dependencies:
       - target: Contrarreloj
     settings:
