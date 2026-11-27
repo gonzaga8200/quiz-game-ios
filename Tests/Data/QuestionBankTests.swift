@@ -107,6 +107,26 @@ struct QuestionBankTests {
         #expect(recorder.requested == [.seconds(6)])
     }
 
+    @Test func remoteThatIgnoresCancellationStillTimesOut() async {
+        let remote = FakeQuestionSource(count: .stall(seconds: 2), fetch: .stall(seconds: 2))
+        let start = ContinuousClock.now
+        let result = await bank(remote: remote, cache: InMemoryQuestionCache(nil), sleep: { _ in }).load()
+        #expect(result.origin == .bundled)
+        #expect(ContinuousClock.now - start < .seconds(1))
+    }
+
+    /// Categories and a game can ask at once on first launch: one download (≈2,600 reads), not two.
+    @Test func concurrentLoadsShareOneDownload() async {
+        let bank = RemoteBank(questions: fresh, documentCount: fresh.count)
+        let remote = FakeQuestionSource(count: .success(fresh.count), fetch: .delayed(bank, seconds: 0.3))
+        let questionBank = self.bank(remote: remote, cache: InMemoryQuestionCache(nil))
+        async let first = questionBank.load()
+        async let second = questionBank.load()
+        let results = await [first, second]
+        #expect(results.map(\.origin) == [.network, .network])
+        #expect(remote.fetchCalls == 1)
+    }
+
     @Test func noRemoteUsesBundled() async {
         let result = await bank(remote: nil, cache: InMemoryQuestionCache(nil)).load()
         #expect(result.origin == .bundled)

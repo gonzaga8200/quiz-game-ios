@@ -41,6 +41,8 @@ actor QuestionBank {
     private let ttl: TimeInterval
     private let timeout: Duration
     private let sleep: Sleeper
+    /// The load under way, shared by everyone who asks meanwhile (one download, not one per screen).
+    private var inFlight: Task<(questions: [Question], origin: QuestionOrigin), Never>?
 
     init(
         remote: (any RemoteQuestionSource)?,
@@ -61,6 +63,15 @@ actor QuestionBank {
     }
 
     func load() async -> (questions: [Question], origin: QuestionOrigin) {
+        if let inFlight { return await inFlight.value }
+        let task = Task { await self.loadOnce() }
+        inFlight = task
+        let result = await task.value
+        inFlight = nil
+        return result
+    }
+
+    private func loadOnce() async -> (questions: [Question], origin: QuestionOrigin) {
         guard let remote else { return (bundled(), .bundled) }
         let cached = cache.read()
 
