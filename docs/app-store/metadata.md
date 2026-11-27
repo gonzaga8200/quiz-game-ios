@@ -18,7 +18,7 @@ Si el nombre «Contrarreloj» estuviera libre en la tienda, se puede usar solo; 
 
 ## Texto promocional (170)
 
-Responde todas las preguntas que puedas antes de que se acabe el reloj. Arcade sin registro y modo competitivo con ranking. ¡Preguntas nuevas cada semana!
+Responde todas las preguntas que puedas antes de que se acabe el reloj. Arcade sin registro y modo competitivo con el mismo ranking que la web.
 
 ## Descripción (4.000)
 
