@@ -87,6 +87,11 @@ Tools                       parity fixtures, question and copy sync, icon render
 UI tests launch the app with `-uiTesting` and fakes for the question bank, the ranking, sign-in and
 mail (see `App/Support/LaunchOptions.swift`). Pass test names as `Target/Suite[/test]`.
 
+A few checks run only on demand, against the real services: `ProductionBankCheck` (the production
+question bank read through the app's code, `TEST_RUNNER_PRODUCTION_BANK_CHECK=<output.json>`) and
+`LiveAnalyticsCheck` (a real game with Firebase Analytics in debug mode, `TEST_RUNNER_ANALYTICS_CHECK=1`).
+Results and the parity table with the web: [`docs/verification/parity.md`](docs/verification/parity.md).
+
 ## Other scripts
 
 | Script | What it does |
@@ -97,6 +102,7 @@ mail (see `App/Support/LaunchOptions.swift`). Pass test names as `Target/Suite[/
 | `Tools/sync-questions.sh` | Refresh the bundled questions from the web repository |
 | `Tools/sync-category-copy.sh` | Regenerate the category page texts from the web |
 | `Tools/render-icon.sh` | Render the app icon (light, dark, tinted) from the in-app pocket watch |
+| `scripts/screenshots.sh [iphone\|ipad]` | Screenshots of every flow, light and dark, plus the largest text size (`docs/verification/screenshots`) |
 
 The scripts use Xcode through `DEVELOPER_DIR`, so `xcode-select` may keep pointing at the Command
 Line Tools.

@@ -1,0 +1,45 @@
+# Firebase Analytics events logged by the app (simulator log, FirebaseAnalytics 13.2.0, -FIRDebugEnabled)
+# Live run of UITests/Verification/LiveAnalyticsCheck on 27-11-2026: analytics accepted, one arcade game, result shared (copy).
+
+Logging event: origin, name, params: app, game_start, {
+    category = all;
+    difficulty = aleatorio;
+    duration = 60;
+    ga_event_origin (_o) = app;
+    mode = arcade;
+}
+
+Logging event: origin, name, params: app, game_end, {
+    best_streak = 3;
+    category = all;
+    correct = 12;
+    difficulty = aleatorio;
+    duration = 60;
+    finish_reason = time;
+    ga_event_origin (_o) = app;
+    mode = arcade;
+    points = 74;
+    skipped = 0;
+    wrong = 46;
+}
+
+Logging event: origin, name, params: app, screen_view (_vs), {
+    ga_event_origin (_o) = app;
+    ga_screen (_sn) = Informe;
+    ga_screen_class (_sc) = Informe;
+    ga_screen_id (_si) = 7361870725830232283;
+}
+
+Logging event: origin, name, params: app, share, {
+    content_type = game_result;
+    ga_event_origin (_o) = app;
+    ga_screen_class (_sc) = UIActivityViewController;
+    ga_screen_id (_si) = 7361870725830232284;
+    method = copy;
+    mode = arcade;
+}
+
+15 matches in 1 files:
+
+/.../scratchpad/analytics.log:4908:...entitySupport dependency is not currently linked. IDFA will not be accessible.
+[+14 more]
