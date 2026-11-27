@@ -12,7 +12,7 @@ struct RootView: View {
 
     var body: some View {
         TabView(selection: $tab) {
-            tabContent(HomePlaceholder(), screen: "Inicio")
+            tabContent(HomeScreen(), screen: "Inicio")
                 .tabItem { Label("Jugar", systemImage: "stopwatch") }
                 .tag(AppTab.play)
             tabContent(TabPlaceholder(title: "Categorías"), screen: "Categorías")

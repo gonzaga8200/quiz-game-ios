@@ -20,6 +20,7 @@ final class PlayCoordinator {
 
     @ObservationIgnored private unowned let env: AppEnvironment
     @ObservationIgnored private var questions: [Question] = []
+    @ObservationIgnored private var lastReport: GameReport?
 
     init(env: AppEnvironment) {
         self.env = env
@@ -27,6 +28,8 @@ final class PlayCoordinator {
 
     func play(_ setup: GameSetup) {
         self.setup = setup
+        submission = nil
+        lastReport = nil
         phase = .loading
         Task { await load() }
     }
@@ -38,6 +41,8 @@ final class PlayCoordinator {
 
     /// "Jugar de nuevo": a fresh game with the questions already loaded.
     func playAgain() {
+        submission = nil
+        lastReport = nil
         startGame()
     }
 
@@ -45,6 +50,8 @@ final class PlayCoordinator {
     func close() {
         if case .playing(let session) = phase { session.leave() }
         setup = nil
+        submission = nil
+        lastReport = nil
         phase = .loading
     }
 
@@ -53,7 +60,26 @@ final class PlayCoordinator {
         env.analytics.track(.share(method: method, mode: setup.mode))
     }
 
-    func retrySubmission() {}
+    func retrySubmission() {
+        if let lastReport { submit(lastReport) }
+    }
+
+    /// Competitive games are saved to the ranking as soon as they end (like the web's /jugar).
+    private func submit(_ report: GameReport) {
+        guard let ranking = env.ranking, let user = env.auth.user else {
+            submission = .error
+            return
+        }
+        submission = .saving
+        let player = RankingPlayer(uid: user.uid, displayName: user.displayName, photoURL: user.photoURL?.absoluteString)
+        Task {
+            do {
+                submission = .done(try await ranking.submit(player: player, report: report))
+            } catch {
+                submission = .error
+            }
+        }
+    }
 
     func sceneDidEnterBackground() {
         if case .playing(let session) = phase { session.appDidEnterBackground() }
@@ -104,5 +130,9 @@ final class PlayCoordinator {
         guard let setup else { return }
         env.analytics.track(.gameEnd(setup, report))
         phase = .finished(report)
+        if setup.mode == .competitive {
+            lastReport = report
+            submit(report)
+        }
     }
 }
