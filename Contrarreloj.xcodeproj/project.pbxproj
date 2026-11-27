@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0354A8775793EF7983FF27A1 /* Timeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFEA8218A3655A4127A724 /* Timeout.swift */; };
 		0C8C6E7F40E096A189AF9669 /* PocketWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C1618BE9C361B2F092549 /* PocketWatch.swift */; };
 		117841E61C5DF72F200D4160 /* ContrarrelojCore in Frameworks */ = {isa = PBXBuildFile; productRef = EF864F15FFD04FB168FCA3F1 /* ContrarrelojCore */; };
+		11B89062C63A733B9AD9994E /* RankingServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCB1CD705D70F35832170C5 /* RankingServiceTests.swift */; };
+		1D1B5B7F69795F420AA93D0B /* FirebaseBootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBBE1A76EEE1ECDF43D05B8 /* FirebaseBootstrap.swift */; };
+		22AE7F77692C6B0654D36D42 /* FirestoreRankingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA40E79CF148307239EEE59 /* FirestoreRankingStore.swift */; };
 		2334294519C0DE6F28FAE5F1 /* FontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B325272F972063E51EFF4C /* FontTests.swift */; };
 		25A08F2D97D0798BB7237B4B /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC7F11FAE3B7C614F49BA53 /* Palette.swift */; };
 		301B5739AAD6668F4E7A3976 /* AtkinsonHyperlegibleNext-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2ED38D357EB5C5411E21B8A /* AtkinsonHyperlegibleNext-Italic.ttf */; };
+		312385241098DD8B674315D0 /* FirestoreQuestionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E723F1DC3B9950D9EDDD47 /* FirestoreQuestionSource.swift */; };
+		3978A50D7E8E6EEA609713F7 /* GameFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB63D37E8C12119BBAEF81 /* GameFixtures.swift */; };
+		3CE6FACE6A1C8A1ABD4EFE2E /* FakeRankingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7939D139F1FE6BBA8DCE9486 /* FakeRankingStore.swift */; };
 		3FAA2B316256F973B846CFBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F82363721F9B1317682CBE3 /* Assets.xcassets */; };
 		43B31C54FFBD2C2E434F0566 /* Share.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5730CC62404E07E246F91CF7 /* Share.swift */; };
 		43D873E7C26A45CCBB81CA66 /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8799FDAC1A93486C3DEACFED /* Format.swift */; };
@@ -19,30 +26,40 @@
 		5763294D96AC6AE7BF019A7F /* Exports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED8240DC624013FE8EB6E3E /* Exports.swift */; };
 		580BE27211FF006F9176449F /* TestResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D889317F168D40EC06E156 /* TestResources.swift */; };
 		588AB865B60153D85ED8EF3E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = EE30E171602B02E20A980559 /* Localizable.xcstrings */; };
+		599D24A210E3F954C9A91E71 /* FirestoreMappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A954A25815C93B44FED89E /* FirestoreMappingTests.swift */; };
 		629B58C40A25D973766720FD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B77CD48B2D45DB10BB403E04 /* FirebaseAnalytics */; };
+		6385EC3B6E970A4A8802B58D /* QuestionCacheFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2F36CEFCDC22FFFD3DAB43 /* QuestionCacheFile.swift */; };
 		6530B5B9B57BACBDF7A9E18B /* PlayfairDisplay-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4FCEEE9F0743E71630BDFF9 /* PlayfairDisplay-ExtraBoldItalic.ttf */; };
+		6AB5CDF861D92FFBA762F68C /* BundledBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADA99DD04A14E42470644E3 /* BundledBankTests.swift */; };
 		6D6A086589CB77AB1F8DDA74 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88D438DD8A03516B3C6EF0CA /* PlayfairDisplay-Bold.ttf */; };
 		7400A2730A6E676DC96A109F /* PlayfairDisplay-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8585CFBF12668B7DBBD28DD0 /* PlayfairDisplay-BoldItalic.ttf */; };
 		7BD7BCE6A80AE09B4D9849C5 /* PlayfairDisplay-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9CA42A39F79CFFC4B6E8405 /* PlayfairDisplay-ExtraBold.ttf */; };
 		7C43D2663A7B14D2AB1A1B11 /* SmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EFB3DCDDEF59F978E12C5E /* SmokeTests.swift */; };
+		7F0D543D0AA163C3897D6560 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = E4FFA7DB05C48EBFEF7602D2 /* questions.json */; };
+		84722E79F78026EE809C6DF7 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F5CEC9306568AFF06E3E /* QuestionBank.swift */; };
 		93597320554E5DB31CAC78B7 /* PaperCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919973B9BEECFB4F779941F7 /* PaperCard.swift */; };
 		94E898A8C4F9B4E124384DB0 /* app-utils.json in Resources */ = {isa = PBXBuildFile; fileRef = 175693AE4AEFA5B06AA2CDAD /* app-utils.json */; };
 		96BFA632560E603625D3B9BB /* ContrastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C321D6B9BE59D7757FA7FB2 /* ContrastTests.swift */; };
+		988382094CB38036B716E51D /* BundledQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E333BC7E3953EF69DBC058 /* BundledQuestions.swift */; };
 		9D0E6DAF76ED1F0A7D5FA6AC /* Mail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7D0A4A0E85542DAC3C40A /* Mail.swift */; };
+		9EEC0E4ECC997176703A1573 /* RankingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C62BEB49F58B93F1C87C9BB /* RankingService.swift */; };
 		A0FC2E128098054B6CE51A68 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9872A74FF59F76AD29A6F67E /* Buttons.swift */; };
 		A4D6190FD28F2B2B16AD3062 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB156DFFBD31510FFEDC35 /* Keyboard.swift */; };
 		A7D444E09492FCC04C1D77E6 /* IntegrationSmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15AA9E5F461651D522C880B /* IntegrationSmokeTests.swift */; };
 		A914F83CE3DA5BEE440437CB /* AppUtilsParityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D724AF0B5E67CA07FD069D1 /* AppUtilsParityTests.swift */; };
 		AEC9DF2AB2D46D1CE6F08908 /* AtkinsonHyperlegibleNext-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2356A2F64359D285377288F6 /* AtkinsonHyperlegibleNext-Bold.ttf */; };
+		C0CEF2CAE028516DB7735770 /* QuestionBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F084C4361B8E9F84DC2E16E8 /* QuestionBankTests.swift */; };
 		C0D63E51930B6AD93955EDE3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B54B54FD2CA22EA77030D675 /* FirebaseAuth */; };
 		C1328821256623ABF1103F49 /* AtkinsonHyperlegibleNext-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8E6CEBA1EFF10287DD45F09 /* AtkinsonHyperlegibleNext-Regular.ttf */; };
 		C5B86D9FB1B5450164BAE9FF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FC6B17CDEF805967FBEE4371 /* FirebaseFirestore */; };
 		CA7C24FA3E70785B0AB3969B /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8155989BF88E6969C717E343 /* LaunchTests.swift */; };
+		CCCD40FCEB7FE1EF04723BB1 /* FirestoreMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9FF628830A0DE3CFF2D5C2 /* FirestoreMapping.swift */; };
 		D1664D24E7B36E3DD63CE6E2 /* AppLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FA66FDBC25B5837CD572B6 /* AppLinks.swift */; };
 		D3AFE765D040AAED04ED79F6 /* ComponentRenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AD9EC02BB4C6C9AEBFD346 /* ComponentRenderTests.swift */; };
 		D8DE42D2BEFD9A31080854F4 /* OFL-AtkinsonHyperlegibleNext.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0B353FF468FFEB983046F02D /* OFL-AtkinsonHyperlegibleNext.txt */; };
 		EB5931A3B1B2DF4B50F737E1 /* AtkinsonHyperlegibleNext-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13DFE1737A0B46A8F375AD18 /* AtkinsonHyperlegibleNext-BoldItalic.ttf */; };
 		F6D7A4EB357AC08F18E737E1 /* ContrarrelojApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545F1CD75C1CA7ADA8C0C0AB /* ContrarrelojApp.swift */; };
+		FB05C63CEC4D9067826C340D /* FakeQuestionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F994593CC6D5A3AEA6264B54 /* FakeQuestionSource.swift */; };
 		FB893A3BAB784B70FFD61756 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = FF395E7FBF31AB364260A61B /* GoogleSignIn */; };
 		FBD7C7943717A5038158389D /* OFL-PlayfairDisplay.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6553484030752632C9F2A765 /* OFL-PlayfairDisplay.txt */; };
 /* End PBXBuildFile section */
@@ -78,8 +95,11 @@
 		13DFE1737A0B46A8F375AD18 /* AtkinsonHyperlegibleNext-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegibleNext-BoldItalic.ttf"; sourceTree = "<group>"; };
 		175693AE4AEFA5B06AA2CDAD /* app-utils.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "app-utils.json"; sourceTree = "<group>"; };
 		2356A2F64359D285377288F6 /* AtkinsonHyperlegibleNext-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegibleNext-Bold.ttf"; sourceTree = "<group>"; };
+		24AFEA8218A3655A4127A724 /* Timeout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeout.swift; sourceTree = "<group>"; };
 		28B325272F972063E51EFF4C /* FontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTests.swift; sourceTree = "<group>"; };
 		2D724AF0B5E67CA07FD069D1 /* AppUtilsParityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtilsParityTests.swift; sourceTree = "<group>"; };
+		3ADA99DD04A14E42470644E3 /* BundledBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundledBankTests.swift; sourceTree = "<group>"; };
+		3E2F36CEFCDC22FFFD3DAB43 /* QuestionCacheFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCacheFile.swift; sourceTree = "<group>"; };
 		3EC7F11FAE3B7C614F49BA53 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		3F2F8B3758BD1BBB72134458 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		43224CC19047DD12968CDAFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -90,28 +110,42 @@
 		5EAB156DFFBD31510FFEDC35 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		6553484030752632C9F2A765 /* OFL-PlayfairDisplay.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-PlayfairDisplay.txt"; sourceTree = "<group>"; };
 		72AD9EC02BB4C6C9AEBFD346 /* ComponentRenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentRenderTests.swift; sourceTree = "<group>"; };
+		75E333BC7E3953EF69DBC058 /* BundledQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundledQuestions.swift; sourceTree = "<group>"; };
+		7939D139F1FE6BBA8DCE9486 /* FakeRankingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRankingStore.swift; sourceTree = "<group>"; };
+		7BA40E79CF148307239EEE59 /* FirestoreRankingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreRankingStore.swift; sourceTree = "<group>"; };
 		7F82363721F9B1317682CBE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8155989BF88E6969C717E343 /* LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTests.swift; sourceTree = "<group>"; };
 		8585CFBF12668B7DBBD28DD0 /* PlayfairDisplay-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-BoldItalic.ttf"; sourceTree = "<group>"; };
 		8799FDAC1A93486C3DEACFED /* Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
 		88D438DD8A03516B3C6EF0CA /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
+		8FCB1CD705D70F35832170C5 /* RankingServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingServiceTests.swift; sourceTree = "<group>"; };
 		919973B9BEECFB4F779941F7 /* PaperCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperCard.swift; sourceTree = "<group>"; };
 		95D889317F168D40EC06E156 /* TestResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResources.swift; sourceTree = "<group>"; };
 		9872A74FF59F76AD29A6F67E /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		9A1895268EB23B77308F72A5 /* Contrarreloj.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Contrarreloj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C62BEB49F58B93F1C87C9BB /* RankingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingService.swift; sourceTree = "<group>"; };
 		A064067AB0FE4FAB00460108 /* ContrarrelojUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ContrarrelojUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15AA9E5F461651D522C880B /* IntegrationSmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationSmokeTests.swift; sourceTree = "<group>"; };
 		A895091BF45B0963CDA08346 /* ContrarrelojTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ContrarrelojTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8A3F5CEC9306568AFF06E3E /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 		A9CA42A39F79CFFC4B6E8405 /* PlayfairDisplay-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBold.ttf"; sourceTree = "<group>"; };
 		B2ED38D357EB5C5411E21B8A /* AtkinsonHyperlegibleNext-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegibleNext-Italic.ttf"; sourceTree = "<group>"; };
+		BC9FF628830A0DE3CFF2D5C2 /* FirestoreMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreMapping.swift; sourceTree = "<group>"; };
 		BF5C168397232A3A331C1CA0 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
 		D4FCEEE9F0743E71630BDFF9 /* PlayfairDisplay-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		D8E6CEBA1EFF10287DD45F09 /* AtkinsonHyperlegibleNext-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AtkinsonHyperlegibleNext-Regular.ttf"; sourceTree = "<group>"; };
+		E0E723F1DC3B9950D9EDDD47 /* FirestoreQuestionSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreQuestionSource.swift; sourceTree = "<group>"; };
 		E2EF39B1DDDFC5A19DF17B28 /* ContrarrelojCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ContrarrelojCore; path = Packages/ContrarrelojCore; sourceTree = SOURCE_ROOT; };
+		E4FFA7DB05C48EBFEF7602D2 /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 		E5FA66FDBC25B5837CD572B6 /* AppLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLinks.swift; sourceTree = "<group>"; };
 		EE30E171602B02E20A980559 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		F084C4361B8E9F84DC2E16E8 /* QuestionBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBankTests.swift; sourceTree = "<group>"; };
+		F3A954A25815C93B44FED89E /* FirestoreMappingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreMappingTests.swift; sourceTree = "<group>"; };
 		F4B75A99661F54491E6A46E4 /* ContrarrelojIntegrationTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ContrarrelojIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D7D0A4A0E85542DAC3C40A /* Mail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mail.swift; sourceTree = "<group>"; };
+		F994593CC6D5A3AEA6264B54 /* FakeQuestionSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeQuestionSource.swift; sourceTree = "<group>"; };
+		FACB63D37E8C12119BBAEF81 /* GameFixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFixtures.swift; sourceTree = "<group>"; };
+		FBBBE1A76EEE1ECDF43D05B8 /* FirebaseBootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseBootstrap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				45EFB3DCDDEF59F978E12C5E /* SmokeTests.swift */,
+				C96047DA15212CA796EFEFD8 /* Data */,
 				FC7628567B156CDAF56734B3 /* Design */,
 				F015D37B7717CE207F0D8306 /* Support */,
 			);
@@ -211,10 +246,28 @@
 			path = IntegrationTests;
 			sourceTree = "<group>";
 		};
+		7EEF9A9785AC6D5B3B54147E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				75E333BC7E3953EF69DBC058 /* BundledQuestions.swift */,
+				FBBBE1A76EEE1ECDF43D05B8 /* FirebaseBootstrap.swift */,
+				BC9FF628830A0DE3CFF2D5C2 /* FirestoreMapping.swift */,
+				E0E723F1DC3B9950D9EDDD47 /* FirestoreQuestionSource.swift */,
+				7BA40E79CF148307239EEE59 /* FirestoreRankingStore.swift */,
+				A8A3F5CEC9306568AFF06E3E /* QuestionBank.swift */,
+				3E2F36CEFCDC22FFFD3DAB43 /* QuestionCacheFile.swift */,
+				9C62BEB49F58B93F1C87C9BB /* RankingService.swift */,
+				24AFEA8218A3655A4127A724 /* Timeout.swift */,
+				D80310B8597326A715A6A603 /* Fakes */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		C44154C129E8FA14D99EF65E /* App */ = {
 			isa = PBXGroup;
 			children = (
 				545F1CD75C1CA7ADA8C0C0AB /* ContrarrelojApp.swift */,
+				7EEF9A9785AC6D5B3B54147E /* Data */,
 				D68701829913F8AB31C615C4 /* Design */,
 				C771E24E797AEC76C5DC2F5E /* Resources */,
 				09B55603079324B1FB7FB91B /* Support */,
@@ -228,9 +281,21 @@
 				7F82363721F9B1317682CBE3 /* Assets.xcassets */,
 				43224CC19047DD12968CDAFB /* Info.plist */,
 				EE30E171602B02E20A980559 /* Localizable.xcstrings */,
+				E4FFA7DB05C48EBFEF7602D2 /* questions.json */,
 				0213A495CCE0DEED5EB607CA /* Fonts */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C96047DA15212CA796EFEFD8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3ADA99DD04A14E42470644E3 /* BundledBankTests.swift */,
+				F3A954A25815C93B44FED89E /* FirestoreMappingTests.swift */,
+				F084C4361B8E9F84DC2E16E8 /* QuestionBankTests.swift */,
+				8FCB1CD705D70F35832170C5 /* RankingServiceTests.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		D288C7E62AC9D8A98BA3D251 /* Fixtures */ = {
@@ -251,6 +316,15 @@
 				3F2F8B3758BD1BBB72134458 /* Typography.swift */,
 			);
 			path = Design;
+			sourceTree = "<group>";
+		};
+		D80310B8597326A715A6A603 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				F994593CC6D5A3AEA6264B54 /* FakeQuestionSource.swift */,
+				7939D139F1FE6BBA8DCE9486 /* FakeRankingStore.swift */,
+			);
+			path = Fakes;
 			sourceTree = "<group>";
 		};
 		D89C9041B12AA0A26FFA372A = {
@@ -297,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				2D724AF0B5E67CA07FD069D1 /* AppUtilsParityTests.swift */,
+				FACB63D37E8C12119BBAEF81 /* GameFixtures.swift */,
 				95D889317F168D40EC06E156 /* TestResources.swift */,
 			);
 			path = Support;
@@ -471,6 +546,7 @@
 				7400A2730A6E676DC96A109F /* PlayfairDisplay-BoldItalic.ttf in Resources */,
 				7BD7BCE6A80AE09B4D9849C5 /* PlayfairDisplay-ExtraBold.ttf in Resources */,
 				6530B5B9B57BACBDF7A9E18B /* PlayfairDisplay-ExtraBoldItalic.ttf in Resources */,
+				7F0D543D0AA163C3897D6560 /* questions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,9 +588,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A914F83CE3DA5BEE440437CB /* AppUtilsParityTests.swift in Sources */,
+				6AB5CDF861D92FFBA762F68C /* BundledBankTests.swift in Sources */,
 				D3AFE765D040AAED04ED79F6 /* ComponentRenderTests.swift in Sources */,
 				96BFA632560E603625D3B9BB /* ContrastTests.swift in Sources */,
+				599D24A210E3F954C9A91E71 /* FirestoreMappingTests.swift in Sources */,
 				2334294519C0DE6F28FAE5F1 /* FontTests.swift in Sources */,
+				3978A50D7E8E6EEA609713F7 /* GameFixtures.swift in Sources */,
+				C0CEF2CAE028516DB7735770 /* QuestionBankTests.swift in Sources */,
+				11B89062C63A733B9AD9994E /* RankingServiceTests.swift in Sources */,
 				7C43D2663A7B14D2AB1A1B11 /* SmokeTests.swift in Sources */,
 				580BE27211FF006F9176449F /* TestResources.swift in Sources */,
 			);
@@ -525,16 +606,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1664D24E7B36E3DD63CE6E2 /* AppLinks.swift in Sources */,
+				988382094CB38036B716E51D /* BundledQuestions.swift in Sources */,
 				A0FC2E128098054B6CE51A68 /* Buttons.swift in Sources */,
 				F6D7A4EB357AC08F18E737E1 /* ContrarrelojApp.swift in Sources */,
 				5763294D96AC6AE7BF019A7F /* Exports.swift in Sources */,
+				FB05C63CEC4D9067826C340D /* FakeQuestionSource.swift in Sources */,
+				3CE6FACE6A1C8A1ABD4EFE2E /* FakeRankingStore.swift in Sources */,
+				1D1B5B7F69795F420AA93D0B /* FirebaseBootstrap.swift in Sources */,
+				CCCD40FCEB7FE1EF04723BB1 /* FirestoreMapping.swift in Sources */,
+				312385241098DD8B674315D0 /* FirestoreQuestionSource.swift in Sources */,
+				22AE7F77692C6B0654D36D42 /* FirestoreRankingStore.swift in Sources */,
 				43D873E7C26A45CCBB81CA66 /* Format.swift in Sources */,
 				A4D6190FD28F2B2B16AD3062 /* Keyboard.swift in Sources */,
 				9D0E6DAF76ED1F0A7D5FA6AC /* Mail.swift in Sources */,
 				25A08F2D97D0798BB7237B4B /* Palette.swift in Sources */,
 				93597320554E5DB31CAC78B7 /* PaperCard.swift in Sources */,
 				0C8C6E7F40E096A189AF9669 /* PocketWatch.swift in Sources */,
+				84722E79F78026EE809C6DF7 /* QuestionBank.swift in Sources */,
+				6385EC3B6E970A4A8802B58D /* QuestionCacheFile.swift in Sources */,
+				9EEC0E4ECC997176703A1573 /* RankingService.swift in Sources */,
 				43B31C54FFBD2C2E434F0566 /* Share.swift in Sources */,
+				0354A8775793EF7983FF27A1 /* Timeout.swift in Sources */,
 				51897999240B5C766F308152 /* Typography.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
