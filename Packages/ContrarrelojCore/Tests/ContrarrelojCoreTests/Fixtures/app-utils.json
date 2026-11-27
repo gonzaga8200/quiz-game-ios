@@ -1,0 +1,1330 @@
+{
+ "generatedFrom": "47a0607d519f48bb39eb7590a5c8326a930ca5f9",
+ "formatClock": [
+  {
+   "ms": 0,
+   "text": "0:00"
+  },
+  {
+   "ms": 1,
+   "text": "0:01"
+  },
+  {
+   "ms": 999,
+   "text": "0:01"
+  },
+  {
+   "ms": 1000,
+   "text": "0:01"
+  },
+  {
+   "ms": 1001,
+   "text": "0:02"
+  },
+  {
+   "ms": 9000,
+   "text": "0:09"
+  },
+  {
+   "ms": 59999,
+   "text": "1:00"
+  },
+  {
+   "ms": 60000,
+   "text": "1:00"
+  },
+  {
+   "ms": 60001,
+   "text": "1:01"
+  },
+  {
+   "ms": 65000,
+   "text": "1:05"
+  },
+  {
+   "ms": 119500,
+   "text": "2:00"
+  },
+  {
+   "ms": 120000,
+   "text": "2:00"
+  },
+  {
+   "ms": -5,
+   "text": "0:00"
+  }
+ ],
+ "formatSeconds": [
+  {
+   "ms": 0,
+   "text": "0,0 s"
+  },
+  {
+   "ms": 4200,
+   "text": "4,2 s"
+  },
+  {
+   "ms": 4249,
+   "text": "4,2 s"
+  },
+  {
+   "ms": 4250,
+   "text": "4,3 s"
+  },
+  {
+   "ms": 999,
+   "text": "1,0 s"
+  },
+  {
+   "ms": 1050,
+   "text": "1,1 s"
+  },
+  {
+   "ms": 12345,
+   "text": "12,3 s"
+  },
+  {
+   "ms": 12345678,
+   "text": "12.345,7 s"
+  },
+  {
+   "ms": -3,
+   "text": "0,0 s"
+  }
+ ],
+ "formatSigned": [
+  {
+   "value": -10,
+   "text": "−10"
+  },
+  {
+   "value": -1,
+   "text": "−1"
+  },
+  {
+   "value": 0,
+   "text": "0"
+  },
+  {
+   "value": 1,
+   "text": "+1"
+  },
+  {
+   "value": 15,
+   "text": "+15"
+  }
+ ],
+ "describeBoard": [
+  {
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": null,
+   "text": "60 segundos, dificultad aleatoria"
+  },
+  {
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": "Arte y Literatura",
+   "text": "60 segundos, dificultad aleatoria, categoría Arte y Literatura"
+  },
+  {
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": "Historia y Geografía",
+   "text": "60 segundos, dificultad aleatoria, categoría Historia y Geografía"
+  },
+  {
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": "Deportes",
+   "text": "60 segundos, dificultad aleatoria, categoría Deportes"
+  },
+  {
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": "Cine y televisión",
+   "text": "60 segundos, dificultad aleatoria, categoría Cine y televisión"
+  },
+  {
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": "Ciencias",
+   "text": "60 segundos, dificultad aleatoria, categoría Ciencias"
+  },
+  {
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": "Lengua e Idiomas",
+   "text": "60 segundos, dificultad aleatoria, categoría Lengua e Idiomas"
+  },
+  {
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": "Música",
+   "text": "60 segundos, dificultad aleatoria, categoría Música"
+  },
+  {
+   "duration": 60,
+   "filter": "Fácil",
+   "category": null,
+   "text": "60 segundos, dificultad fácil"
+  },
+  {
+   "duration": 60,
+   "filter": "Fácil",
+   "category": "Arte y Literatura",
+   "text": "60 segundos, dificultad fácil, categoría Arte y Literatura"
+  },
+  {
+   "duration": 60,
+   "filter": "Fácil",
+   "category": "Historia y Geografía",
+   "text": "60 segundos, dificultad fácil, categoría Historia y Geografía"
+  },
+  {
+   "duration": 60,
+   "filter": "Fácil",
+   "category": "Deportes",
+   "text": "60 segundos, dificultad fácil, categoría Deportes"
+  },
+  {
+   "duration": 60,
+   "filter": "Fácil",
+   "category": "Cine y televisión",
+   "text": "60 segundos, dificultad fácil, categoría Cine y televisión"
+  },
+  {
+   "duration": 60,
+   "filter": "Fácil",
+   "category": "Ciencias",
+   "text": "60 segundos, dificultad fácil, categoría Ciencias"
+  },
+  {
+   "duration": 60,
+   "filter": "Fácil",
+   "category": "Lengua e Idiomas",
+   "text": "60 segundos, dificultad fácil, categoría Lengua e Idiomas"
+  },
+  {
+   "duration": 60,
+   "filter": "Fácil",
+   "category": "Música",
+   "text": "60 segundos, dificultad fácil, categoría Música"
+  },
+  {
+   "duration": 60,
+   "filter": "Medio",
+   "category": null,
+   "text": "60 segundos, dificultad medio"
+  },
+  {
+   "duration": 60,
+   "filter": "Medio",
+   "category": "Arte y Literatura",
+   "text": "60 segundos, dificultad medio, categoría Arte y Literatura"
+  },
+  {
+   "duration": 60,
+   "filter": "Medio",
+   "category": "Historia y Geografía",
+   "text": "60 segundos, dificultad medio, categoría Historia y Geografía"
+  },
+  {
+   "duration": 60,
+   "filter": "Medio",
+   "category": "Deportes",
+   "text": "60 segundos, dificultad medio, categoría Deportes"
+  },
+  {
+   "duration": 60,
+   "filter": "Medio",
+   "category": "Cine y televisión",
+   "text": "60 segundos, dificultad medio, categoría Cine y televisión"
+  },
+  {
+   "duration": 60,
+   "filter": "Medio",
+   "category": "Ciencias",
+   "text": "60 segundos, dificultad medio, categoría Ciencias"
+  },
+  {
+   "duration": 60,
+   "filter": "Medio",
+   "category": "Lengua e Idiomas",
+   "text": "60 segundos, dificultad medio, categoría Lengua e Idiomas"
+  },
+  {
+   "duration": 60,
+   "filter": "Medio",
+   "category": "Música",
+   "text": "60 segundos, dificultad medio, categoría Música"
+  },
+  {
+   "duration": 60,
+   "filter": "Difícil",
+   "category": null,
+   "text": "60 segundos, dificultad difícil"
+  },
+  {
+   "duration": 60,
+   "filter": "Difícil",
+   "category": "Arte y Literatura",
+   "text": "60 segundos, dificultad difícil, categoría Arte y Literatura"
+  },
+  {
+   "duration": 60,
+   "filter": "Difícil",
+   "category": "Historia y Geografía",
+   "text": "60 segundos, dificultad difícil, categoría Historia y Geografía"
+  },
+  {
+   "duration": 60,
+   "filter": "Difícil",
+   "category": "Deportes",
+   "text": "60 segundos, dificultad difícil, categoría Deportes"
+  },
+  {
+   "duration": 60,
+   "filter": "Difícil",
+   "category": "Cine y televisión",
+   "text": "60 segundos, dificultad difícil, categoría Cine y televisión"
+  },
+  {
+   "duration": 60,
+   "filter": "Difícil",
+   "category": "Ciencias",
+   "text": "60 segundos, dificultad difícil, categoría Ciencias"
+  },
+  {
+   "duration": 60,
+   "filter": "Difícil",
+   "category": "Lengua e Idiomas",
+   "text": "60 segundos, dificultad difícil, categoría Lengua e Idiomas"
+  },
+  {
+   "duration": 60,
+   "filter": "Difícil",
+   "category": "Música",
+   "text": "60 segundos, dificultad difícil, categoría Música"
+  },
+  {
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": null,
+   "text": "120 segundos, dificultad aleatoria"
+  },
+  {
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": "Arte y Literatura",
+   "text": "120 segundos, dificultad aleatoria, categoría Arte y Literatura"
+  },
+  {
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": "Historia y Geografía",
+   "text": "120 segundos, dificultad aleatoria, categoría Historia y Geografía"
+  },
+  {
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": "Deportes",
+   "text": "120 segundos, dificultad aleatoria, categoría Deportes"
+  },
+  {
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": "Cine y televisión",
+   "text": "120 segundos, dificultad aleatoria, categoría Cine y televisión"
+  },
+  {
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": "Ciencias",
+   "text": "120 segundos, dificultad aleatoria, categoría Ciencias"
+  },
+  {
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": "Lengua e Idiomas",
+   "text": "120 segundos, dificultad aleatoria, categoría Lengua e Idiomas"
+  },
+  {
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": "Música",
+   "text": "120 segundos, dificultad aleatoria, categoría Música"
+  },
+  {
+   "duration": 120,
+   "filter": "Fácil",
+   "category": null,
+   "text": "120 segundos, dificultad fácil"
+  },
+  {
+   "duration": 120,
+   "filter": "Fácil",
+   "category": "Arte y Literatura",
+   "text": "120 segundos, dificultad fácil, categoría Arte y Literatura"
+  },
+  {
+   "duration": 120,
+   "filter": "Fácil",
+   "category": "Historia y Geografía",
+   "text": "120 segundos, dificultad fácil, categoría Historia y Geografía"
+  },
+  {
+   "duration": 120,
+   "filter": "Fácil",
+   "category": "Deportes",
+   "text": "120 segundos, dificultad fácil, categoría Deportes"
+  },
+  {
+   "duration": 120,
+   "filter": "Fácil",
+   "category": "Cine y televisión",
+   "text": "120 segundos, dificultad fácil, categoría Cine y televisión"
+  },
+  {
+   "duration": 120,
+   "filter": "Fácil",
+   "category": "Ciencias",
+   "text": "120 segundos, dificultad fácil, categoría Ciencias"
+  },
+  {
+   "duration": 120,
+   "filter": "Fácil",
+   "category": "Lengua e Idiomas",
+   "text": "120 segundos, dificultad fácil, categoría Lengua e Idiomas"
+  },
+  {
+   "duration": 120,
+   "filter": "Fácil",
+   "category": "Música",
+   "text": "120 segundos, dificultad fácil, categoría Música"
+  },
+  {
+   "duration": 120,
+   "filter": "Medio",
+   "category": null,
+   "text": "120 segundos, dificultad medio"
+  },
+  {
+   "duration": 120,
+   "filter": "Medio",
+   "category": "Arte y Literatura",
+   "text": "120 segundos, dificultad medio, categoría Arte y Literatura"
+  },
+  {
+   "duration": 120,
+   "filter": "Medio",
+   "category": "Historia y Geografía",
+   "text": "120 segundos, dificultad medio, categoría Historia y Geografía"
+  },
+  {
+   "duration": 120,
+   "filter": "Medio",
+   "category": "Deportes",
+   "text": "120 segundos, dificultad medio, categoría Deportes"
+  },
+  {
+   "duration": 120,
+   "filter": "Medio",
+   "category": "Cine y televisión",
+   "text": "120 segundos, dificultad medio, categoría Cine y televisión"
+  },
+  {
+   "duration": 120,
+   "filter": "Medio",
+   "category": "Ciencias",
+   "text": "120 segundos, dificultad medio, categoría Ciencias"
+  },
+  {
+   "duration": 120,
+   "filter": "Medio",
+   "category": "Lengua e Idiomas",
+   "text": "120 segundos, dificultad medio, categoría Lengua e Idiomas"
+  },
+  {
+   "duration": 120,
+   "filter": "Medio",
+   "category": "Música",
+   "text": "120 segundos, dificultad medio, categoría Música"
+  },
+  {
+   "duration": 120,
+   "filter": "Difícil",
+   "category": null,
+   "text": "120 segundos, dificultad difícil"
+  },
+  {
+   "duration": 120,
+   "filter": "Difícil",
+   "category": "Arte y Literatura",
+   "text": "120 segundos, dificultad difícil, categoría Arte y Literatura"
+  },
+  {
+   "duration": 120,
+   "filter": "Difícil",
+   "category": "Historia y Geografía",
+   "text": "120 segundos, dificultad difícil, categoría Historia y Geografía"
+  },
+  {
+   "duration": 120,
+   "filter": "Difícil",
+   "category": "Deportes",
+   "text": "120 segundos, dificultad difícil, categoría Deportes"
+  },
+  {
+   "duration": 120,
+   "filter": "Difícil",
+   "category": "Cine y televisión",
+   "text": "120 segundos, dificultad difícil, categoría Cine y televisión"
+  },
+  {
+   "duration": 120,
+   "filter": "Difícil",
+   "category": "Ciencias",
+   "text": "120 segundos, dificultad difícil, categoría Ciencias"
+  },
+  {
+   "duration": 120,
+   "filter": "Difícil",
+   "category": "Lengua e Idiomas",
+   "text": "120 segundos, dificultad difícil, categoría Lengua e Idiomas"
+  },
+  {
+   "duration": 120,
+   "filter": "Difícil",
+   "category": "Música",
+   "text": "120 segundos, dificultad difícil, categoría Música"
+  }
+ ],
+ "shareText": [
+  {
+   "points": 0,
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 0 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s). ¿Me superas?"
+  },
+  {
+   "points": 0,
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 0 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 0,
+   "duration": 60,
+   "filter": "Fácil",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 0 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, dificultad fácil). ¿Me superas?"
+  },
+  {
+   "points": 0,
+   "duration": 60,
+   "filter": "Fácil",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 0 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 0,
+   "duration": 60,
+   "filter": "Medio",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 0 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, dificultad medio). ¿Me superas?"
+  },
+  {
+   "points": 0,
+   "duration": 60,
+   "filter": "Medio",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 0 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 0,
+   "duration": 60,
+   "filter": "Difícil",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 0 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, dificultad difícil). ¿Me superas?"
+  },
+  {
+   "points": 0,
+   "duration": 60,
+   "filter": "Difícil",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 0 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 0,
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 0 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s). ¿Me superas?"
+  },
+  {
+   "points": 0,
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 0 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 0,
+   "duration": 120,
+   "filter": "Fácil",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 0 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, dificultad fácil). ¿Me superas?"
+  },
+  {
+   "points": 0,
+   "duration": 120,
+   "filter": "Fácil",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 0 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 0,
+   "duration": 120,
+   "filter": "Medio",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 0 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, dificultad medio). ¿Me superas?"
+  },
+  {
+   "points": 0,
+   "duration": 120,
+   "filter": "Medio",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 0 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 0,
+   "duration": 120,
+   "filter": "Difícil",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 0 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, dificultad difícil). ¿Me superas?"
+  },
+  {
+   "points": 0,
+   "duration": 120,
+   "filter": "Difícil",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 0 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 1,
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 1 punto en Contrarreloj, el juego de preguntas contra el reloj (60 s). ¿Me superas?"
+  },
+  {
+   "points": 1,
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 1 punto en Contrarreloj, el juego de preguntas contra el reloj (60 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 1,
+   "duration": 60,
+   "filter": "Fácil",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 1 punto en Contrarreloj, el juego de preguntas contra el reloj (60 s, dificultad fácil). ¿Me superas?"
+  },
+  {
+   "points": 1,
+   "duration": 60,
+   "filter": "Fácil",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 1 punto en Contrarreloj, el juego de preguntas contra el reloj (60 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 1,
+   "duration": 60,
+   "filter": "Medio",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 1 punto en Contrarreloj, el juego de preguntas contra el reloj (60 s, dificultad medio). ¿Me superas?"
+  },
+  {
+   "points": 1,
+   "duration": 60,
+   "filter": "Medio",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 1 punto en Contrarreloj, el juego de preguntas contra el reloj (60 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 1,
+   "duration": 60,
+   "filter": "Difícil",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 1 punto en Contrarreloj, el juego de preguntas contra el reloj (60 s, dificultad difícil). ¿Me superas?"
+  },
+  {
+   "points": 1,
+   "duration": 60,
+   "filter": "Difícil",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 1 punto en Contrarreloj, el juego de preguntas contra el reloj (60 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 1,
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 1 punto en Contrarreloj, el juego de preguntas contra el reloj (120 s). ¿Me superas?"
+  },
+  {
+   "points": 1,
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 1 punto en Contrarreloj, el juego de preguntas contra el reloj (120 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 1,
+   "duration": 120,
+   "filter": "Fácil",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 1 punto en Contrarreloj, el juego de preguntas contra el reloj (120 s, dificultad fácil). ¿Me superas?"
+  },
+  {
+   "points": 1,
+   "duration": 120,
+   "filter": "Fácil",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 1 punto en Contrarreloj, el juego de preguntas contra el reloj (120 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 1,
+   "duration": 120,
+   "filter": "Medio",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 1 punto en Contrarreloj, el juego de preguntas contra el reloj (120 s, dificultad medio). ¿Me superas?"
+  },
+  {
+   "points": 1,
+   "duration": 120,
+   "filter": "Medio",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 1 punto en Contrarreloj, el juego de preguntas contra el reloj (120 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 1,
+   "duration": 120,
+   "filter": "Difícil",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 1 punto en Contrarreloj, el juego de preguntas contra el reloj (120 s, dificultad difícil). ¿Me superas?"
+  },
+  {
+   "points": 1,
+   "duration": 120,
+   "filter": "Difícil",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 1 punto en Contrarreloj, el juego de preguntas contra el reloj (120 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 2,
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 2 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s). ¿Me superas?"
+  },
+  {
+   "points": 2,
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 2 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 2,
+   "duration": 60,
+   "filter": "Fácil",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 2 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, dificultad fácil). ¿Me superas?"
+  },
+  {
+   "points": 2,
+   "duration": 60,
+   "filter": "Fácil",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 2 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 2,
+   "duration": 60,
+   "filter": "Medio",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 2 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, dificultad medio). ¿Me superas?"
+  },
+  {
+   "points": 2,
+   "duration": 60,
+   "filter": "Medio",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 2 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 2,
+   "duration": 60,
+   "filter": "Difícil",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 2 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, dificultad difícil). ¿Me superas?"
+  },
+  {
+   "points": 2,
+   "duration": 60,
+   "filter": "Difícil",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 2 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 2,
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 2 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s). ¿Me superas?"
+  },
+  {
+   "points": 2,
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 2 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 2,
+   "duration": 120,
+   "filter": "Fácil",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 2 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, dificultad fácil). ¿Me superas?"
+  },
+  {
+   "points": 2,
+   "duration": 120,
+   "filter": "Fácil",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 2 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 2,
+   "duration": 120,
+   "filter": "Medio",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 2 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, dificultad medio). ¿Me superas?"
+  },
+  {
+   "points": 2,
+   "duration": 120,
+   "filter": "Medio",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 2 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 2,
+   "duration": 120,
+   "filter": "Difícil",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 2 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, dificultad difícil). ¿Me superas?"
+  },
+  {
+   "points": 2,
+   "duration": 120,
+   "filter": "Difícil",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 2 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 57,
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 57 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s). ¿Me superas?"
+  },
+  {
+   "points": 57,
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 57 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 57,
+   "duration": 60,
+   "filter": "Fácil",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 57 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, dificultad fácil). ¿Me superas?"
+  },
+  {
+   "points": 57,
+   "duration": 60,
+   "filter": "Fácil",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 57 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 57,
+   "duration": 60,
+   "filter": "Medio",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 57 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, dificultad medio). ¿Me superas?"
+  },
+  {
+   "points": 57,
+   "duration": 60,
+   "filter": "Medio",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 57 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 57,
+   "duration": 60,
+   "filter": "Difícil",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 57 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, dificultad difícil). ¿Me superas?"
+  },
+  {
+   "points": 57,
+   "duration": 60,
+   "filter": "Difícil",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 57 puntos en Contrarreloj, el juego de preguntas contra el reloj (60 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 57,
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 57 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s). ¿Me superas?"
+  },
+  {
+   "points": 57,
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 57 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 57,
+   "duration": 120,
+   "filter": "Fácil",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 57 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, dificultad fácil). ¿Me superas?"
+  },
+  {
+   "points": 57,
+   "duration": 120,
+   "filter": "Fácil",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 57 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 57,
+   "duration": 120,
+   "filter": "Medio",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 57 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, dificultad medio). ¿Me superas?"
+  },
+  {
+   "points": 57,
+   "duration": 120,
+   "filter": "Medio",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 57 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, Música). ¿Me superas?"
+  },
+  {
+   "points": 57,
+   "duration": 120,
+   "filter": "Difícil",
+   "category": null,
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 57 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, dificultad difícil). ¿Me superas?"
+  },
+  {
+   "points": 57,
+   "duration": 120,
+   "filter": "Difícil",
+   "category": "Música",
+   "emoji": "🏆",
+   "text": "🏆 He conseguido 57 puntos en Contrarreloj, el juego de preguntas contra el reloj (120 s, Música). ¿Me superas?"
+  }
+ ],
+ "shareUrl": [
+  {
+   "category": null,
+   "url": "https://contrarreloj-quiz.com/"
+  },
+  {
+   "category": "Arte y Literatura",
+   "url": "https://contrarreloj-quiz.com/preguntas/arte-y-literatura"
+  },
+  {
+   "category": "Historia y Geografía",
+   "url": "https://contrarreloj-quiz.com/preguntas/historia-y-geografia"
+  },
+  {
+   "category": "Deportes",
+   "url": "https://contrarreloj-quiz.com/preguntas/deportes"
+  },
+  {
+   "category": "Cine y televisión",
+   "url": "https://contrarreloj-quiz.com/preguntas/cine-y-television"
+  },
+  {
+   "category": "Ciencias",
+   "url": "https://contrarreloj-quiz.com/preguntas/ciencias"
+  },
+  {
+   "category": "Lengua e Idiomas",
+   "url": "https://contrarreloj-quiz.com/preguntas/lengua-e-idiomas"
+  },
+  {
+   "category": "Música",
+   "url": "https://contrarreloj-quiz.com/preguntas/musica"
+  }
+ ],
+ "contactReasons": [
+  {
+   "key": "suggestion",
+   "label": "Una sugerencia",
+   "subject": "Sugerencia · Contrarreloj"
+  },
+  {
+   "key": "wrong-answer",
+   "label": "Una pregunta con una respuesta incorrecta",
+   "subject": "Pregunta con respuesta incorrecta · Contrarreloj"
+  },
+  {
+   "key": "other",
+   "label": "Otra consulta",
+   "subject": "Consulta · Contrarreloj"
+  }
+ ],
+ "mailtoHref": [
+  {
+   "email": "informacion@contrarreloj-quiz.com",
+   "subject": "",
+   "body": "",
+   "href": "mailto:informacion@contrarreloj-quiz.com"
+  },
+  {
+   "email": "informacion@contrarreloj-quiz.com",
+   "subject": "Sugerencia · Contrarreloj",
+   "body": "",
+   "href": "mailto:informacion@contrarreloj-quiz.com?subject=Sugerencia%20%C2%B7%20Contrarreloj"
+  },
+  {
+   "email": "informacion@contrarreloj-quiz.com",
+   "subject": "¿Qué tal? & más",
+   "body": "Línea 1\nLínea 2: 100% + = ok",
+   "href": "mailto:informacion@contrarreloj-quiz.com?subject=%C2%BFQu%C3%A9%20tal%3F%20%26%20m%C3%A1s&body=L%C3%ADnea%201%0AL%C3%ADnea%202%3A%20100%25%20%2B%20%3D%20ok"
+  }
+ ],
+ "questionReportHref": [
+  {
+   "email": "informacion@contrarreloj-quiz.com",
+   "id": "capital-francia",
+   "text": "¿Cuál es la capital de Francia?",
+   "href": "mailto:informacion@contrarreloj-quiz.com?subject=Pregunta%20con%20respuesta%20incorrecta%20(pregunta%20capital-francia)&body=Pregunta%3A%20%C2%BFCu%C3%A1l%20es%20la%20capital%20de%20Francia%3F%0AIdentificador%3A%20capital-francia%0A%0A"
+  },
+  {
+   "email": "informacion@contrarreloj-quiz.com",
+   "id": "id con espacios",
+   "text": "  Texto con espacios alrededor  ",
+   "href": "mailto:informacion@contrarreloj-quiz.com?subject=Pregunta%20con%20respuesta%20incorrecta&body=Pregunta%3A%20Texto%20con%20espacios%20alrededor%0A%0A"
+  },
+  {
+   "email": "informacion@contrarreloj-quiz.com",
+   "id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "text": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "href": "mailto:informacion@contrarreloj-quiz.com?subject=Pregunta%20con%20respuesta%20incorrecta&body=Pregunta%3A%20aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa%0A%0A"
+  },
+  {
+   "email": "informacion@contrarreloj-quiz.com",
+   "id": "",
+   "text": "",
+   "href": "mailto:informacion@contrarreloj-quiz.com?subject=Pregunta%20con%20respuesta%20incorrecta"
+  }
+ ],
+ "actionForKey": [
+  {
+   "key": "1",
+   "optionCount": 4,
+   "action": {
+    "type": "answer",
+    "index": 0
+   }
+  },
+  {
+   "key": "1",
+   "optionCount": 2,
+   "action": {
+    "type": "answer",
+    "index": 0
+   }
+  },
+  {
+   "key": "2",
+   "optionCount": 4,
+   "action": {
+    "type": "answer",
+    "index": 1
+   }
+  },
+  {
+   "key": "2",
+   "optionCount": 2,
+   "action": {
+    "type": "answer",
+    "index": 1
+   }
+  },
+  {
+   "key": "3",
+   "optionCount": 4,
+   "action": {
+    "type": "answer",
+    "index": 2
+   }
+  },
+  {
+   "key": "3",
+   "optionCount": 2,
+   "action": null
+  },
+  {
+   "key": "4",
+   "optionCount": 4,
+   "action": {
+    "type": "answer",
+    "index": 3
+   }
+  },
+  {
+   "key": "4",
+   "optionCount": 2,
+   "action": null
+  },
+  {
+   "key": "5",
+   "optionCount": 4,
+   "action": null
+  },
+  {
+   "key": "5",
+   "optionCount": 2,
+   "action": null
+  },
+  {
+   "key": "9",
+   "optionCount": 4,
+   "action": null
+  },
+  {
+   "key": "9",
+   "optionCount": 2,
+   "action": null
+  },
+  {
+   "key": "0",
+   "optionCount": 4,
+   "action": null
+  },
+  {
+   "key": "0",
+   "optionCount": 2,
+   "action": null
+  },
+  {
+   "key": "a",
+   "optionCount": 4,
+   "action": {
+    "type": "answer",
+    "index": 0
+   }
+  },
+  {
+   "key": "a",
+   "optionCount": 2,
+   "action": {
+    "type": "answer",
+    "index": 0
+   }
+  },
+  {
+   "key": "B",
+   "optionCount": 4,
+   "action": {
+    "type": "answer",
+    "index": 1
+   }
+  },
+  {
+   "key": "B",
+   "optionCount": 2,
+   "action": {
+    "type": "answer",
+    "index": 1
+   }
+  },
+  {
+   "key": "c",
+   "optionCount": 4,
+   "action": {
+    "type": "answer",
+    "index": 2
+   }
+  },
+  {
+   "key": "c",
+   "optionCount": 2,
+   "action": null
+  },
+  {
+   "key": "D",
+   "optionCount": 4,
+   "action": {
+    "type": "answer",
+    "index": 3
+   }
+  },
+  {
+   "key": "D",
+   "optionCount": 2,
+   "action": null
+  },
+  {
+   "key": "e",
+   "optionCount": 4,
+   "action": null
+  },
+  {
+   "key": "e",
+   "optionCount": 2,
+   "action": null
+  },
+  {
+   "key": "p",
+   "optionCount": 4,
+   "action": {
+    "type": "skip"
+   }
+  },
+  {
+   "key": "p",
+   "optionCount": 2,
+   "action": {
+    "type": "skip"
+   }
+  },
+  {
+   "key": "P",
+   "optionCount": 4,
+   "action": {
+    "type": "skip"
+   }
+  },
+  {
+   "key": "P",
+   "optionCount": 2,
+   "action": {
+    "type": "skip"
+   }
+  },
+  {
+   "key": "x",
+   "optionCount": 4,
+   "action": null
+  },
+  {
+   "key": "x",
+   "optionCount": 2,
+   "action": null
+  },
+  {
+   "key": " ",
+   "optionCount": 4,
+   "action": null
+  },
+  {
+   "key": " ",
+   "optionCount": 2,
+   "action": null
+  },
+  {
+   "key": "Enter",
+   "optionCount": 4,
+   "action": null
+  },
+  {
+   "key": "Enter",
+   "optionCount": 2,
+   "action": null
+  }
+ ]
+}

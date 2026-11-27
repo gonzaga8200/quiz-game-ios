@@ -1,0 +1,381 @@
+{
+ "generatedFrom": "47a0607d519f48bb39eb7590a5c8326a930ca5f9",
+ "boards": [
+  {
+   "id": "60_aleatorio",
+   "duration": 60,
+   "filter": "Aleatorio"
+  },
+  {
+   "id": "60_aleatorio_arte-y-literatura",
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": "Arte y Literatura"
+  },
+  {
+   "id": "60_aleatorio_historia-y-geografia",
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": "Historia y Geografía"
+  },
+  {
+   "id": "60_aleatorio_deportes",
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": "Deportes"
+  },
+  {
+   "id": "60_aleatorio_cine-y-television",
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": "Cine y televisión"
+  },
+  {
+   "id": "60_aleatorio_ciencias",
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": "Ciencias"
+  },
+  {
+   "id": "60_aleatorio_lengua-e-idiomas",
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": "Lengua e Idiomas"
+  },
+  {
+   "id": "60_aleatorio_musica",
+   "duration": 60,
+   "filter": "Aleatorio",
+   "category": "Música"
+  },
+  {
+   "id": "60_facil",
+   "duration": 60,
+   "filter": "Fácil"
+  },
+  {
+   "id": "60_facil_arte-y-literatura",
+   "duration": 60,
+   "filter": "Fácil",
+   "category": "Arte y Literatura"
+  },
+  {
+   "id": "60_facil_historia-y-geografia",
+   "duration": 60,
+   "filter": "Fácil",
+   "category": "Historia y Geografía"
+  },
+  {
+   "id": "60_facil_deportes",
+   "duration": 60,
+   "filter": "Fácil",
+   "category": "Deportes"
+  },
+  {
+   "id": "60_facil_cine-y-television",
+   "duration": 60,
+   "filter": "Fácil",
+   "category": "Cine y televisión"
+  },
+  {
+   "id": "60_facil_ciencias",
+   "duration": 60,
+   "filter": "Fácil",
+   "category": "Ciencias"
+  },
+  {
+   "id": "60_facil_lengua-e-idiomas",
+   "duration": 60,
+   "filter": "Fácil",
+   "category": "Lengua e Idiomas"
+  },
+  {
+   "id": "60_facil_musica",
+   "duration": 60,
+   "filter": "Fácil",
+   "category": "Música"
+  },
+  {
+   "id": "60_medio",
+   "duration": 60,
+   "filter": "Medio"
+  },
+  {
+   "id": "60_medio_arte-y-literatura",
+   "duration": 60,
+   "filter": "Medio",
+   "category": "Arte y Literatura"
+  },
+  {
+   "id": "60_medio_historia-y-geografia",
+   "duration": 60,
+   "filter": "Medio",
+   "category": "Historia y Geografía"
+  },
+  {
+   "id": "60_medio_deportes",
+   "duration": 60,
+   "filter": "Medio",
+   "category": "Deportes"
+  },
+  {
+   "id": "60_medio_cine-y-television",
+   "duration": 60,
+   "filter": "Medio",
+   "category": "Cine y televisión"
+  },
+  {
+   "id": "60_medio_ciencias",
+   "duration": 60,
+   "filter": "Medio",
+   "category": "Ciencias"
+  },
+  {
+   "id": "60_medio_lengua-e-idiomas",
+   "duration": 60,
+   "filter": "Medio",
+   "category": "Lengua e Idiomas"
+  },
+  {
+   "id": "60_medio_musica",
+   "duration": 60,
+   "filter": "Medio",
+   "category": "Música"
+  },
+  {
+   "id": "60_dificil",
+   "duration": 60,
+   "filter": "Difícil"
+  },
+  {
+   "id": "60_dificil_arte-y-literatura",
+   "duration": 60,
+   "filter": "Difícil",
+   "category": "Arte y Literatura"
+  },
+  {
+   "id": "60_dificil_historia-y-geografia",
+   "duration": 60,
+   "filter": "Difícil",
+   "category": "Historia y Geografía"
+  },
+  {
+   "id": "60_dificil_deportes",
+   "duration": 60,
+   "filter": "Difícil",
+   "category": "Deportes"
+  },
+  {
+   "id": "60_dificil_cine-y-television",
+   "duration": 60,
+   "filter": "Difícil",
+   "category": "Cine y televisión"
+  },
+  {
+   "id": "60_dificil_ciencias",
+   "duration": 60,
+   "filter": "Difícil",
+   "category": "Ciencias"
+  },
+  {
+   "id": "60_dificil_lengua-e-idiomas",
+   "duration": 60,
+   "filter": "Difícil",
+   "category": "Lengua e Idiomas"
+  },
+  {
+   "id": "60_dificil_musica",
+   "duration": 60,
+   "filter": "Difícil",
+   "category": "Música"
+  },
+  {
+   "id": "120_aleatorio",
+   "duration": 120,
+   "filter": "Aleatorio"
+  },
+  {
+   "id": "120_aleatorio_arte-y-literatura",
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": "Arte y Literatura"
+  },
+  {
+   "id": "120_aleatorio_historia-y-geografia",
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": "Historia y Geografía"
+  },
+  {
+   "id": "120_aleatorio_deportes",
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": "Deportes"
+  },
+  {
+   "id": "120_aleatorio_cine-y-television",
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": "Cine y televisión"
+  },
+  {
+   "id": "120_aleatorio_ciencias",
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": "Ciencias"
+  },
+  {
+   "id": "120_aleatorio_lengua-e-idiomas",
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": "Lengua e Idiomas"
+  },
+  {
+   "id": "120_aleatorio_musica",
+   "duration": 120,
+   "filter": "Aleatorio",
+   "category": "Música"
+  },
+  {
+   "id": "120_facil",
+   "duration": 120,
+   "filter": "Fácil"
+  },
+  {
+   "id": "120_facil_arte-y-literatura",
+   "duration": 120,
+   "filter": "Fácil",
+   "category": "Arte y Literatura"
+  },
+  {
+   "id": "120_facil_historia-y-geografia",
+   "duration": 120,
+   "filter": "Fácil",
+   "category": "Historia y Geografía"
+  },
+  {
+   "id": "120_facil_deportes",
+   "duration": 120,
+   "filter": "Fácil",
+   "category": "Deportes"
+  },
+  {
+   "id": "120_facil_cine-y-television",
+   "duration": 120,
+   "filter": "Fácil",
+   "category": "Cine y televisión"
+  },
+  {
+   "id": "120_facil_ciencias",
+   "duration": 120,
+   "filter": "Fácil",
+   "category": "Ciencias"
+  },
+  {
+   "id": "120_facil_lengua-e-idiomas",
+   "duration": 120,
+   "filter": "Fácil",
+   "category": "Lengua e Idiomas"
+  },
+  {
+   "id": "120_facil_musica",
+   "duration": 120,
+   "filter": "Fácil",
+   "category": "Música"
+  },
+  {
+   "id": "120_medio",
+   "duration": 120,
+   "filter": "Medio"
+  },
+  {
+   "id": "120_medio_arte-y-literatura",
+   "duration": 120,
+   "filter": "Medio",
+   "category": "Arte y Literatura"
+  },
+  {
+   "id": "120_medio_historia-y-geografia",
+   "duration": 120,
+   "filter": "Medio",
+   "category": "Historia y Geografía"
+  },
+  {
+   "id": "120_medio_deportes",
+   "duration": 120,
+   "filter": "Medio",
+   "category": "Deportes"
+  },
+  {
+   "id": "120_medio_cine-y-television",
+   "duration": 120,
+   "filter": "Medio",
+   "category": "Cine y televisión"
+  },
+  {
+   "id": "120_medio_ciencias",
+   "duration": 120,
+   "filter": "Medio",
+   "category": "Ciencias"
+  },
+  {
+   "id": "120_medio_lengua-e-idiomas",
+   "duration": 120,
+   "filter": "Medio",
+   "category": "Lengua e Idiomas"
+  },
+  {
+   "id": "120_medio_musica",
+   "duration": 120,
+   "filter": "Medio",
+   "category": "Música"
+  },
+  {
+   "id": "120_dificil",
+   "duration": 120,
+   "filter": "Difícil"
+  },
+  {
+   "id": "120_dificil_arte-y-literatura",
+   "duration": 120,
+   "filter": "Difícil",
+   "category": "Arte y Literatura"
+  },
+  {
+   "id": "120_dificil_historia-y-geografia",
+   "duration": 120,
+   "filter": "Difícil",
+   "category": "Historia y Geografía"
+  },
+  {
+   "id": "120_dificil_deportes",
+   "duration": 120,
+   "filter": "Difícil",
+   "category": "Deportes"
+  },
+  {
+   "id": "120_dificil_cine-y-television",
+   "duration": 120,
+   "filter": "Difícil",
+   "category": "Cine y televisión"
+  },
+  {
+   "id": "120_dificil_ciencias",
+   "duration": 120,
+   "filter": "Difícil",
+   "category": "Ciencias"
+  },
+  {
+   "id": "120_dificil_lengua-e-idiomas",
+   "duration": 120,
+   "filter": "Difícil",
+   "category": "Lengua e Idiomas"
+  },
+  {
+   "id": "120_dificil_musica",
+   "duration": 120,
+   "filter": "Difícil",
+   "category": "Música"
+  }
+ ]
+}

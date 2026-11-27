@@ -1,0 +1,87 @@
+{
+ "generatedFrom": "47a0607d519f48bb39eb7590a5c8326a930ca5f9",
+ "cases": [
+  {
+   "streak": 0,
+   "milestone": {
+    "at": 3,
+    "bonus": 2
+   }
+  },
+  {
+   "streak": 1,
+   "milestone": {
+    "at": 3,
+    "bonus": 2
+   }
+  },
+  {
+   "streak": 2,
+   "milestone": {
+    "at": 3,
+    "bonus": 2
+   }
+  },
+  {
+   "streak": 3,
+   "milestone": {
+    "at": 5,
+    "bonus": 4
+   }
+  },
+  {
+   "streak": 4,
+   "milestone": {
+    "at": 5,
+    "bonus": 4
+   }
+  },
+  {
+   "streak": 5,
+   "milestone": {
+    "at": 10,
+    "bonus": 8
+   }
+  },
+  {
+   "streak": 6,
+   "milestone": {
+    "at": 10,
+    "bonus": 8
+   }
+  },
+  {
+   "streak": 7,
+   "milestone": {
+    "at": 10,
+    "bonus": 8
+   }
+  },
+  {
+   "streak": 8,
+   "milestone": {
+    "at": 10,
+    "bonus": 8
+   }
+  },
+  {
+   "streak": 9,
+   "milestone": {
+    "at": 10,
+    "bonus": 8
+   }
+  },
+  {
+   "streak": 10,
+   "milestone": null
+  },
+  {
+   "streak": 11,
+   "milestone": null
+  },
+  {
+   "streak": 12,
+   "milestone": null
+  }
+ ]
+}
