@@ -10,13 +10,13 @@ struct SettingsScreen: View {
         NavigationStack {
             List {
                 account
-                Section("Preferencias") {
+                Section {
                     Toggle("Sonido", isOn: Binding(get: { !env.sound.isMuted }, set: { env.sound.isMuted = !$0 }))
                         .accessibilityIdentifier("settings.sound")
-                }
+                } header: { header("Preferencias") }
                 .listRowBackground(Color.card)
                 privacy
-                Section("Ayuda y redes") {
+                Section {
                     NavigationLink { ContactScreen() } label: { Label("Contacto", systemImage: "envelope") }
                         .accessibilityIdentifier("settings.contact")
                     socialLink(.instagram)
@@ -26,12 +26,12 @@ struct SettingsScreen: View {
                             .badge(env.hiddenPlayers.uids.count)
                     }
                     .accessibilityIdentifier("settings.hidden")
-                }
+                } header: { header("Ayuda y redes") }
                 .listRowBackground(Color.card)
                 Section {
                     LabeledContent("Versión", value: appVersion)
                     Text(verbatim: Legal.copyright)
-                } header: { Text("Acerca de") }
+                } header: { header("Acerca de") }
                 .listRowBackground(Color.card)
             }
             .scrollContentBackground(.hidden)
@@ -45,7 +45,7 @@ struct SettingsScreen: View {
     }
 
     @ViewBuilder private var account: some View {
-        Section("Cuenta") {
+        Section {
             if let user = env.auth.user {
                 HStack(spacing: 12) {
                     Avatar(url: user.photoURL, name: user.displayName, size: 40)
@@ -55,21 +55,19 @@ struct SettingsScreen: View {
                             .font(.reading(.footnote)).foregroundStyle(Color.cardTextSoft)
                     }
                 }
-                Button("Cerrar sesión") { try? env.auth.signOut() }
-                    .foregroundStyle(Color.enlacePapel)
+                Button { try? env.auth.signOut() } label: { linkText("Cerrar sesión") }
                     .accessibilityIdentifier("settings.signOut")
                 NavigationLink { DeleteAccountScreen() } label: {
                     Text("Eliminar cuenta").foregroundStyle(Color.fallo)
                 }
                 .accessibilityIdentifier("settings.deleteAccount")
             } else if env.auth.isAvailable {
-                Button("Entrar con Apple o con Google") { signingIn = true }
-                    .foregroundStyle(Color.enlacePapel)
+                Button { signingIn = true } label: { linkText("Entrar con Apple o con Google") }
                     .accessibilityIdentifier("settings.signIn")
             } else {
                 Text("El modo competitivo no está disponible en este momento.")
             }
-        }
+        } header: { header("Cuenta") }
         .listRowBackground(Color.card)
     }
 
@@ -88,12 +86,22 @@ struct SettingsScreen: View {
             NavigationLink { LegalNoticeScreen() } label: { Label("Aviso legal", systemImage: "doc.text") }
                 .accessibilityIdentifier("settings.legal")
         } header: {
-            Text("Privacidad")
+            header("Privacidad")
         } footer: {
             Text("Con las estadísticas activadas medimos de forma anónima cómo se usa el juego con Google Analytics. No se usan para publicidad.")
                 .foregroundStyle(Color.onGroundSoft)
         }
         .listRowBackground(Color.card)
+    }
+
+    /// Section titles sit on the ground, not on the cards: they take the ground's text colour.
+    private func header(_ title: LocalizedStringKey) -> some View {
+        Text(title).foregroundStyle(Color.onGroundSoft)
+    }
+
+    /// An action inside a card, in the paper's link colour (a list would otherwise tint it).
+    private func linkText(_ title: LocalizedStringKey) -> some View {
+        Text(title).font(.reading(.body, weight: .bold)).foregroundStyle(Color.enlacePapel)
     }
 
     private func socialLink(_ network: SocialNetwork) -> some View {
