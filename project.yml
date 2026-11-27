@@ -100,7 +100,7 @@ targets:
         SWIFT_TREAT_WARNINGS_AS_ERRORS: YES
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
-        CODE_SIGN_ENTITLEMENTS: App/Contrarreloj.entitlements
+        CODE_SIGN_ENTITLEMENTS: $(ENTITLEMENTS_FILE_$(ENABLE_APPLE_SIGN_IN))
         ENABLE_PREVIEWS: YES
     dependencies:
       - package: ContrarrelojCore

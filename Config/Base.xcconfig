@@ -11,5 +11,7 @@ GOOGLE_REVERSED_CLIENT_ID = com.contrarrelojquiz.app.no-google-config
 // Sign in with Apple needs a paid Apple Developer team. Set this to NO in Secrets.xcconfig to
 // build for a device with a free (personal) team: the entitlement is then left out.
 ENABLE_APPLE_SIGN_IN = YES
+ENTITLEMENTS_FILE_YES = App/Contrarreloj.entitlements
+ENTITLEMENTS_FILE_NO = App/Contrarreloj-NoApple.entitlements
 
 #include? "Secrets.xcconfig"
