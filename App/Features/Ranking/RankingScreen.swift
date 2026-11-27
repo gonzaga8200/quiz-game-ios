@@ -71,7 +71,7 @@ struct RankingScreen: View {
                             onReport: {
                                 Task { _ = await env.mail.compose(playerReportDraft(board: board, uid: entry.uid, name: entry.displayName)) }
                             },
-                            onHide: { env.hiddenPlayers.hide(entry.uid) }
+                            onHide: { env.hiddenPlayers.hide(entry.uid, name: entry.displayName) }
                         )
                     }
                 }

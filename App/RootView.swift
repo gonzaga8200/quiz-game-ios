@@ -23,14 +23,14 @@ struct RootView: View {
                     .tabItem { Label("Ranking", systemImage: "trophy") }
                     .tag(AppTab.ranking)
             }
-            tabContent(TabPlaceholder(title: "Ajustes"), screen: "Ajustes")
+            tabContent(SettingsScreen(), screen: "Ajustes")
                 .tabItem { Label("Ajustes", systemImage: "gearshape") }
                 .tag(AppTab.settings)
         }
         .tint(Color.accentOnGround)
         .overlay(alignment: .bottomLeading) { FakeMailBadge() }
         .sheet(isPresented: $showPrivacy) {
-            NavigationStack { TabPlaceholder(title: "Política de privacidad") }
+            NavigationStack { PrivacyScreen() }
         }
         .fullScreenCover(isPresented: Binding(get: { env.play.isPresented }, set: { if !$0 { env.play.close() } })) {
             PlayCover()

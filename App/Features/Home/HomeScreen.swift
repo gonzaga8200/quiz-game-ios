@@ -48,7 +48,7 @@ struct HomeScreen: View {
                 openSetupAfterSignIn = false
             }) {
                 SignInSheet(onPrivacy: { showPrivacy = true })
-                    .sheet(isPresented: $showPrivacy) { NavigationStack { TabPlaceholder(title: "Política de privacidad") } }
+                    .sheet(isPresented: $showPrivacy) { NavigationStack { PrivacyScreen() } }
             }
         }
     }

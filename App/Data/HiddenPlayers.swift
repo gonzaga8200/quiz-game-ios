@@ -1,29 +1,33 @@
 import Foundation
 import Observation
 
-/// Ranking players this device chose to hide (moderation, Guideline 1.2). Only on this device.
+/// Ranking players this device chose to hide (moderation, Guideline 1.2), with the name they had,
+/// so Ajustes can list them. Only on this device.
 @Observable
 final class HiddenPlayers {
     static let key = "contrarreloj.hiddenPlayers"
     @ObservationIgnored private let defaults: UserDefaults
-    private(set) var uids: Set<String>
+    /// uid → display name when hidden.
+    private(set) var players: [String: String]
+
+    var uids: Set<String> { Set(players.keys) }
 
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
-        uids = Set(defaults.stringArray(forKey: Self.key) ?? [])
+        players = defaults.dictionary(forKey: Self.key) as? [String: String] ?? [:]
     }
 
-    func hide(_ uid: String) {
-        uids.insert(uid)
+    func hide(_ uid: String, name: String = "") {
+        players[uid] = name
         save()
     }
 
     func unhide(_ uid: String) {
-        uids.remove(uid)
+        players[uid] = nil
         save()
     }
 
     private func save() {
-        defaults.set(uids.sorted(), forKey: Self.key)
+        defaults.set(players, forKey: Self.key)
     }
 }
