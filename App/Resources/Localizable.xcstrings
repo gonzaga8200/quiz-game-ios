@@ -1,30 +1,776 @@
 {
-  "sourceLanguage": "es",
-  "strings": {
-    "%lld puntos": {
-      "extractionState": "manual",
-      "localizations": {
-        "es": {
-          "variations": {
-            "plural": {
-              "one": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "%lld punto"
+  "sourceLanguage" : "es",
+  "strings" : {
+    " Pierdes %@." : {
+
+    },
+    " y %lld de bonus por racha" : {
+
+    },
+    "¡Buena partida!" : {
+
+    },
+    "¡Correcto! %@" : {
+
+    },
+    "¡Correcto! %@ y %@ de racha" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "¡Correcto! %1$@ y %2$@ de racha"
+          }
+        }
+      }
+    },
+    "¡Fallo!" : {
+
+    },
+    "¡Gran partida!" : {
+
+    },
+    "¡Has respondido todas las preguntas!" : {
+
+    },
+    "¡Racha de %lld!" : {
+
+    },
+    "¡Resultado de campeón!" : {
+
+    },
+    "¿Abandonar la partida?" : {
+
+    },
+    "¿Cuántas aciertas en 60 segundos?" : {
+
+    },
+    "¿Eliminar tu cuenta?" : {
+
+    },
+    "¿Nos dejas usar Google Analytics para medir cómo se usa el juego? Son datos estadísticos y no los usamos para publicidad." : {
+
+    },
+    "¿Prefieres escribir tú el asunto? Escríbenos a [%@](mailto:%@)." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "¿Prefieres escribir tú el asunto? Escríbenos a [%1$@](mailto:%2$@)."
+          }
+        }
+      }
+    },
+    "¿Tienes una sugerencia o has visto algo raro?" : {
+
+    },
+    "(tú)" : {
+
+    },
+    "%@ He conseguido %@ en Contrarreloj, el juego de preguntas contra el reloj (%@). ¿Me superas?" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ He conseguido %2$@ en Contrarreloj, el juego de preguntas contra el reloj (%3$@). ¿Me superas?"
+          }
+        }
+      }
+    },
+    "%@ para +%lld" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ para +%2$lld"
+          }
+        }
+      }
+    },
+    "%@ s" : {
+      "comment" : "Seconds spent on a question, e.g. 4,2 s"
+    },
+    "%@, categoría %@" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@, categoría %2$@"
+          }
+        }
+      }
+    },
+    "%lld preguntas de %@ con respuesta" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld preguntas de %2$@ con respuesta"
+          }
+        }
+      }
+    },
+    "%lld preguntas en el juego" : {
+
+    },
+    "%lld puntos" : {
+      "comment" : "A number of points",
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld punto"
                 }
               },
-              "other": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "%lld puntos"
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld puntos"
                 }
               }
             }
           }
         }
-      },
-      "comment": "A number of points"
+      }
+    },
+    "%lld segundos, dificultad %@" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld segundos, dificultad %2$@"
+          }
+        }
+      }
+    },
+    "%lld segundos, dificultad aleatoria" : {
+
+    },
+    "%lld veces" : {
+
+    },
+    "+%lld de bonus" : {
+
+    },
+    "60 o 120 segundos, tú eliges dificultad y categoría" : {
+
+    },
+    "60 s" : {
+
+    },
+    "60 segundos, dificultad aleatoria, sin registro" : {
+
+    },
+    "120 s" : {
+
+    },
+    "Abandonar" : {
+
+    },
+    "Abandonar la partida" : {
+
+    },
+    "Abrir mi correo" : {
+
+    },
+    "Aceptar" : {
+
+    },
+    "Acerca de" : {
+
+    },
+    "Aciertos" : {
+
+    },
+    "Activar el sonido" : {
+
+    },
+    "Ajustes" : {
+
+    },
+    "Aleatorio" : {
+
+    },
+    "Aviso legal" : {
+
+    },
+    "Ayuda y redes" : {
+
+    },
+    "Cancelar" : {
+
+    },
+    "Cargando el ranking…" : {
+
+    },
+    "Cargando preguntas…" : {
+
+    },
+    "Categoría" : {
+
+    },
+    "Categorías" : {
+
+    },
+    "Cerrar sesión" : {
+
+    },
+    "Compartir resultado" : {
+
+    },
+    "Con 0 puntos no entras en el ranking." : {
+
+    },
+    "Con las estadísticas activadas medimos de forma anónima cómo se usa el juego con Google Analytics. No se usan para publicidad." : {
+
+    },
+    "Consulta · Contrarreloj" : {
+
+    },
+    "Contacto" : {
+
+    },
+    "Contrarreloj: juego de preguntas contra el tiempo" : {
+
+    },
+    "Correcta" : {
+
+    },
+    "Correctas" : {
+
+    },
+    "Correcto. %lld puntos%@." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Correcto. %1$lld puntos%2$@."
+          }
+        }
+      }
+    },
+    "Cuenta" : {
+
+    },
+    "Desglose de puntos" : {
+
+    },
+    "Difícil" : {
+
+    },
+    "Difícil y muy difícil" : {
+
+    },
+    "Dificultad" : {
+
+    },
+    "dificultad %@" : {
+
+    },
+    "dificultad aleatoria" : {
+
+    },
+    "Dificultad: %@" : {
+
+    },
+    "El modo competitivo no está disponible en este momento." : {
+
+    },
+    "El ranking no está disponible en este momento." : {
+
+    },
+    "Eliminando tu cuenta…" : {
+
+    },
+    "Eliminar" : {
+
+    },
+    "Eliminar cuenta" : {
+
+    },
+    "Eliminar mi cuenta" : {
+
+    },
+    "Empezar partida" : {
+
+    },
+    "En el juego hay %lld preguntas de %@. Aquí ves %lld, de las más fáciles a las más difíciles." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "En el juego hay %1$lld preguntas de %2$@. Aquí ves %3$lld, de las más fáciles a las más difíciles."
+          }
+        }
+      }
+    },
+    "Entra con Apple o con Google para competir en el ranking" : {
+
+    },
+    "Entra con Apple o con Google para jugar en modo competitivo (mayores de 14 años). Tu nombre, tu foto de perfil y tu puntuación serán visibles en el ranking." : {
+
+    },
+    "Entra para jugar en modo competitivo" : {
+
+    },
+    "Entrar" : {
+
+    },
+    "Entrar con Apple o con Google" : {
+
+    },
+    "Entrar con Google" : {
+
+    },
+    "Esta acción no se puede deshacer." : {
+
+    },
+    "Esta era la respuesta correcta" : {
+
+    },
+    "Estadísticas de uso" : {
+
+    },
+    "Estás en el puesto %lld del ranking de %@." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Estás en el puesto %1$lld del ranking de %2$@."
+          }
+        }
+      }
+    },
+    "Fácil" : {
+
+    },
+    "Guardamos en tu dispositivo lo imprescindible para que funcione el inicio de sesión y para recordar tus preferencias. Iniciar sesión no depende de lo que elijas aquí." : {
+
+    },
+    "Guardando tu puntuación…" : {
+
+    },
+    "Has entrado con Apple" : {
+
+    },
+    "Has entrado con Google" : {
+
+    },
+    "Hemos borrado tu cuenta y tus puntuaciones del ranking. Puedes seguir jugando en modo arcade." : {
+
+    },
+    "Identificador: %@" : {
+
+    },
+    "Incorrecta" : {
+
+    },
+    "Incorrectas" : {
+
+    },
+    "Incorrecto" : {
+
+    },
+    "Incorrecto %@" : {
+
+    },
+    "Incorrecto. La respuesta correcta era: %@.%@" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Incorrecto. La respuesta correcta era: %1$@.%2$@"
+          }
+        }
+      }
+    },
+    "Juegas por el ranking de" : {
+
+    },
+    "Jugador" : {
+
+    },
+    "Jugador reportado en el ranking · Contrarreloj" : {
+
+    },
+    "Jugador: %@" : {
+
+    },
+    "Jugadores ocultos" : {
+
+    },
+    "Jugar" : {
+
+    },
+    "Jugar arcade" : {
+
+    },
+    "Jugar con preguntas de %@" : {
+
+    },
+    "Jugar con todas las categorías" : {
+
+    },
+    "Jugar de nuevo" : {
+
+    },
+    "La partida está en pausa. Se abrirá tu correo con la pregunta ya escrita: añade lo que veas y envíalo desde allí." : {
+
+    },
+    "La partida no se guardará ni contará para el ranking." : {
+
+    },
+    "Las 50 mejores puntuaciones de cada combinación de tiempo, dificultad y categoría." : {
+
+    },
+    "Más información en la política de privacidad" : {
+
+    },
+    "Más información sobre privacidad" : {
+
+    },
+    "Más preguntas con respuestas" : {
+
+    },
+    "Medio" : {
+
+    },
+    "Mejor racha" : {
+
+    },
+    "Modo competitivo" : {
+
+    },
+    "Mostrar" : {
+
+    },
+    "Muy fácil y fácil" : {
+
+    },
+    "Nada mal" : {
+
+    },
+    "No has ocultado a ningún jugador." : {
+
+    },
+    "No hay conexión. Revisa tu conexión a internet y vuelve a intentarlo." : {
+
+    },
+    "No hay preguntas con estas opciones" : {
+
+    },
+    "No hay preguntas para esta combinación. Prueba con otra dificultad u otra categoría." : {
+
+    },
+    "No se ha podido cargar el ranking." : {
+
+    },
+    "No se ha podido eliminar tu cuenta. Inténtalo de nuevo." : {
+
+    },
+    "No se ha podido guardar tu puntuación en el ranking." : {
+
+    },
+    "No se ha podido iniciar sesión. Inténtalo de nuevo en unos minutos." : {
+
+    },
+    "No se han podido cargar las preguntas." : {
+
+    },
+    "Nos importa lo que opinas. Elige el motivo: se abrirá tu correo con el asunto ya escrito y tú pones el resto. Lo leemos todo." : {
+
+    },
+    "Novedades de Contrarreloj, al momento." : {
+
+    },
+    "Nuevo récord personal." : {
+
+    },
+    "Ocultar jugador" : {
+
+    },
+    "Opciones de %@" : {
+
+    },
+    "Otra consulta" : {
+
+    },
+    "Para confirmarlo tendrás que volver a identificarte con Apple o con Google. Lo que se guarda solo en este dispositivo, como el sonido o las preguntas vistas, se queda hasta que desinstales la app." : {
+
+    },
+    "Partida de %lld segundos con %@." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Partida de %1$lld segundos con %2$@."
+          }
+        }
+      }
+    },
+    "Partida de %lld segundos de %@." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Partida de %1$lld segundos de %2$@."
+          }
+        }
+      }
+    },
+    "Pasada" : {
+
+    },
+    "Pasadas" : {
+
+    },
+    "Pasar" : {
+
+    },
+    "Pasar pregunta. Cuesta %@." : {
+
+    },
+    "Pasar pregunta. Te queda 1 pase gratis." : {
+
+    },
+    "Pasar pregunta. Te quedan %lld pases gratis." : {
+
+    },
+    "Pasas la pregunta. Pierdes %@." : {
+
+    },
+    "Penalización por fallos" : {
+
+    },
+    "Penalización por pasar" : {
+
+    },
+    "Política de privacidad" : {
+
+    },
+    "Preferencias" : {
+
+    },
+    "Pregunta a pregunta" : {
+
+    },
+    "Pregunta con respuesta incorrecta" : {
+
+    },
+    "Pregunta con respuesta incorrecta · Contrarreloj" : {
+
+    },
+    "Pregunta con respuesta incorrecta (pregunta %@)" : {
+
+    },
+    "Pregunta: %@" : {
+
+    },
+    "Preguntas de %@ con respuesta" : {
+
+    },
+    "Preguntas nuevas y novedades de Contrarreloj, también en redes." : {
+
+    },
+    "Preguntas nuevas y novedades del juego." : {
+
+    },
+    "Privacidad" : {
+
+    },
+    "Puesto %lld: %@, %@" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Puesto %1$lld: %2$@, %3$@"
+          }
+        }
+      }
+    },
+    "punto" : {
+
+    },
+    "puntos" : {
+
+    },
+    "Puntos" : {
+
+    },
+    "Puntos: %lld" : {
+
+    },
+    "Queda 1 gratis" : {
+
+    },
+    "Quedan %lld gratis" : {
+
+    },
+    "Quedan %lld segundos" : {
+
+    },
+    "Racha" : {
+
+    },
+    "Racha de %lld (%@)" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Racha de %1$lld (%2$@)"
+          }
+        }
+      }
+    },
+    "Racha máxima de bonus alcanzada" : {
+
+    },
+    "Racha: %lld" : {
+
+    },
+    "Ranking" : {
+
+    },
+    "Rechazar" : {
+
+    },
+    "Redes sociales de Contrarreloj" : {
+
+    },
+    "Reintentar" : {
+
+    },
+    "Reportar esta pregunta" : {
+
+    },
+    "Reportar jugador" : {
+
+    },
+    "Responde todas las preguntas que puedas antes de que se acabe el tiempo." : {
+
+    },
+    "Respuesta %@: %@" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Respuesta %1$@: %2$@"
+          }
+        }
+      }
+    },
+    "Respuesta correcta" : {
+
+    },
+    "Respuesta correcta: " : {
+
+    },
+    "Respuesta incorrecta" : {
+
+    },
+    "Respuesta: " : {
+
+    },
+    "Respuestas" : {
+
+    },
+    "Resultado copiado. Pégalo donde quieras." : {
+
+    },
+    "Se borrarán tu cuenta y tus puntuaciones del ranking en todas las tablas. No se puede deshacer." : {
+
+    },
+    "Seguir jugando" : {
+
+    },
+    "Sigue practicando" : {
+
+    },
+    "Síguenos" : {
+
+    },
+    "Silenciar el sonido" : {
+
+    },
+    "Sin conexión: puede que el ranking no esté al día." : {
+
+    },
+    "Solo nivel medio" : {
+
+    },
+    "Sonido" : {
+
+    },
+    "Sugerencia · Contrarreloj" : {
+
+    },
+    "Tabla: %@" : {
+
+    },
+    "Te falta 1 acierto seguido" : {
+
+    },
+    "Te faltan %lld aciertos seguidos" : {
+
+    },
+    "Tiempo" : {
+
+    },
+    "Tiempo restante: %@" : {
+
+    },
+    "Todavía no hay puntuaciones aquí. Juega en modo competitivo para ser el primero." : {
+
+    },
+    "Total" : {
+
+    },
+    "Total: %lld" : {
+
+    },
+    "Tu cuenta se ha eliminado." : {
+
+    },
+    "Tu mejor puntuación en el ranking de %@ sigue siendo %@, en el puesto %lld." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Tu mejor puntuación en el ranking de %1$@ sigue siendo %2$@, en el puesto %3$lld."
+          }
+        }
+      }
+    },
+    "Tu puntuación entra en el ranking de la combinación de tiempo, dificultad y categoría que elijas." : {
+
+    },
+    "Tu respuesta: " : {
+
+    },
+    "Última actualización: %@" : {
+
+    },
+    "Una pregunta con una respuesta incorrecta" : {
+
+    },
+    "Una sugerencia" : {
+
+    },
+    "una vez" : {
+
+    },
+    "Versión" : {
+
+    },
+    "Volver a Ajustes" : {
+
+    },
+    "Volver al menú" : {
+
     }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }
