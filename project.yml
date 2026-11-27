@@ -176,6 +176,9 @@ schemes:
       config: Debug
     test:
       config: Debug
+      # Unit tests run inside the app: keep it off any real Firebase project.
+      commandLineArguments:
+        "-noFirebase": true
       targets:
         - ContrarrelojTests
         - ContrarrelojUITests
@@ -188,5 +191,7 @@ schemes:
         ContrarrelojIntegrationTests: [test]
     test:
       config: Debug
+      commandLineArguments:
+        "-noFirebase": true
       targets:
         - ContrarrelojIntegrationTests

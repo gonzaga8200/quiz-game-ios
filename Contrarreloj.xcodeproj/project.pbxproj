@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03022ADCE2926A3FE8393704 /* RankingIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E442C11105FE654D397E74A9 /* RankingIntegrationTests.swift */; };
 		0354A8775793EF7983FF27A1 /* Timeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFEA8218A3655A4127A724 /* Timeout.swift */; };
 		03ACDBDC2F9D05497885ADDD /* UITestBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A8D04AB1464A740B2BEEE /* UITestBank.swift */; };
 		06F346DDE5858C7EB9AD4362 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21E4D4F99FF82C168216DEC /* AuthService.swift */; };
@@ -77,6 +78,7 @@
 		7D7422DB8F2CEE1698FB909E /* ShareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9603677CC30519C100ADC4FA /* ShareController.swift */; };
 		7F0D543D0AA163C3897D6560 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = E4FFA7DB05C48EBFEF7602D2 /* questions.json */; };
 		80D847E3D82B6EE48520DA9B /* OffMainValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A867D7B65C1D5B3B9C605455 /* OffMainValueTests.swift */; };
+		82E6A7F117E63E55460D4679 /* EmulatorSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F425B15E886869E5378416E /* EmulatorSupport.swift */; };
 		84722E79F78026EE809C6DF7 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F5CEC9306568AFF06E3E /* QuestionBank.swift */; };
 		84B0C0DBDC67CF38A44369E1 /* SoundPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D9C0FE08A5EF71AECB131 /* SoundPreference.swift */; };
 		8B22D7A0563221579357619B /* CategoryCopyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9AAD2BA4BCE0B8E01DB3A3 /* CategoryCopyTests.swift */; };
@@ -96,7 +98,6 @@
 		A3EC06EBCFE2CE2E3FFB48A5 /* ContactScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911258D4A79CA1720758DD89 /* ContactScreen.swift */; };
 		A4D6190FD28F2B2B16AD3062 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAB156DFFBD31510FFEDC35 /* Keyboard.swift */; };
 		A50C77B1972FCE403BAE2772 /* CategoryDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C3EE516C00FBC13A442047 /* CategoryDetailScreen.swift */; };
-		A7D444E09492FCC04C1D77E6 /* IntegrationSmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15AA9E5F461651D522C880B /* IntegrationSmokeTests.swift */; };
 		A914F83CE3DA5BEE440437CB /* AppUtilsParityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D724AF0B5E67CA07FD069D1 /* AppUtilsParityTests.swift */; };
 		A9C59DF42A91FEA9E71AD36A /* StatusBarBackdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88A7ABB3E36840BBB3F227 /* StatusBarBackdrop.swift */; };
 		AA4A23AB1457D696B1ACFEBC /* GameSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC1A3BC2DC3312F813CD65F /* GameSetup.swift */; };
@@ -141,6 +142,7 @@
 		F6816C52ACAAECBC85FF40F3 /* SynthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9601E3CB3DB66496E1A47DE5 /* SynthTests.swift */; };
 		F6D7A4EB357AC08F18E737E1 /* ContrarrelojApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545F1CD75C1CA7ADA8C0C0AB /* ContrarrelojApp.swift */; };
 		F92072DD37734158C68E54A5 /* GameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E928EEFB677983D514141E2 /* GameScreen.swift */; };
+		F99439943A459591C1319A49 /* AccountDeletionIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A333149A297075B08B87E739 /* AccountDeletionIntegrationTests.swift */; };
 		FB05C63CEC4D9067826C340D /* FakeQuestionSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F994593CC6D5A3AEA6264B54 /* FakeQuestionSource.swift */; };
 		FB893A3BAB784B70FFD61756 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = FF395E7FBF31AB364260A61B /* GoogleSignIn */; };
 		FBD7C7943717A5038158389D /* OFL-PlayfairDisplay.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6553484030752632C9F2A765 /* OFL-PlayfairDisplay.txt */; };
@@ -227,6 +229,7 @@
 		7BA40E79CF148307239EEE59 /* FirestoreRankingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreRankingStore.swift; sourceTree = "<group>"; };
 		7DD31502DD9A31232CAFBC56 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		7DF6F87A9218A2094513DFC1 /* RankingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingScreen.swift; sourceTree = "<group>"; };
+		7F425B15E886869E5378416E /* EmulatorSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmulatorSupport.swift; sourceTree = "<group>"; };
 		7F82363721F9B1317682CBE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8155989BF88E6969C717E343 /* LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTests.swift; sourceTree = "<group>"; };
 		850EAF9ED058167056317CBF /* LaunchOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchOptions.swift; sourceTree = "<group>"; };
@@ -251,9 +254,9 @@
 		9DDECC319E1F922E01C75E5F /* PlayCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCoordinator.swift; sourceTree = "<group>"; };
 		9E7EA5338E5FE2EA516B4FA0 /* CategoriesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesScreen.swift; sourceTree = "<group>"; };
 		A064067AB0FE4FAB00460108 /* ContrarrelojUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ContrarrelojUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A15AA9E5F461651D522C880B /* IntegrationSmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationSmokeTests.swift; sourceTree = "<group>"; };
 		A22F5E0F39EEF83D86C846A6 /* ReportRowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportRowsView.swift; sourceTree = "<group>"; };
 		A27AB57A37D28C9F19D8FE11 /* RankingFiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingFiltersView.swift; sourceTree = "<group>"; };
+		A333149A297075B08B87E739 /* AccountDeletionIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDeletionIntegrationTests.swift; sourceTree = "<group>"; };
 		A5478044792ACF4AC07EF940 /* Social.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Social.swift; sourceTree = "<group>"; };
 		A6EBB2C5FF4F1944FCDA0AB9 /* CategoryCopy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCopy.swift; sourceTree = "<group>"; };
 		A867D7B65C1D5B3B9C605455 /* OffMainValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffMainValueTests.swift; sourceTree = "<group>"; };
@@ -292,6 +295,7 @@
 		E0E723F1DC3B9950D9EDDD47 /* FirestoreQuestionSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreQuestionSource.swift; sourceTree = "<group>"; };
 		E28A3BE972ECBA2314BD8693 /* PlayCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCover.swift; sourceTree = "<group>"; };
 		E2EF39B1DDDFC5A19DF17B28 /* ContrarrelojCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ContrarrelojCore; path = Packages/ContrarrelojCore; sourceTree = SOURCE_ROOT; };
+		E442C11105FE654D397E74A9 /* RankingIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingIntegrationTests.swift; sourceTree = "<group>"; };
 		E47127395B8E35A475D589DA /* UITestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestSupport.swift; sourceTree = "<group>"; };
 		E4D2B076CF4D80605B5CEAD6 /* FxLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FxLayer.swift; sourceTree = "<group>"; };
 		E4FFA7DB05C48EBFEF7602D2 /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
@@ -532,7 +536,9 @@
 		65BEE596AAB31D44EEE5C405 /* IntegrationTests */ = {
 			isa = PBXGroup;
 			children = (
-				A15AA9E5F461651D522C880B /* IntegrationSmokeTests.swift */,
+				A333149A297075B08B87E739 /* AccountDeletionIntegrationTests.swift */,
+				7F425B15E886869E5378416E /* EmulatorSupport.swift */,
+				E442C11105FE654D397E74A9 /* RankingIntegrationTests.swift */,
 			);
 			path = IntegrationTests;
 			sourceTree = "<group>";
@@ -1143,7 +1149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7D444E09492FCC04C1D77E6 /* IntegrationSmokeTests.swift in Sources */,
+				F99439943A459591C1319A49 /* AccountDeletionIntegrationTests.swift in Sources */,
+				82E6A7F117E63E55460D4679 /* EmulatorSupport.swift in Sources */,
+				03022ADCE2926A3FE8393704 /* RankingIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

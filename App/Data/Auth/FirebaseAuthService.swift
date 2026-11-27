@@ -13,10 +13,16 @@ final class FirebaseAuthService: AuthService {
 
     @ObservationIgnored private var listener: AuthStateDidChangeListenerHandle?
     @ObservationIgnored private let apple = AppleSignInCoordinator()
+    @ObservationIgnored private let auth: Auth
+    @ObservationIgnored private let googleCredentialSource: (@MainActor () async throws -> AuthCredential)?
 
-    init() {
-        user = Auth.auth().currentUser.map(Self.authUser)
-        listener = Auth.auth().addStateDidChangeListener { [weak self] _, user in
+    /// The integration tests pass the Auth emulator's instance and a fake Google credential; the
+    /// app uses the defaults (the configured Firebase app and the Google sign-in sheet).
+    init(auth: Auth = Auth.auth(), googleCredential: (@MainActor () async throws -> AuthCredential)? = nil) {
+        self.auth = auth
+        googleCredentialSource = googleCredential
+        user = auth.currentUser.map(Self.authUser)
+        listener = auth.addStateDidChangeListener { [weak self] _, user in
             self?.user = user.map(Self.authUser)
         }
     }
@@ -31,29 +37,31 @@ final class FirebaseAuthService: AuthService {
     func signIn(with provider: AuthProvider) async throws {
         switch provider {
         case .google:
-            _ = try await Auth.auth().signIn(with: try await googleCredential())
+            _ = try await auth.signIn(with: try await googleCredential())
+            user = auth.currentUser.map(Self.authUser)
         case .apple:
             let result = try await apple.request()
             let credential = OAuthProvider.appleCredential(withIDToken: result.idToken, rawNonce: result.nonce, fullName: result.fullName)
-            let signedIn = try await Auth.auth().signIn(with: credential).user
+            let signedIn = try await auth.signIn(with: credential).user
+            user = auth.currentUser.map(Self.authUser)
             // Apple shares the name only the first time: keep it in the Firebase profile.
             if (signedIn.displayName ?? "").isEmpty, let name = appleDisplayName(from: result.fullName) {
                 let change = signedIn.createProfileChangeRequest()
                 change.displayName = name
                 try? await callback { done in change.commitChanges(completion: done) }
                 try? await callback { done in signedIn.reload(completion: done) }
-                user = Auth.auth().currentUser.map(Self.authUser)
+                user = auth.currentUser.map(Self.authUser)
             }
         }
     }
 
     func signOut() throws {
-        try Auth.auth().signOut()
+        try auth.signOut()
         GIDSignIn.sharedInstance.signOut()
     }
 
     func reauthenticate() async throws -> ReauthProof {
-        guard let current = Auth.auth().currentUser else { throw AccountDeletionError.notSignedIn }
+        guard let current = auth.currentUser else { throw AccountDeletionError.notSignedIn }
         switch Self.authUser(current).provider {
         case .google:
             let credential = try await googleCredential()
@@ -69,7 +77,7 @@ final class FirebaseAuthService: AuthService {
 
     func revokeAppleToken(_ proof: ReauthProof) async throws {
         guard let code = proof.appleAuthorizationCode else { throw AuthFailure.missingToken }
-        try await Auth.auth().revokeToken(withAuthorizationCode: code)
+        try await auth.revokeToken(withAuthorizationCode: code)
     }
 
     func disconnectGoogle() async {
@@ -77,7 +85,7 @@ final class FirebaseAuthService: AuthService {
     }
 
     func deleteUser() async throws {
-        guard let current = Auth.auth().currentUser else { return }
+        guard let current = auth.currentUser else { return }
         try await callback { done in current.delete(completion: done) }
     }
 
@@ -92,6 +100,7 @@ final class FirebaseAuthService: AuthService {
     }
 
     private func googleCredential() async throws -> AuthCredential {
+        if let googleCredentialSource { return try await googleCredentialSource() }
         guard let clientID = FirebaseApp.app()?.options.clientID else { throw AuthFailure.notConfigured }
         GIDSignIn.sharedInstance.configuration = GIDConfiguration(clientID: clientID)
         guard let presenter = UIApplication.shared.topViewController else { throw AuthFailure.noWindow }

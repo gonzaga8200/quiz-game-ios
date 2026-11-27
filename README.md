@@ -81,8 +81,8 @@ Tools                       parity fixtures, question and copy sync, icon render
 | `scripts/test-core.sh` | `ContrarrelojCore` tests on the Mac: rules and exact parity with the web |
 | `scripts/test-app.sh [tests…]` | App unit tests on the iPhone simulator (data, auth, analytics, game session, texts, privacy manifest) |
 | `scripts/test-ui.sh iphone\|ipad [tests…]` | UI tests of the main flows, with fakes (no network) |
-| `scripts/emulators.sh` + scheme `ContrarrelojIntegrationTests` | Ranking writes and account deletion against the Firebase emulators with the web's security rules |
-| `scripts/cross-check-web.sh` | The web (on the same emulators) shows what the iOS app wrote |
+| `scripts/test-integration.sh` | Ranking writes, rules and account deletion against the Firebase emulators running the web's security rules (`scripts/emulators.sh` starts them) |
+| `scripts/cross-check-web.sh` | The web from `origin/main`, on the same emulators, to check it shows what the iOS app wrote |
 
 UI tests launch the app with `-uiTesting` and fakes for the question bank, the ranking, sign-in and
 mail (see `App/Support/LaunchOptions.swift`). Pass test names as `Target/Suite[/test]`.
