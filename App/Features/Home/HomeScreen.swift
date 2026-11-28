@@ -87,7 +87,9 @@ struct HomeScreen: View {
             Text(verbatim: "Contrarreloj")
                 .font(.display(size: 56, relativeTo: .largeTitle, weight: .heavy))
                 .foregroundStyle(Color.accentOnGround)
-                .minimumScaleFactor(0.6)
+                // One word: shrink it rather than cut it ("Contrarre…" at the largest sizes on a
+                // 375-pt iPhone).
+                .minimumScaleFactor(0.3)
                 .lineLimit(1)
                 .accessibilityLabel(Text("Contrarreloj: juego de preguntas contra el tiempo"))
                 .accessibilityAddTraits(.isHeader)
