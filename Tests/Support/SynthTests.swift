@@ -4,6 +4,8 @@ import Testing
 
 private final class RecordingEngine: SoundOutput {
     var played: [SoundName] = []
+    var prepared = 0
+    func prepare(sampleRate: Double) { prepared += 1 }
     func play(_ sound: SoundName, samples: [Float], sampleRate: Double) { played.append(sound) }
 }
 
@@ -42,4 +44,32 @@ struct SynthTests {
         player.play(.wrong)
         #expect(engine.played == [.correct])
     }
+
+    @Test func preparingWarmsUpTheOutputUnlessMuted() {
+        let defaults = UserDefaults(suiteName: "SynthTests.\(UUID().uuidString)")!
+        let preference = SoundPreference(defaults: defaults)
+        let output = RecordingEngine()
+        let player = SynthPlayer(preference: preference, output: output)
+        player.prepare()
+        #expect(output.prepared == 1)
+        preference.isMuted = true
+        player.prepare()
+        #expect(output.prepared == 1)
+    }
+
+    /// Starting the audio session and engine can take tens of milliseconds: never on the main thread.
+    @Test func audioEngineWorkRunsOffTheMainThread() {
+        let onMain = ThreadRecorder()
+        let output = AudioEngineOutput(activate: { onMain.record(Thread.isMainThread) })
+        output.prepare(sampleRate: SynthPlayer.sampleRate)
+        output.waitUntilIdle()
+        #expect(onMain.values == [false])
+    }
+}
+
+nonisolated final class ThreadRecorder: @unchecked Sendable {
+    private let lock = NSLock()
+    private var _values: [Bool] = []
+    var values: [Bool] { lock.withLock { _values } }
+    func record(_ value: Bool) { lock.withLock { _values.append(value) } }
 }

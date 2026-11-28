@@ -86,10 +86,14 @@ nonisolated func synthesize(_ notes: [Note], sampleRate: Double) -> [Float] {
 
 /// Where synthesised sounds are played (AVAudioEngine in the app, a recorder in tests).
 protocol SoundOutput: AnyObject {
+    /// Gets ready to play (audio session, engine), so the first sound does not wait for it.
+    func prepare(sampleRate: Double)
     func play(_ sound: SoundName, samples: [Float], sampleRate: Double)
 }
 
 protocol SoundPlayer: AnyObject {
+    /// Warms up the audio when a game starts.
+    func prepare()
     func play(_ sound: SoundName)
 }
 
@@ -105,6 +109,11 @@ final class SynthPlayer: SoundPlayer {
         self.output = output
     }
 
+    func prepare() {
+        guard !preference.isMuted else { return }
+        output.prepare(sampleRate: Self.sampleRate)
+    }
+
     func play(_ sound: SoundName) {
         guard !preference.isMuted else { return }
         let samples = cache[sound] ?? synthesize(soundNotes[sound] ?? [], sampleRate: Self.sampleRate)
@@ -114,16 +123,53 @@ final class SynthPlayer: SoundPlayer {
 }
 
 /// AVAudioEngine with a few player nodes, so a streak jingle can overlap the answer sound. The
-/// session is `.ambient`: it respects the silent switch and mixes with the player's music.
+/// session is `.ambient`: it respects the silent switch and mixes with the player's music. All the
+/// audio work (session, engine start, buffers) runs on a serial queue of its own: starting the
+/// engine can take tens of milliseconds, too long for the main thread in the middle of a game.
 final class AudioEngineOutput: SoundOutput {
+    private let core: AudioEngineCore
+    private let queue = DispatchQueue(label: "com.contrarrelojquiz.app.audio", qos: .userInitiated)
+
+    init(activate: @escaping @Sendable () throws -> Void = AudioEngineCore.activateSession) {
+        core = AudioEngineCore(activate: activate)
+    }
+
+    func prepare(sampleRate: Double) {
+        let core = core
+        queue.async { _ = core.start(sampleRate: sampleRate) }
+    }
+
+    func play(_ sound: SoundName, samples: [Float], sampleRate: Double) {
+        let core = core
+        queue.async { core.play(sound, samples: samples, sampleRate: sampleRate) }
+    }
+
+    /// Returns once the queued audio work is done (tests).
+    func waitUntilIdle() {
+        queue.sync {}
+    }
+}
+
+/// The engine and its nodes, touched only on `AudioEngineOutput`'s queue.
+nonisolated final class AudioEngineCore: @unchecked Sendable {
+    static let activateSession: @Sendable () throws -> Void = {
+        try AVAudioSession.sharedInstance().setCategory(.ambient)
+        try AVAudioSession.sharedInstance().setActive(true)
+    }
+
+    private let activate: @Sendable () throws -> Void
     private let engine = AVAudioEngine()
     private var nodes: [AVAudioPlayerNode] = []
     private var buffers: [SoundName: AVAudioPCMBuffer] = [:]
     private var next = 0
     private var format: AVAudioFormat?
 
+    init(activate: @escaping @Sendable () throws -> Void) {
+        self.activate = activate
+    }
+
     func play(_ sound: SoundName, samples: [Float], sampleRate: Double) {
-        guard prepare(sampleRate: sampleRate), let format else { return }
+        guard start(sampleRate: sampleRate), let format else { return }
         let buffer = buffers[sound] ?? makeBuffer(samples, format: format)
         buffers[sound] = buffer
         guard let buffer else { return }
@@ -134,11 +180,10 @@ final class AudioEngineOutput: SoundOutput {
         node.play()
     }
 
-    private func prepare(sampleRate: Double) -> Bool {
+    func start(sampleRate: Double) -> Bool {
         if engine.isRunning { return true }
         do {
-            try AVAudioSession.sharedInstance().setCategory(.ambient)
-            try AVAudioSession.sharedInstance().setActive(true)
+            try activate()
             if nodes.isEmpty {
                 guard let format = AVAudioFormat(standardFormatWithSampleRate: sampleRate, channels: 1) else { return false }
                 self.format = format

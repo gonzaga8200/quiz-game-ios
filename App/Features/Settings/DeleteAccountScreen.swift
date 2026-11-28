@@ -70,6 +70,7 @@ struct DeleteAccountScreen: View {
         Task {
             do {
                 let provider = try await AccountDeleter(auth: env.auth, ranking: store).delete()
+                await env.ranking?.invalidateAll() // the player's rows must not linger for a minute
                 env.analytics.track(.accountDeleted(provider))
                 done = true
             } catch {

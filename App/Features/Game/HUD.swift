@@ -1,7 +1,9 @@
 import SwiftUI
 
 /// Clock, score, streak and the combo hint (the web's GameHud). A slim bar on phones, a side panel
-/// on wide screens.
+/// on wide screens. The bar fits a 375-pt-wide iPhone up to the "xLarge" text size; from
+/// "xxLarge" (where the game screen also starts to scroll) it uses two rows. A bar wider than the
+/// screen gets centred again whenever its width changes, and the whole screen shifts.
 struct HUD: View {
     let session: GameSession
     let fx: GameFx
@@ -24,35 +26,35 @@ struct HUD: View {
                     comboHint
                 }
                 .padding(20)
-            } else if typeSize.isAccessibilitySize {
-                // Largest text sizes: clock on one row, score and streak on the next.
+            } else if typeSize >= .xxLarge {
+                // Large text: clock on one row, score and streak on the next.
                 VStack(alignment: .leading, spacing: 6) {
                     HStack(spacing: 10) {
                         PocketWatch(progress: progress, urgent: urgent).frame(width: 40)
                         clockText(size: 40)
                         Spacer(minLength: 0)
                     }
-                    HStack(spacing: 12) {
+                    HStack(spacing: 8) {
                         scoreTile
                         streakTile
                         Spacer(minLength: 0)
                     }
                     comboHint
                 }
-                .padding(.horizontal, 14)
+                .padding(.horizontal, 10)
                 .padding(.vertical, 8)
             } else {
                 VStack(spacing: 6) {
-                    HStack(spacing: 12) {
-                        PocketWatch(progress: progress, urgent: urgent).frame(width: 52)
-                        clockText(size: 40)
+                    HStack(spacing: 8) {
+                        PocketWatch(progress: progress, urgent: urgent).frame(width: 40)
+                        clockText(size: 34)
                         Spacer(minLength: 4)
                         scoreTile
                         streakTile
                     }
                     comboHint
                 }
-                .padding(.horizontal, 14)
+                .padding(.horizontal, 10)
                 .padding(.vertical, 8)
             }
         }
@@ -63,16 +65,13 @@ struct HUD: View {
 
     private func clockText(size: CGFloat) -> some View {
         let pulse: CGFloat = urgent && !reduceMotion && Int(session.remainingMs / 500) % 2 == 0 ? 1.06 : 1
-        return Text(verbatim: clock)
-            .font(.display(size: size, relativeTo: .title, weight: .heavy))
-            .monospacedDigit()
+        return ClockText(clock: clock, size: size)
             .foregroundStyle(urgent ? Color.errorOnGround : Color.accentOnGround)
-            // Always its full width: with Playfair's figures SwiftUI measured some times ("0:58")
-            // a hair narrower than it draws them, and the clock showed "0:…".
-            .fixedSize()
             .layoutPriority(1)
-            // Only the urgent pulse animates, not the text's frame.
+            // Only the urgent pulse animates, not the clock's frame.
             .animation(reduceMotion ? nil : .easeInOut(duration: 0.25)) { $0.scaleEffect(pulse) }
+            .accessibilityElement(children: .ignore)
+            .accessibilityAddTraits(.isStaticText)
             .accessibilityLabel(Text("Tiempo restante: \(clock)"))
             .accessibilityIdentifier("hud.clock")
     }
@@ -93,8 +92,8 @@ struct HUD: View {
                 .accessibilityLabel(Text("Puntos: \(session.snapshot.score)"))
                 .accessibilityIdentifier("hud.score")
         }
-        .frame(minWidth: 56)
-        .padding(.horizontal, 8)
+        .frame(minWidth: 48)
+        .padding(.horizontal, 4)
         .padding(.vertical, 4)
         .background(fx.hit != nil ? Color.fallo.opacity(0.35) : Color.clear, in: RoundedRectangle(cornerRadius: 8))
         .overlay(alignment: .topTrailing) {
@@ -121,8 +120,8 @@ struct HUD: View {
             .accessibilityLabel(Text("Racha: \(streak)"))
             .accessibilityIdentifier("hud.streak")
         }
-        .frame(minWidth: 56)
-        .padding(.horizontal, 8)
+        .frame(minWidth: 48)
+        .padding(.horizontal, 4)
         .padding(.vertical, 4)
         .background(fx.brokenStreak ? Color.fallo.opacity(0.35) : (hot ? Color.oroSombra.opacity(0.35) : Color.clear),
                     in: RoundedRectangle(cornerRadius: 8))

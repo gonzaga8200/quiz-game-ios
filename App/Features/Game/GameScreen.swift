@@ -70,7 +70,7 @@ struct GameScreen: View {
 
     private var compactLayout: some View {
         VStack(spacing: 10) {
-            HStack(spacing: 10) {
+            HStack(spacing: 8) {
                 exitButton
                 HUD(session: session, fx: fx, wide: false)
             }

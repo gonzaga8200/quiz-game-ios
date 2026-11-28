@@ -2,7 +2,7 @@ import SwiftUI
 
 /// The two typefaces of the web, bundled (OFL): Playfair Display for titles and numbers, Atkinson
 /// Hyperlegible Next for reading. Both scale with Dynamic Type through `relativeTo:`.
-enum AppTypeface {
+nonisolated enum AppTypeface {
     static func display(weight: Font.Weight, italic: Bool) -> String {
         let heavy = weight == .heavy || weight == .black
         switch (heavy, italic) {

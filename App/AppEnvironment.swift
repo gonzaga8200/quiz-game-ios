@@ -106,9 +106,15 @@ final class AppEnvironment {
         }
         let available = !options.noFirebase
         let rankingStore: (any RankingStore)? = available ? UITestBank.ranking(options.rankingFake) : nil
-        let auth: any AuthService = available
-            ? FakeAuthService(user: options.fakeUser.map { AuthUser(uid: "me", displayName: "Yo", photoURL: nil, provider: $0) })
-            : UnavailableAuthService()
+        let auth: any AuthService
+        if available {
+            let fake = FakeAuthService(user: options.fakeUser.map { AuthUser(uid: "me", displayName: "Yo", photoURL: nil, provider: $0) })
+            // Longer than any test step, even on a slow CI runner: the sign-in stays under way.
+            if options.slowSignIn { fake.signInDelay = .seconds(60) }
+            auth = fake
+        } else {
+            auth = UnavailableAuthService()
+        }
         return AppEnvironment(
             questionBank: QuestionBank(remote: remote, cache: InMemoryQuestionCache(nil),
                                        bundled: { failing ? [] : BundledQuestions.all }),
@@ -140,5 +146,6 @@ final class UnavailableAuthService: AuthService {
 
 /// No sound in UI tests.
 final class SilentOutput: SoundOutput {
+    func prepare(sampleRate: Double) {}
     func play(_ sound: SoundName, samples: [Float], sampleRate: Double) {}
 }

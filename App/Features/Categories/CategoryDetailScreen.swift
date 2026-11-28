@@ -5,15 +5,15 @@ import SwiftUI
 struct CategoryDetailScreen: View {
     let category: QuizCategory
     /// nil while the bank loads.
-    let questions: [Question]?
+    let catalog: CategoryCatalog?
     @Environment(AppEnvironment.self) private var env
 
-    private static let showcaseSize = 20
+    private static let showcaseSize = CategoryCatalog.showcaseSize
 
     var body: some View {
         let text = copy(for: category)
-        let items = questions.map { pickShowcase($0, category: category, count: Self.showcaseSize) } ?? []
-        let total = questions.map { countActiveByCategory($0)[category] ?? 0 }
+        let items = catalog?.showcase(for: category) ?? []
+        let total = catalog.map { $0.counts[category] ?? 0 }
         let lower = category.rawValue.lowercased()
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {

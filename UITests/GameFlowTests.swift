@@ -99,8 +99,9 @@ final class GameFlowTests: XCTestCase {
         for id in ["answer.0", "answer.1", "answer.2", "answer.3", "skip"] {
             let element = app.buttons[id].waitToAppear()
             var swipes = 0
-            while !element.isHittable && swipes < 6 {
-                app.swipeUp()
+            // Short, slow drags: on a small screen a fast swipe scrolls past a whole answer.
+            while !element.isHittable && swipes < 12 {
+                app.scrollViews.firstMatch.swipeUp(velocity: .slow)
                 swipes += 1
             }
             XCTAssertTrue(element.isHittable, "\(id) is not reachable at the largest text size")
@@ -119,5 +120,24 @@ final class GameFlowTests: XCTestCase {
         XCTAssertEqual(questionText(app), question)
         XCTAssertEqual(app.staticTexts["hud.score"].label, score)
         XCUIDevice.shared.orientation = .portrait
+    }
+
+    /// Nothing but the clock and the watch hand may move while the time runs: the HUD fits the
+    /// screen and keeps its width (Playfair's figures are proportional).
+    func testGameScreenStaysStillWhileTheClockRuns() {
+        let app = startArcade()
+        let exit = app.buttons["exitGame"]
+        let streak = app.descendants(matching: .any)["hud.streak"]
+        let window = app.windows.firstMatch.frame
+        var exitPositions: Set<CGFloat> = []
+        var clocks: Set<String> = []
+        for _ in 0..<5 {
+            exitPositions.insert(exit.frame.minX)
+            clocks.insert(app.staticTexts["hud.clock"].label)
+            XCTAssertLessThanOrEqual(streak.frame.maxX, window.maxX, "the HUD must fit the screen")
+            Thread.sleep(forTimeInterval: 1.0)
+        }
+        XCTAssertGreaterThan(clocks.count, 2, "the clock should have run")
+        XCTAssertEqual(exitPositions.count, 1, "the screen moved as the clock ran: \(exitPositions.sorted())")
     }
 }

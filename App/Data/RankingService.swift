@@ -41,6 +41,11 @@ nonisolated func toScoreSubmission(player: RankingPlayer, report: GameReport) ->
     )
 }
 
+nonisolated enum RankingError: Error, Equatable {
+    /// The game's numbers break the score rules (more points than possible, more answers than seconds).
+    case invalidScore
+}
+
 /// Saves competitive games (one entry per player per board, only when it improves) and reads the
 /// boards, with a one-minute cache per board so switching filters does not re-read 50 documents.
 actor RankingService {
@@ -77,10 +82,17 @@ actor RankingService {
         }
 
         let entry = toScoreSubmission(player: player, report: report)
+        // The web's schema check throws here too: a score the rules would refuse is never sent.
+        guard entry.isValid else { throw RankingError.invalidScore }
         try await timed { try await store.saveEntry(board: board, entry: entry) }
         cache[board] = nil
         let better = try await timed { try await store.countBetter(board: board, points: report.points) }
         return .newBest(best: report.points, position: better + 1)
+    }
+
+    /// Forgets every cached board (after the player's account and entries are deleted).
+    func invalidateAll() {
+        cache.removeAll()
     }
 
     func top(board: String, forceRefresh: Bool = false) async throws -> [RankingEntry] {

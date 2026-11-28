@@ -88,4 +88,19 @@ final class SettingsTests: XCTestCase {
         app.buttons["Mostrar"].tap()
         app.staticTexts["No has ocultado a ningún jugador."].waitToAppear()
     }
+
+    /// A deleted player disappears from the ranking at once, not after the one-minute cache.
+    func testDeletedPlayerLeavesTheRankingAtOnce() {
+        let app = openSettings(["-fakeUser", "google", "-rankingFake", "seeded"])
+        app.tab("Ranking").tap()
+        app.otherElements["ranking.row.me"].waitToAppear()
+        app.tab("Ajustes").tap()
+        app.buttons["settings.deleteAccount"].waitToAppear().tap()
+        app.buttons["deleteAccount.confirm"].waitToAppear().tap()
+        app.alerts.buttons["Eliminar"].waitToAppear().tap()
+        app.staticTexts["Tu cuenta se ha eliminado."].waitToAppear()
+        app.tab("Ranking").tap()
+        app.otherElements["ranking.row.u1"].waitToAppear()
+        XCTAssertFalse(app.otherElements["ranking.row.me"].exists, "the deleted player is still listed")
+    }
 }

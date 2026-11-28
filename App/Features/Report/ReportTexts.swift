@@ -6,6 +6,8 @@ nonisolated enum SubmissionState: Equatable, Sendable {
     case saving
     case done(SubmitResult)
     case error
+    /// The score breaks the rules and will never be accepted: no retry.
+    case rejected
 }
 
 /// No question matched the chosen options (the bank had none for that combination).
@@ -63,5 +65,7 @@ func rankingResultText(_ state: SubmissionState, board: String) -> String {
         return String(localized: "Tu mejor puntuación en el ranking de \(board) sigue siendo \(pointsText(best)), en el puesto \(position).")
     case .error:
         return String(localized: "No se ha podido guardar tu puntuación en el ranking.")
+    case .rejected:
+        return String(localized: "Esta partida no se puede guardar en el ranking.")
     }
 }

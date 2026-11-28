@@ -35,6 +35,11 @@ struct AuthErrorsTests {
         struct Weird: Error {}
         #expect(authErrorCode(Weird()) == "unknown")
     }
+
+    /// A refused second request leaves the first one running: nothing to tell the player.
+    @Test func busyHasNoMessage() {
+        #expect(authErrorMessage(AuthFailure.busy) == nil)
+    }
 }
 
 struct AppleNameTests {

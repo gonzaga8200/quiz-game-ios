@@ -139,6 +139,35 @@ struct RankingServiceTests {
         await #expect(throws: TimeoutError.self) { try await ranking.top(board: "60_medio") }
         #expect(recorded.values == [.seconds(10)])
     }
+
+    /// After an account is deleted its rows must not linger in the one-minute cache.
+    @Test func invalidateAllForgetsEveryBoard() async throws {
+        let store = FakeRankingStore()
+        let service = RankingService(store: store)
+        _ = try await service.top(board: "60_aleatorio")
+        _ = try await service.top(board: "120_medio")
+        await service.invalidateAll()
+        _ = try await service.top(board: "60_aleatorio")
+        _ = try await service.top(board: "120_medio")
+        #expect(store.topCalls == 4)
+    }
+
+    /// Like the web (its schema check throws before writing): an impossible score is not sent.
+    @Test func impossibleScoreIsRejectedWithoutWriting() async {
+        let store = FakeRankingStore()
+        let service = RankingService(store: store)
+        let report = GameFixtures.report(rights: 3)
+        // 99 points from one right answer: more than the 17 a right answer can give.
+        let impossible = GameReport(
+            points: 99, correct: 1, wrong: report.wrong, skipped: report.skipped, bestStreak: 1,
+            breakdown: report.breakdown, rows: report.rows, finishReason: report.finishReason,
+            duration: report.duration, filter: report.filter, category: report.category, celebration: report.celebration
+        )
+        await #expect(throws: RankingError.invalidScore) {
+            _ = try await service.submit(player: RankingPlayer(uid: "ana", displayName: "Ana", photoURL: nil), report: impossible)
+        }
+        #expect(store.saved.isEmpty)
+    }
 }
 
 nonisolated private final class DurationLog: @unchecked Sendable {
@@ -146,4 +175,5 @@ nonisolated private final class DurationLog: @unchecked Sendable {
     private var _values: [Duration] = []
     var values: [Duration] { lock.withLock { _values } }
     func append(_ d: Duration) { lock.withLock { _values.append(d) } }
+
 }

@@ -9,9 +9,9 @@ comprobado. Al final está lo que no se ha podido verificar y por qué.
 | Comprobación | Resultado | Cómo repetirla |
 |---|---|---|
 | Núcleo del juego (`ContrarrelojCore`) con fixtures generados por el `core/` TypeScript de la web | 39 de 39 | `scripts/test-core.sh` (fixtures: `Tools/parity/run.sh`) |
-| Tests unitarios de la app | 116 pasan; 2 omitidos (los de verificación manual: icono y producción) | `scripts/test-app.sh` |
-| Tests de interfaz en iPhone 17 Pro (iOS 26.5) | 40 pasan; 5 omitidos (2 solo de iPad, 3 de verificación manual) | `scripts/test-ui.sh iphone` |
-| Tests de interfaz en iPad Pro 13" M5 (iOS 26.5) | 42 pasan; 3 omitidos (los de verificación manual) | `scripts/test-ui.sh ipad` |
+| Tests unitarios de la app | 130 pasan; 2 omitidos (los de verificación manual: icono y producción) | `scripts/test-app.sh` |
+| Tests de interfaz en iPhone 17 Pro (iOS 26.5) | 43 pasan; 5 omitidos (2 solo de iPad, 3 de verificación manual) | `scripts/test-ui.sh iphone` |
+| Tests de interfaz en iPad Pro 13" M5 (iOS 26.5) | 45 pasan; 3 omitidos (los de verificación manual) | `scripts/test-ui.sh ipad` |
 | Integración con los emuladores de Firebase y las reglas reales de la web | 5 de 5 | `scripts/test-integration.sh` |
 | La web muestra en su ranking lo que escribió la app | Sí (captura abajo) | `scripts/cross-check-web.sh` |
 | Banco de preguntas de producción (solo lectura), app frente a SDK web | Idénticos | ver «Producción» |
@@ -113,6 +113,20 @@ el texto más grande (AX5). Revisarlas sirvió para corregir cuatro cosas:
 - en modo oscuro no se leían los títulos de sección de Ajustes;
 - el botón «Entrar» de Ajustes tenía poco contraste.
 
+Después, con la app en uso, se vio que **la pantalla de la partida se movía cada segundo**. La
+Playfair Display no tiene cifras de ancho fijo (a 40 pt un «1» mide 15,5 pt y un «0», 26,4), así
+que el reloj cambiaba de ancho al contar. La barra del marcador, unos 40 pt más ancha que el
+iPhone, se volvía a centrar cada vez. El reloj pone ahora cada dígito en una casilla del ancho del
+más ancho, y la barra cabe en un iPhone de 375 pt; a partir del tamaño de texto «xxLarge» usa dos
+filas. Lo comprueban:
+
+- un test que dibuja todos los segundos de una partida de 2 minutos con el mismo ancho;
+- un test de interfaz que mira durante 5 s que nada se mueva;
+- una pasada en un simulador temporal de iPhone SE (375 pt), con el texto normal y con AX5.
+
+Esa pasada encontró además el título de la portada cortado («Contrarre…»). Ahora encoge en vez de
+cortarse.
+
 ## Revisión final
 
 Un revisor sin contexto previo revisó toda la rama. No encontró nada crítico y sí cuatro problemas
@@ -125,8 +139,21 @@ importantes, ya corregidos, cada uno con un test que falló antes del arreglo:
   habría mostrado.
 - Categorías mostraba «0 preguntas» mientras cargaba.
 
-También se evita descargar el banco dos veces a la vez. Las mejoras menores quedan anotadas para
-más adelante.
+También se evita descargar el banco dos veces a la vez.
+
+Las ocho mejoras menores que señaló se corrigieron en una segunda rama
+(`fix/minors-and-game-jitter`), cada una con su test:
+
+- Un guardado lento ya no aparece en el informe de la partida siguiente.
+- Pulsar «Jugar» dos veces ya no crea dos partidas.
+- Una segunda petición de Apple se rechaza en vez de dejar colgada la primera.
+- El jugador borrado sale del ranking al momento.
+- Una puntuación imposible no se envía, como en la web.
+- El renombrado `activeKeyWindow`.
+- Las categorías se calculan una vez y fuera del hilo principal.
+- El audio arranca al empezar la partida, fuera del hilo principal.
+
+Que el botón de Apple no se desactivaba no se reproduce: su test pasa sin cambios.
 
 ## No verificado
 

@@ -82,4 +82,15 @@ final class CompetitiveFlowTests: XCTestCase {
         app.buttons["home.signOut"].waitToAppear().tap()
         app.buttons["home.signIn"].waitToAppear()
     }
+
+    /// While one sign-in is under way the other provider's button is off (Apple's is a UIKit button
+    /// that SwiftUI's .disabled does not reach).
+    func testAppleButtonIsDisabledWhileSigningIn() {
+        let app = launchApp(["-slowSignIn"])
+        app.buttons["home.signIn"].waitToAppear().tap()
+        app.buttons["signIn.google"].waitToAppear().tap()
+        let apple = app.buttons["signIn.apple"]
+        XCTAssertTrue(apple.waitForExistence(timeout: 2))
+        XCTAssertFalse(apple.isEnabled, "Apple's button must be off while signing in with Google")
+    }
 }

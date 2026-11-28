@@ -17,6 +17,7 @@ nonisolated final class FakeRankingStore: RankingStore, @unchecked Sendable {
     private let better: Int
     private let failing: Bool
     private let hanging: Bool
+    private let delay: Double
     private var boards: [String: [RankingEntry]]
     private var _saved: [SavedEntry] = []
     private var _countBetterCalls: [CountCall] = []
@@ -24,12 +25,13 @@ nonisolated final class FakeRankingStore: RankingStore, @unchecked Sendable {
     private var _topCalls = 0
     private var _deleted: [(uid: String, boards: [String])] = []
 
-    init(best: Int? = nil, better: Int = 0, failing: Bool = false, hanging: Bool = false,
+    init(best: Int? = nil, better: Int = 0, failing: Bool = false, hanging: Bool = false, delay: Double = 0,
          boards: [String: [RankingEntry]] = [:]) {
         self.best = best
         self.better = better
         self.failing = failing
         self.hanging = hanging
+        self.delay = delay
         self.boards = boards
     }
 
@@ -41,6 +43,7 @@ nonisolated final class FakeRankingStore: RankingStore, @unchecked Sendable {
 
     private func gate() async throws {
         if hanging { try await Task.sleep(for: .seconds(3_600)) }
+        if delay > 0 { try await Task.sleep(for: .seconds(delay)) }
         if failing { throw FakeRemoteError.offline }
     }
 
@@ -69,6 +72,9 @@ nonisolated final class FakeRankingStore: RankingStore, @unchecked Sendable {
 
     func deleteEntries(uid: String, boards: [String]) async throws {
         try await gate()
-        lock.withLock { _deleted.append((uid, boards)) }
+        lock.withLock {
+            _deleted.append((uid, boards))
+            for board in boards { self.boards[board]?.removeAll { $0.uid == uid } }
+        }
     }
 }
