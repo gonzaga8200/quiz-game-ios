@@ -106,9 +106,14 @@ final class AppEnvironment {
         }
         let available = !options.noFirebase
         let rankingStore: (any RankingStore)? = available ? UITestBank.ranking(options.rankingFake) : nil
-        let auth: any AuthService = available
-            ? FakeAuthService(user: options.fakeUser.map { AuthUser(uid: "me", displayName: "Yo", photoURL: nil, provider: $0) })
-            : UnavailableAuthService()
+        let auth: any AuthService
+        if available {
+            let fake = FakeAuthService(user: options.fakeUser.map { AuthUser(uid: "me", displayName: "Yo", photoURL: nil, provider: $0) })
+            if options.slowSignIn { fake.signInDelay = .seconds(5) }
+            auth = fake
+        } else {
+            auth = UnavailableAuthService()
+        }
         return AppEnvironment(
             questionBank: QuestionBank(remote: remote, cache: InMemoryQuestionCache(nil),
                                        bundled: { failing ? [] : BundledQuestions.all }),

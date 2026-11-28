@@ -17,6 +17,7 @@ final class FakeAuthService: AuthService {
     @ObservationIgnored var reauthFails = false
     @ObservationIgnored var revokeFails = false
     @ObservationIgnored var signInFails = false
+    @ObservationIgnored var signInDelay: Duration = .zero
     @ObservationIgnored let log: EventLog
 
     init(log: EventLog = EventLog(), user: AuthUser? = nil) {
@@ -26,6 +27,7 @@ final class FakeAuthService: AuthService {
 
     func signIn(with provider: AuthProvider) async throws {
         log.append("signIn:\(provider.rawValue)")
+        if signInDelay > .zero { try await Task.sleep(for: signInDelay) }
         if signInFails { throw URLError(.notConnectedToInternet) }
         user = AuthUser(uid: "fake-\(provider.rawValue)", displayName: "Jugadora de prueba", photoURL: nil, provider: provider)
     }

@@ -22,6 +22,8 @@ nonisolated func authErrorCode(_ error: any Error) -> String {
 /// The message for the player, or nil when there is nothing to say (they closed the window).
 /// Texts of the web's `auth-errors.ts`, without the browser pop-up cases.
 nonisolated func authErrorMessage(_ error: any Error) -> String? {
+    // A second request refused while one is open: the first carries on, there is nothing to say.
+    if (error as? AuthFailure) == .busy { return nil }
     let ns = error as NSError
     let cancelled =
         (ns.domain == ASAuthorizationError.errorDomain && ns.code == ASAuthorizationError.canceled.rawValue)
@@ -41,4 +43,6 @@ nonisolated enum AuthFailure: Error, Equatable {
     case notConfigured
     case missingToken
     case noWindow
+    /// A sign-in is already open.
+    case busy
 }
