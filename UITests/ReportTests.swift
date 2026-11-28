@@ -38,4 +38,18 @@ final class ReportTests: XCTestCase {
         app.buttons["Volver al menú"].tap()
         app.buttons["home.playArcade"].waitToAppear()
     }
+
+    /// The actions sit in a bar pinned to the bottom: reachable at once, wherever the report is scrolled.
+    func testActionsStayInReachWhileTheReportScrolls() {
+        let app = launchApp(["-seed", "7", "-bank", "tiny"])
+        app.playTinyGame(right: true)
+        let actions = ["Jugar de nuevo", "Compartir resultado", "Volver al menú"].map { app.buttons[$0] }
+        for button in actions { XCTAssertTrue(button.waitToAppear().isHittable, "\(button) needs scrolling") }
+        let rows = app.scrollViews.firstMatch
+        rows.swipeUp(velocity: .slow)
+        rows.swipeUp(velocity: .slow)
+        for button in actions { XCTAssertTrue(button.isHittable, "\(button) scrolled away") }
+        rows.swipeDown(velocity: .fast)
+        for button in actions { XCTAssertTrue(button.isHittable, "\(button) scrolled away") }
+    }
 }

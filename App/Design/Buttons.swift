@@ -24,6 +24,30 @@ struct SecondaryButtonStyle: ButtonStyle {
     }
 }
 
+/// A square parchment button with an icon, for secondary actions beside a primary one (the
+/// report's bar). The label must be a `Label`, so VoiceOver and UI tests read its title.
+struct IconButtonStyle: ButtonStyle {
+    /// Wide: shares the row's width (the stacked bar at large text sizes) instead of a square.
+    var wide = false
+    @ScaledMetric(relativeTo: .title3) private var scaledSide: CGFloat = 60
+    /// Grows with the text a little, then stops: a bigger icon adds nothing to recognise it.
+    private var side: CGFloat { min(scaledSide, 76) }
+
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .labelStyle(.iconOnly)
+            .font(.system(size: side * 0.36, weight: .semibold))
+            .foregroundStyle(Color.tinta)
+            .frame(width: wide ? nil : side, height: side)
+            .frame(maxWidth: wide ? .infinity : nil)
+            .background(configuration.isPressed ? Color.papelOscuro : Color.papel, in: RoundedRectangle(cornerRadius: 8))
+            .overlay(RoundedRectangle(cornerRadius: 8).strokeBorder(Color.tinta, lineWidth: 2))
+            .contentShape(RoundedRectangle(cornerRadius: 8))
+            .offset(y: configuration.isPressed ? 1 : 0)
+            .accessibilityShowsLargeContentViewer()
+    }
+}
+
 private struct AppButtonBody: View {
     let configuration: ButtonStyle.Configuration
     let large: Bool
