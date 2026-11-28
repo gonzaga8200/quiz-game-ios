@@ -7,6 +7,7 @@ nonisolated private let bundledFonts = [
     "PlayfairDisplay-Bold", "PlayfairDisplay-ExtraBold", "PlayfairDisplay-BoldItalic", "PlayfairDisplay-ExtraBoldItalic",
     "AtkinsonHyperlegibleNext-Regular", "AtkinsonHyperlegibleNext-Bold",
     "AtkinsonHyperlegibleNext-Italic", "AtkinsonHyperlegibleNext-BoldItalic",
+    "NewsreaderDisplay-SemiBold",
 ]
 
 struct FontTests {
@@ -23,5 +24,10 @@ struct FontTests {
         #expect(AppTypeface.display(weight: .bold, italic: false) == "PlayfairDisplay-Bold")
         #expect(AppTypeface.reading(weight: .regular, italic: false) == "AtkinsonHyperlegibleNext-Regular")
         #expect(AppTypeface.reading(weight: .bold, italic: true) == "AtkinsonHyperlegibleNext-BoldItalic")
+    }
+
+    /// The question face: Playfair's italic capital Q reads as a "2" ("¿Qué…" looked like "¿2ué…").
+    @Test func questionsUseNewsreaderDisplay() {
+        #expect(AppTypeface.question == "NewsreaderDisplay-SemiBold")
     }
 }

@@ -1,8 +1,13 @@
 import SwiftUI
 
-/// The two typefaces of the web, bundled (OFL): Playfair Display for titles and numbers, Atkinson
-/// Hyperlegible Next for reading. Both scale with Dynamic Type through `relativeTo:`.
+/// The bundled typefaces (OFL), all scaling with Dynamic Type through `relativeTo:`: the web's
+/// Playfair Display for titles and numbers and Atkinson Hyperlegible Next for reading, plus
+/// Newsreader Display for the question on the card.
 nonisolated enum AppTypeface {
+    /// Newsreader at its display optical size (72) and weight 600, cut to a static font. It
+    /// replaces Playfair's italic on the card, whose capital Q reads as a "2".
+    static let question = "NewsreaderDisplay-SemiBold"
+
     static func display(weight: Font.Weight, italic: Bool) -> String {
         let heavy = weight == .heavy || weight == .black
         switch (heavy, italic) {
@@ -55,5 +60,11 @@ extension Font {
     /// Body text, buttons and labels (Atkinson Hyperlegible Next).
     static func reading(_ style: Font.TextStyle, weight: Font.Weight = .regular, italic: Bool = false) -> Font {
         .custom(AppTypeface.reading(weight: weight, italic: italic), size: AppTypeface.baseSize(style), relativeTo: style)
+    }
+
+    /// The question on the card (Newsreader Display). Its x-height is smaller than Playfair's, so
+    /// it is set a little larger than the style's default to read at the same size.
+    static func question(_ style: Font.TextStyle) -> Font {
+        .custom(AppTypeface.question, size: AppTypeface.baseSize(style) * 1.14, relativeTo: style)
     }
 }

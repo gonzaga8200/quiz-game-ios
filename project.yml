@@ -65,6 +65,7 @@ targets:
           - AtkinsonHyperlegibleNext-Bold.ttf
           - AtkinsonHyperlegibleNext-Italic.ttf
           - AtkinsonHyperlegibleNext-BoldItalic.ttf
+          - NewsreaderDisplay-SemiBold.ttf
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
         UILaunchScreen:
