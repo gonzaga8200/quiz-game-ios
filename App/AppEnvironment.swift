@@ -140,5 +140,6 @@ final class UnavailableAuthService: AuthService {
 
 /// No sound in UI tests.
 final class SilentOutput: SoundOutput {
+    func prepare(sampleRate: Double) {}
     func play(_ sound: SoundName, samples: [Float], sampleRate: Double) {}
 }

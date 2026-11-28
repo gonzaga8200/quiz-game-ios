@@ -21,26 +21,34 @@ final class PlayCoordinator {
     @ObservationIgnored private unowned let env: AppEnvironment
     @ObservationIgnored private var questions: [Question] = []
     @ObservationIgnored private var lastReport: GameReport?
+    /// Changes with every game, retry and close: a load or a save that ends after it belongs to a
+    /// game the player has left, and is ignored.
+    @ObservationIgnored private var generation = 0
 
     init(env: AppEnvironment) {
         self.env = env
     }
 
     func play(_ setup: GameSetup) {
+        generation += 1
         self.setup = setup
         submission = nil
         lastReport = nil
         phase = .loading
-        Task { await load() }
+        let game = generation
+        Task { await load(for: game) }
     }
 
     func retry() {
+        generation += 1
         phase = .loading
-        Task { await load() }
+        let game = generation
+        Task { await load(for: game) }
     }
 
     /// "Jugar de nuevo": a fresh game with the questions already loaded.
     func playAgain() {
+        generation += 1
         submission = nil
         lastReport = nil
         startGame()
@@ -48,6 +56,7 @@ final class PlayCoordinator {
 
     /// Leaves the game or the report and goes back to the tabs.
     func close() {
+        generation += 1
         if case .playing(let session) = phase { session.leave() }
         setup = nil
         submission = nil
@@ -72,12 +81,18 @@ final class PlayCoordinator {
         }
         submission = .saving
         let player = RankingPlayer(uid: user.uid, displayName: user.displayName, photoURL: user.photoURL?.absoluteString)
+        let game = generation
         Task {
+            let state: SubmissionState
             do {
-                submission = .done(try await ranking.submit(player: player, report: report))
+                state = .done(try await ranking.submit(player: player, report: report))
+            } catch RankingError.invalidScore {
+                state = .rejected
             } catch {
-                submission = .error
+                state = .error
             }
+            guard game == generation else { return } // the player has moved on to another game
+            submission = state
         }
     }
 
@@ -85,9 +100,9 @@ final class PlayCoordinator {
         if case .playing(let session) = phase { session.appDidEnterBackground() }
     }
 
-    private func load() async {
+    private func load(for game: Int) async {
         let loaded = await env.questionBank.load().questions
-        guard setup != nil else { return }
+        guard game == generation, setup != nil else { return } // closed, retried or replaced meanwhile
         guard !loaded.isEmpty else {
             phase = .failed
             return
@@ -123,10 +138,12 @@ final class PlayCoordinator {
         )
         phase = .playing(session)
         env.analytics.track(.gameStart(setup))
+        player.prepare() // the audio starts now, not at the first answer
         session.start()
     }
 
-    private func finish(_ report: GameReport) {
+    /// The session calls this when the game ends (internal for tests).
+    func finish(_ report: GameReport) {
         guard let setup else { return }
         env.analytics.track(.gameEnd(setup, report))
         phase = .finished(report)
