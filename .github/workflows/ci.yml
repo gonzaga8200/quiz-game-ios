@@ -25,8 +25,14 @@ jobs:
           echo "Using $XCODE"
           echo "DEVELOPER_DIR=$XCODE/Contents/Developer" >> "$GITHUB_ENV"
 
+      # The exact version that generated the committed project (Homebrew's can lag or lead, and
+      # each version writes the project slightly differently).
       - name: Install XcodeGen
-        run: brew install xcodegen
+        run: |
+          version=$(cat .xcodegen-version)
+          curl -sSfL "https://github.com/yonaskolb/XcodeGen/releases/download/$version/xcodegen.zip" -o "$RUNNER_TEMP/xcodegen.zip"
+          unzip -q "$RUNNER_TEMP/xcodegen.zip" -d "$RUNNER_TEMP/xcodegen"
+          echo "$RUNNER_TEMP/xcodegen/xcodegen/bin" >> "$GITHUB_PATH"
 
       - name: Generated project is up to date
         run: scripts/generate.sh && git diff --exit-code -- Contrarreloj.xcodeproj App/Resources/Info.plist

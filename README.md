@@ -11,9 +11,10 @@ Swift 6 and SwiftUI only: no web views, no cross-platform frameworks. Design:
 ## Requirements
 
 - Xcode 26 or newer (iOS 26 SDK); the app runs on iOS 17 and later, iPhone and iPad.
-- [XcodeGen](https://github.com/yonaskolb/XcodeGen) (`brew install xcodegen`) to regenerate the
-  project after editing `project.yml` or adding files. The generated `Contrarreloj.xcodeproj` is
-  committed (CI checks it is up to date).
+- [XcodeGen](https://github.com/yonaskolb/XcodeGen) **2.49.0**, the version in `.xcodegen-version`
+  (`brew install xcodegen`, or its GitHub release), to regenerate the project after editing
+  `project.yml` or adding files. The generated `Contrarreloj.xcodeproj` is committed, and CI checks
+  it is up to date with that same version.
 - Only for the parity fixtures and emulator tests: a checkout of the web repository next to this
   one (`../quiz-game`, with `npm install`), the Firebase CLI and Java 21.
 
