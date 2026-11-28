@@ -9,9 +9,9 @@ comprobado. Al final está lo que no se ha podido verificar y por qué.
 | Comprobación | Resultado | Cómo repetirla |
 |---|---|---|
 | Núcleo del juego (`ContrarrelojCore`) con fixtures generados por el `core/` TypeScript de la web | 39 de 39 | `scripts/test-core.sh` (fixtures: `Tools/parity/run.sh`) |
-| Tests unitarios de la app | 109 pasan; 2 omitidos (los de verificación manual: icono y producción) | `scripts/test-app.sh` |
-| Tests de interfaz en iPhone 17 Pro (iOS 26.5) | 39 pasan; 5 omitidos (2 solo de iPad, 3 de verificación manual) | `scripts/test-ui.sh iphone` |
-| Tests de interfaz en iPad Pro 13" M5 (iOS 26.5) | 41 pasan; 3 omitidos (los de verificación manual) | `scripts/test-ui.sh ipad` |
+| Tests unitarios de la app | 116 pasan; 2 omitidos (los de verificación manual: icono y producción) | `scripts/test-app.sh` |
+| Tests de interfaz en iPhone 17 Pro (iOS 26.5) | 40 pasan; 5 omitidos (2 solo de iPad, 3 de verificación manual) | `scripts/test-ui.sh iphone` |
+| Tests de interfaz en iPad Pro 13" M5 (iOS 26.5) | 42 pasan; 3 omitidos (los de verificación manual) | `scripts/test-ui.sh ipad` |
 | Integración con los emuladores de Firebase y las reglas reales de la web | 5 de 5 | `scripts/test-integration.sh` |
 | La web muestra en su ranking lo que escribió la app | Sí (captura abajo) | `scripts/cross-check-web.sh` |
 | Banco de preguntas de producción (solo lectura), app frente a SDK web | Idénticos | ver «Producción» |
@@ -112,6 +112,21 @@ el texto más grande (AX5). Revisarlas sirvió para corregir cuatro cosas:
 - con el texto AX5, el marcador y las etiquetas partían palabras;
 - en modo oscuro no se leían los títulos de sección de Ajustes;
 - el botón «Entrar» de Ajustes tenía poco contraste.
+
+## Revisión final
+
+Un revisor sin contexto previo revisó toda la rama. No encontró nada crítico y sí cuatro problemas
+importantes, ya corregidos, cada uno con un test que falló antes del arreglo:
+
+- Los tiempos límite de 6 s y 10 s no se cumplían con Firebase, porque sus llamadas ignoran la
+  cancelación.
+- Borrar la cuenta sin conexión se quedaba esperando para siempre.
+- El correo de «Reportar esta pregunta» se abría sobre la hoja que se estaba cerrando y no se
+  habría mostrado.
+- Categorías mostraba «0 preguntas» mientras cargaba.
+
+También se evita descargar el banco dos veces a la vez. Las mejoras menores quedan anotadas para
+más adelante.
 
 ## No verificado
 
