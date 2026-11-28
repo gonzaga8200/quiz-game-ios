@@ -5,7 +5,7 @@ import SwiftUI
 struct CategoriesScreen: View {
     @Environment(AppEnvironment.self) private var env
     /// nil while the bank loads (it can be a full download on first launch).
-    @State private var questions: [Question]?
+    @State private var catalog: CategoryCatalog?
 
     var body: some View {
         NavigationStack {
@@ -21,20 +21,19 @@ struct CategoriesScreen: View {
                     Button("Jugar con todas las categorías") { env.play.play(.arcade()) }
                         .buttonStyle(PrimaryButtonStyle(large: true))
                         .accessibilityIdentifier("categories.playAll")
-                    if questions == nil {
+                    if catalog == nil {
                         ProgressView { Text("Cargando preguntas…") }
                             .frame(maxWidth: .infinity)
-                    } else if questions?.isEmpty == true {
+                    } else if catalog?.isEmpty == true {
                         VStack(alignment: .leading, spacing: 10) {
                             Text("No se han podido cargar las preguntas.").font(.reading(.body, weight: .bold))
                             Button("Reintentar") { Task { await load() } }.buttonStyle(SecondaryButtonStyle())
                         }
                     }
-                    let counts = questions.map(countActiveByCategory)
                     LazyVGrid(columns: [GridItem(.adaptive(minimum: 300), spacing: 14)], spacing: 14) {
                         ForEach(QuizCategory.allCases, id: \.self) { category in
                             NavigationLink(value: category) {
-                                CategoryCard(category: category, count: counts.map { $0[category] ?? 0 })
+                                CategoryCard(category: category, count: catalog.map { $0.counts[category] ?? 0 })
                             }
                             .buttonStyle(PressableStyle())
                             .accessibilityIdentifier("categories.card.\(category.urlSlug)")
@@ -49,7 +48,7 @@ struct CategoriesScreen: View {
             .background(Color.ground.ignoresSafeArea())
             .toolbar(.hidden, for: .navigationBar)
             .navigationDestination(for: QuizCategory.self) { category in
-                CategoryDetailScreen(category: category, questions: questions)
+                CategoryDetailScreen(category: category, catalog: catalog)
             }
             .task { await load() }
         }
@@ -58,8 +57,9 @@ struct CategoriesScreen: View {
 
 extension CategoriesScreen {
     private func load() async {
-        questions = nil
-        questions = await env.questionBank.load().questions
+        catalog = nil
+        let questions = await env.questionBank.load().questions
+        catalog = await Task.detached(priority: .userInitiated) { CategoryCatalog(questions: questions) }.value
     }
 }
 
