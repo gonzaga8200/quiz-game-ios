@@ -109,7 +109,8 @@ final class AppEnvironment {
         let auth: any AuthService
         if available {
             let fake = FakeAuthService(user: options.fakeUser.map { AuthUser(uid: "me", displayName: "Yo", photoURL: nil, provider: $0) })
-            if options.slowSignIn { fake.signInDelay = .seconds(5) }
+            // Longer than any test step, even on a slow CI runner: the sign-in stays under way.
+            if options.slowSignIn { fake.signInDelay = .seconds(60) }
             auth = fake
         } else {
             auth = UnavailableAuthService()
