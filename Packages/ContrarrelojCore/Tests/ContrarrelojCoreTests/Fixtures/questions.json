@@ -1,0 +1,2462 @@
+{
+ "generatedFrom": "47a0607d519f48bb39eb7590a5c8326a930ca5f9",
+ "questions": [
+  {
+   "id": "arte-amaba-don-quijote",
+   "text": "¿A quién amaba Don Quijote?",
+   "options": [
+    "Celestina",
+    "Dulcinea",
+    "Penélope",
+    "Melibea"
+   ],
+   "correctIndex": 1,
+   "category": "Arte y Literatura",
+   "difficulty": "muy fácil",
+   "explanation": "Dulcinea del Toboso es la dama a quien Don Quijote dedica sus hazañas, aunque solo existe en su imaginación. Todo caballero andante debía tener una dama a quien servir.",
+   "source": "siglo_de_oro_de_la_literatura_espanola.json",
+   "createdAt": "2026-11-21T16:26:21Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-animal-platero-platero-yo",
+   "text": "¿Qué animal es Platero en «Platero y yo»?",
+   "options": [
+    "Un caballo",
+    "Un burro",
+    "Un gato",
+    "Un perro"
+   ],
+   "correctIndex": 1,
+   "category": "Arte y Literatura",
+   "difficulty": "muy fácil",
+   "explanation": "Platero es un burrito pequeño y tierno, compañero del narrador en el libro de Juan Ramón Jiménez ambientado en Moguer, publicado completo en 1917.",
+   "source": "generacion_del_98_y_generacion_del_27.json",
+   "createdAt": "2026-11-24T12:32:38Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-campos-castilla-antonio-machado",
+   "text": "¿Qué es «Campos de Castilla», de Antonio Machado?",
+   "options": [
+    "Un libro de poemas",
+    "Una canción",
+    "Una película",
+    "Un cuadro"
+   ],
+   "correctIndex": 0,
+   "category": "Arte y Literatura",
+   "difficulty": "muy fácil",
+   "explanation": "Campos de Castilla (1912) es un libro de poemas de Antonio Machado que retrata los paisajes y la gente de Soria y de Castilla.",
+   "source": "generacion_del_98_y_generacion_del_27.json",
+   "createdAt": "2026-11-24T12:32:38Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-ciudad-esta-museo-prado",
+   "text": "¿En qué ciudad está el Museo del Prado?",
+   "options": [
+    "Madrid",
+    "Valencia",
+    "Bilbao",
+    "Sevilla"
+   ],
+   "correctIndex": 0,
+   "category": "Arte y Literatura",
+   "difficulty": "muy fácil",
+   "explanation": "El Museo del Prado está en Madrid, en el Paseo del Prado. Guarda obras de Velázquez, Goya, El Greco, Murillo y muchos otros grandes maestros.",
+   "source": "pintores_impresionistas_espanoles_y_realistas.json",
+   "createdAt": "2026-11-23T13:52:36Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-buscaban-captar-impresionistas",
+   "text": "¿Qué buscaban captar los impresionistas?",
+   "options": [
+    "Los milagros",
+    "Las batallas",
+    "La luz del momento",
+    "El dolor humano"
+   ],
+   "correctIndex": 2,
+   "category": "Arte y Literatura",
+   "difficulty": "fácil",
+   "explanation": "Los impresionistas querían reflejar la impresión fugaz de la luz y el color en un momento concreto, más que detallar con precisión los objetos.",
+   "source": "pintores_impresionistas_espanoles_y_realistas.json",
+   "createdAt": "2026-11-23T13:52:36Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-ciudad-era-sorolla",
+   "text": "¿De qué ciudad era Sorolla?",
+   "options": [
+    "Sevilla",
+    "Málaga",
+    "Valencia",
+    "Bilbao"
+   ],
+   "correctIndex": 2,
+   "category": "Arte y Literatura",
+   "difficulty": "fácil",
+   "explanation": "Joaquín Sorolla nació en Valencia el 27 de febrero de 1863. Quedó huérfano de niño y se formó en la Escuela de Bellas Artes de San Carlos.",
+   "source": "pintores_impresionistas_espanoles_y_realistas.json",
+   "createdAt": "2026-11-23T13:52:36Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-ciudad-era-velazquez",
+   "text": "¿De qué ciudad era Velázquez?",
+   "options": [
+    "Toledo",
+    "Madrid",
+    "Sevilla",
+    "Granada"
+   ],
+   "correctIndex": 2,
+   "category": "Arte y Literatura",
+   "difficulty": "fácil",
+   "explanation": "Diego Rodríguez de Silva y Velázquez nació en Sevilla en 1599. Allí se formó con Francisco Pacheco antes de marchar a Madrid, a la corte.",
+   "source": "pintores_impresionistas_espanoles_y_realistas.json",
+   "createdAt": "2026-11-23T13:52:36Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-ciudad-estaba-residencia-estudiantes",
+   "text": "¿En qué ciudad estaba la Residencia de Estudiantes?",
+   "options": [
+    "Sevilla",
+    "Salamanca",
+    "Barcelona",
+    "Madrid"
+   ],
+   "correctIndex": 3,
+   "category": "Arte y Literatura",
+   "difficulty": "fácil",
+   "explanation": "La Residencia de Estudiantes, creada en 1910 en Madrid, reunió a jóvenes como Lorca, Dalí y Buñuel, y fue un foco cultural clave de la Edad de Plata.",
+   "source": "generacion_del_98_y_generacion_del_27.json",
+   "createdAt": "2026-11-24T12:32:38Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-acaba-capitan-deshonra-hija",
+   "text": "¿Cómo acaba el capitán que deshonra a la hija del alcalde?",
+   "options": [
+    "Desterrado a Flandes",
+    "Ejecutado por el alcalde",
+    "Casado con ella",
+    "Perdonado por el rey"
+   ],
+   "correctIndex": 1,
+   "category": "Arte y Literatura",
+   "difficulty": "medio",
+   "explanation": "Don Álvaro de Ataide se niega a casarse con Isabel tras violarla; entonces Pedro Crespo lo hace apresar y ejecutar por garrote. El rey aprueba la sentencia.",
+   "source": "siglo_de_oro_de_la_literatura_espanola.json",
+   "createdAt": "2026-11-21T16:26:21Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-alcalde-zalamea",
+   "text": "¿Quién es el alcalde de Zalamea?",
+   "options": [
+    "Pedro Mendo",
+    "Lope de Figueroa",
+    "Juan Crespo",
+    "Pedro Crespo"
+   ],
+   "correctIndex": 3,
+   "category": "Arte y Literatura",
+   "difficulty": "medio",
+   "explanation": "Pedro Crespo es un rico labrador, hombre de honor, elegido alcalde. Defiende la dignidad de los villanos frente a la arrogancia de los militares que se alojan en su casa.",
+   "source": "siglo_de_oro_de_la_literatura_espanola.json",
+   "createdAt": "2026-11-21T16:26:21Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-amantes-protagonizan-celestina",
+   "text": "¿Qué amantes protagonizan «La Celestina»?",
+   "options": [
+    "Pármeno y Areúsa",
+    "Pleberio y Alisa",
+    "Calisto y Melibea",
+    "Sempronio y Elicia"
+   ],
+   "correctIndex": 2,
+   "category": "Arte y Literatura",
+   "difficulty": "medio",
+   "explanation": "Calisto, joven noble, se enamora de Melibea y contrata a la alcahueta Celestina para conquistarla. El amor lleva a los dos a la muerte en un final trágico.",
+   "source": "siglo_de_oro_de_la_literatura_espanola.json",
+   "createdAt": "2026-11-21T16:26:21Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-amo-lazarillo-pasa-hambre",
+   "text": "¿Qué amo de Lazarillo pasa hambre y presume de hidalgo?",
+   "options": [
+    "El escudero",
+    "El ciego",
+    "El buldero",
+    "El clérigo"
+   ],
+   "correctIndex": 0,
+   "category": "Arte y Literatura",
+   "difficulty": "medio",
+   "explanation": "El escudero es un hidalgo pobre que oculta su miseria tras una apariencia de honra. Lazarillo mendiga para ambos, en una de las críticas más finas del libro a la vanidad del honor.",
+   "source": "siglo_de_oro_de_la_literatura_espanola.json",
+   "createdAt": "2026-11-21T16:26:21Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-ano-exilio-goya-francia",
+   "text": "¿En qué año se exilió Goya a Francia?",
+   "options": [
+    "1824",
+    "1814",
+    "1820",
+    "1828"
+   ],
+   "correctIndex": 0,
+   "category": "Arte y Literatura",
+   "difficulty": "difícil",
+   "explanation": "Goya dejó España en 1824, tras el regreso del absolutismo de Fernando VII. Se instaló en Burdeos y murió allí en 1828.",
+   "source": "pintores_impresionistas_espanoles_y_realistas.json",
+   "createdAt": "2026-11-23T13:52:36Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-ano-imprimio-burlador-sevilla",
+   "text": "¿En qué año se imprimió «El burlador de Sevilla»?",
+   "options": [
+    "1670",
+    "1605",
+    "1630",
+    "1650"
+   ],
+   "correctIndex": 2,
+   "category": "Arte y Literatura",
+   "difficulty": "difícil",
+   "explanation": "La obra se imprimió por primera vez en 1630, en una colección de comedias publicada en Barcelona. Se atribuyó a Tirso de Molina, aunque hoy se discute su autoría.",
+   "source": "siglo_de_oro_de_la_literatura_espanola.json",
+   "createdAt": "2026-11-21T16:26:21Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-ano-murio-ramon-valle",
+   "text": "¿En qué año murió Ramón del Valle-Inclán?",
+   "options": [
+    "1939",
+    "1931",
+    "1936",
+    "1925"
+   ],
+   "correctIndex": 2,
+   "category": "Arte y Literatura",
+   "difficulty": "difícil",
+   "explanation": "Valle-Inclán murió en Santiago de Compostela el 5 de enero de 1936, meses antes de que empezara la Guerra Civil.",
+   "source": "generacion_del_98_y_generacion_del_27.json",
+   "createdAt": "2026-11-24T12:32:38Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-ano-publico-persiles",
+   "text": "¿En qué año se publicó el «Persiles»?",
+   "options": [
+    "1617",
+    "1605",
+    "1626",
+    "1613"
+   ],
+   "correctIndex": 0,
+   "category": "Arte y Literatura",
+   "difficulty": "difícil",
+   "explanation": "Cervantes terminó «Los trabajos de Persiles y Sigismunda» días antes de morir. Se publicó póstumamente en 1617, un año después de su muerte, y es una novela bizantina de aventuras y viajes.",
+   "source": "siglo_de_oro_de_la_literatura_espanola.json",
+   "createdAt": "2026-11-21T16:26:21Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-ano-aparecio-tercera-parte",
+   "text": "¿En qué año apareció la tercera parte del «Criticón»?",
+   "options": [
+    "1651",
+    "1657",
+    "1653",
+    "1648"
+   ],
+   "correctIndex": 1,
+   "category": "Arte y Literatura",
+   "difficulty": "muy difícil",
+   "explanation": "Gracián publicó las tres partes de esta novela alegórica en 1651, 1653 y 1657. Narra el viaje de Critilo y Andrenio por las edades de la vida.",
+   "source": "siglo_de_oro_de_la_literatura_espanola.json",
+   "createdAt": "2026-11-21T16:26:21Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-ano-nacio-pintora-isabel",
+   "text": "¿En qué año nació la pintora Isabel Quintanilla?",
+   "options": [
+    "1942",
+    "1938",
+    "1933",
+    "1930"
+   ],
+   "correctIndex": 1,
+   "category": "Arte y Literatura",
+   "difficulty": "muy difícil",
+   "explanation": "Isabel Quintanilla nació en Madrid en 1938 y estudió Bellas Artes en San Fernando, donde conoció a Antonio López y a Francisco López Hernández.",
+   "source": "pintores_impresionistas_espanoles_y_realistas.json",
+   "createdAt": "2026-11-23T13:52:36Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-ano-publicaron-suenos-quevedo",
+   "text": "¿En qué año se publicaron «Los sueños» de Quevedo?",
+   "options": [
+    "1605",
+    "1617",
+    "1627",
+    "1645"
+   ],
+   "correctIndex": 2,
+   "category": "Arte y Literatura",
+   "difficulty": "muy difícil",
+   "explanation": "Escritos entre 1606 y 1622, los «Sueños» se imprimieron en 1627. Son visiones satíricas del infierno y del juicio final con las que Quevedo censura vicios y oficios.",
+   "source": "siglo_de_oro_de_la_literatura_espanola.json",
+   "createdAt": "2026-11-21T16:26:21Z",
+   "status": "active"
+  },
+  {
+   "id": "arte-ano-publico-agudeza-arte",
+   "text": "¿En qué año se publicó «Agudeza y arte de ingenio»?",
+   "options": [
+    "1651",
+    "1646",
+    "1637",
+    "1648"
+   ],
+   "correctIndex": 3,
+   "category": "Arte y Literatura",
+   "difficulty": "muy difícil",
+   "explanation": "Gracián publicó este tratado de retórica barroca en 1648. Es la gran teoría del conceptismo: analiza la agudeza y el ingenio con ejemplos de poetas antiguos y modernos.",
+   "source": "siglo_de_oro_de_la_literatura_espanola.json",
+   "createdAt": "2026-11-21T16:26:21Z",
+   "status": "active"
+  },
+  {
+   "id": "hist-acuerdo-detuvo-combates-noviembre",
+   "text": "¿Qué acuerdo detuvo los combates en noviembre de 1918?",
+   "options": [
+    "Armisticio",
+    "Tratado de Roma",
+    "Carta Magna",
+    "Pacto de Varsovia"
+   ],
+   "correctIndex": 0,
+   "category": "Historia y Geografía",
+   "difficulty": "muy fácil",
+   "explanation": "El armisticio, firmado en un vagón de tren en Compiègne, detuvo los combates el 11 de noviembre de 1918. No fue la paz definitiva, que llegó meses después con el Tratado de Versalles.",
+   "source": "primera_guerra_mundial.json",
+   "createdAt": "2026-11-23T13:52:36Z",
+   "status": "active"
+  },
+  {
+   "id": "hist-ano-empezo-primera-guerra",
+   "text": "¿En qué año empezó la Primera Guerra Mundial?",
+   "options": [
+    "1939",
+    "1918",
+    "1914",
+    "1905"
+   ],
+   "correctIndex": 2,
+   "category": "Historia y Geografía",
+   "difficulty": "muy fácil",
+   "explanation": "La Primera Guerra Mundial empezó en 1914, después del asesinato del archiduque Francisco Fernando en Sarajevo. El 28 de julio de ese año Austria-Hungría declaró la guerra a Serbia.",
+   "source": "primera_guerra_mundial.json",
+   "createdAt": "2026-11-23T13:52:36Z",
+   "status": "active"
+  },
+  {
+   "id": "hist-ano-termino-primera-guerra",
+   "text": "¿En qué año terminó la Primera Guerra Mundial?",
+   "options": [
+    "1945",
+    "1916",
+    "1918",
+    "1919"
+   ],
+   "correctIndex": 2,
+   "category": "Historia y Geografía",
+   "difficulty": "muy fácil",
+   "explanation": "Los combates de la Primera Guerra Mundial terminaron en 1918, el 11 de noviembre, cuando entró en vigor el armisticio. La paz con Alemania se firmó después, en 1919, en Versalles.",
+   "source": "primera_guerra_mundial.json",
+   "createdAt": "2026-11-23T13:52:36Z",
+   "status": "active"
+  },
+  {
+   "id": "hist-anos-duro-aproximadamente-guerra",
+   "text": "¿Cuántos años duró aproximadamente la guerra?",
+   "options": [
+    "Cien años",
+    "Diez años",
+    "Cuatro años",
+    "Un año"
+   ],
+   "correctIndex": 2,
+   "category": "Historia y Geografía",
+   "difficulty": "muy fácil",
+   "explanation": "La guerra duró algo más de cuatro años, desde el 28 de julio de 1914 hasta el 11 de noviembre de 1918. Todos pensaban que sería corta, pero acabó convirtiéndose en una guerra larga de desgaste.",
+   "source": "primera_guerra_mundial.json",
+   "createdAt": "2026-11-23T13:52:36Z",
+   "status": "active"
+  },
+  {
+   "id": "geo-peninsula-nacimiento-islam",
+   "text": "¿En qué península nació el islam?",
+   "options": [
+    "Balcánica",
+    "Ibérica",
+    "Arábiga",
+    "Itálica"
+   ],
+   "correctIndex": 2,
+   "category": "Historia y Geografía",
+   "difficulty": "fácil",
+   "explanation": "El islam nació en la península arábiga, un territorio casi desértico entre el mar Rojo y el golfo Pérsico.",
+   "source": "islam-libro-1.jpeg",
+   "createdAt": "2026-11-16T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "hist-animal-llevaba-mensajes-frente",
+   "text": "¿Qué animal llevaba mensajes en el frente?",
+   "options": [
+    "Cuervo",
+    "Paloma",
+    "Búho",
+    "Gaviota"
+   ],
+   "correctIndex": 1,
+   "category": "Historia y Geografía",
+   "difficulty": "fácil",
+   "explanation": "Las palomas mensajeras llevaban mensajes entre las trincheras y los mandos, cuando fallaban las comunicaciones por cable o por radio. También se usaron perros y caballos para otros servicios.",
+   "source": "primera_guerra_mundial.json",
+   "createdAt": "2026-11-23T13:52:36Z",
+   "status": "active"
+  },
+  {
+   "id": "hist-ano-acabo-guerra-civil",
+   "text": "¿En qué año acabó la Guerra Civil española?",
+   "options": [
+    "1945",
+    "1936",
+    "1931",
+    "1939"
+   ],
+   "correctIndex": 3,
+   "category": "Historia y Geografía",
+   "difficulty": "fácil",
+   "explanation": "El último parte de guerra es del 1 de abril de 1939.",
+   "source": "historia_de_espana_del_siglo_xx.json",
+   "createdAt": "2026-11-21T16:01:09Z",
+   "status": "active"
+  },
+  {
+   "id": "hist-ano-aprobo-constitucion-actual",
+   "text": "¿En qué año se aprobó la Constitución actual?",
+   "options": [
+    "1978",
+    "1992",
+    "1931",
+    "1975"
+   ],
+   "correctIndex": 0,
+   "category": "Historia y Geografía",
+   "difficulty": "fácil",
+   "explanation": "Se aprobó en referéndum el 6 de diciembre de 1978.",
+   "source": "historia_de_espana_del_siglo_xx.json",
+   "createdAt": "2026-11-21T16:01:09Z",
+   "status": "active"
+  },
+  {
+   "id": "geo-capital-australia",
+   "text": "¿Cuál es la capital de Australia?",
+   "options": [
+    "Sídney",
+    "Melbourne",
+    "Brisbane",
+    "Canberra"
+   ],
+   "correctIndex": 3,
+   "category": "Historia y Geografía",
+   "difficulty": "medio",
+   "explanation": "Canberra es la capital; Sídney y Melbourne son más grandes, pero no lo son.",
+   "createdAt": "2026-11-16T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "hist-abrio-expo-sevilla",
+   "text": "¿Cuándo abrió la Expo de Sevilla?",
+   "options": [
+    "25 de julio de 1992",
+    "20 de abril de 1992",
+    "12 de octubre de 1992",
+    "1 de enero de 1986"
+   ],
+   "correctIndex": 1,
+   "category": "Historia y Geografía",
+   "difficulty": "medio",
+   "explanation": "La Exposición Universal duró seis meses.",
+   "source": "historia_de_espana_del_siglo_xx.json",
+   "createdAt": "2026-11-21T16:01:09Z",
+   "status": "active"
+  },
+  {
+   "id": "hist-acorazado-aleman-hundio-royal",
+   "text": "¿Qué acorazado alemán hundió la Royal Navy en 1941?",
+   "options": [
+    "Bismarck",
+    "Graf Spee",
+    "Scharnhorst",
+    "Tirpitz"
+   ],
+   "correctIndex": 0,
+   "category": "Historia y Geografía",
+   "difficulty": "medio",
+   "explanation": "El Bismarck, el mayor acorazado alemán de su momento, fue hundido el 27 de mayo de 1941 tras una persecución de la Marina Real británica, después de destruir al crucero Hood.",
+   "source": "segunda_guerra_mundial.json",
+   "createdAt": "2026-11-22T01:10:27Z",
+   "status": "active"
+  },
+  {
+   "id": "hist-acorazado-revoluciono-marina-britanica",
+   "text": "¿Qué acorazado revolucionó la marina británica en 1906?",
+   "options": [
+    "HMS Warspite",
+    "HMS Dreadnought",
+    "HMS Hood",
+    "HMS Victory"
+   ],
+   "correctIndex": 1,
+   "category": "Historia y Geografía",
+   "difficulty": "medio",
+   "explanation": "El HMS Dreadnought, botado en 1906, montaba cañones de un solo calibre grande y era muy rápido. Dejó anticuados a los demás acorazados e inició una carrera naval entre Gran Bretaña y Alemania.",
+   "source": "primera_guerra_mundial.json",
+   "createdAt": "2026-11-23T13:52:36Z",
+   "status": "active"
+  },
+  {
+   "id": "geo-limite-oriental-califato-omeya",
+   "text": "¿Qué valle fluvial marcó el límite oriental del califato omeya?",
+   "options": [
+    "Valle del Ganges",
+    "Valle del Nilo",
+    "Valle del Indo",
+    "Valle del Éufrates"
+   ],
+   "correctIndex": 2,
+   "category": "Historia y Geografía",
+   "difficulty": "difícil",
+   "explanation": "En su máxima expansión, el califato omeya llegó desde el norte de África y la península ibérica, al oeste, hasta el Turkestán y el valle del Indo, al este.",
+   "source": "islam-libro-2.jpeg, p. 40",
+   "createdAt": "2026-11-16T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "hist-ano-batalla-poitiers",
+   "text": "¿En qué año derrotó Carlos Martel a los musulmanes en Poitiers?",
+   "options": [
+    "711",
+    "722",
+    "732",
+    "756"
+   ],
+   "correctIndex": 2,
+   "category": "Historia y Geografía",
+   "difficulty": "difícil",
+   "explanation": "Carlos Martel venció a los musulmanes en Poitiers en 732, una victoria que le dio un enorme prestigio.",
+   "source": "apuntes-5.jpeg",
+   "createdAt": "2026-11-16T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "hist-ano-cisma-oriente",
+   "text": "¿En qué año se produjo el cisma de Oriente?",
+   "options": [
+    "1054",
+    "1071",
+    "1095",
+    "1204"
+   ],
+   "correctIndex": 0,
+   "category": "Historia y Geografía",
+   "difficulty": "difícil",
+   "explanation": "El cisma de 1054 dividió la Iglesia entre la occidental (católica) y la oriental (ortodoxa); 1095 es el Concilio de Clermont y 1204 el saqueo de Constantinopla.",
+   "source": "apuntes-4.jpeg",
+   "createdAt": "2026-11-16T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "hist-ano-libro-tercera-batalla",
+   "text": "¿En qué año se libró la tercera batalla de Ypres?",
+   "options": [
+    "1917",
+    "1914",
+    "1915",
+    "1916"
+   ],
+   "correctIndex": 0,
+   "category": "Historia y Geografía",
+   "difficulty": "difícil",
+   "explanation": "La tercera batalla de Ypres, conocida como Passchendaele, se libró entre julio y noviembre de 1917. Se recuerda por el barro, las lluvias y el elevado número de bajas con escasas ganancias.",
+   "source": "primera_guerra_mundial.json",
+   "createdAt": "2026-11-23T13:52:36Z",
+   "status": "active"
+  },
+  {
+   "id": "geo-region-arabia-meca-yatrib-hiyaz",
+   "text": "¿Cómo se llama la región de Arabia donde están La Meca y Yatrib?",
+   "options": [
+    "Omán",
+    "Néyed",
+    "Yemen",
+    "Hiyaz"
+   ],
+   "correctIndex": 3,
+   "category": "Historia y Geografía",
+   "difficulty": "muy difícil",
+   "explanation": "El Hiyaz, transitado por caravanas, albergaba las ciudades comerciales de La Meca y Yatrib; Yemen, Néyed y Omán son otras regiones de la península.",
+   "source": "islam-libro-1.jpeg",
+   "createdAt": "2026-11-16T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "hist-acuerdo-1912-repartio-marruecos",
+   "text": "¿Qué acuerdo de 1912 repartió Marruecos?",
+   "options": [
+    "Tratado de Algeciras",
+    "Conferencia de Berlín",
+    "Tratado hispano-francés",
+    "Pacto de Tánger"
+   ],
+   "correctIndex": 2,
+   "category": "Historia y Geografía",
+   "difficulty": "muy difícil",
+   "explanation": "Estableció los protectorados francés y español.",
+   "source": "historia_de_espana_del_siglo_xx.json",
+   "createdAt": "2026-11-21T16:01:09Z",
+   "status": "active"
+  },
+  {
+   "id": "hist-almirante-aleman-vencio-britanicos",
+   "text": "¿Qué almirante alemán venció a los británicos en Coronel?",
+   "options": [
+    "Alfred von Tirpitz",
+    "Maximilian von Spee",
+    "Franz von Hipper",
+    "Reinhard Scheer"
+   ],
+   "correctIndex": 1,
+   "category": "Historia y Geografía",
+   "difficulty": "muy difícil",
+   "explanation": "El almirante Maximilian von Spee derrotó a una escuadra británica en Coronel, frente a Chile, el 1 de noviembre de 1914. Un mes después murió con la mayor parte de su flota en las islas Malvinas.",
+   "source": "primera_guerra_mundial.json",
+   "createdAt": "2026-11-23T13:52:36Z",
+   "status": "active"
+  },
+  {
+   "id": "hist-ano-fundo-fai",
+   "text": "¿En qué año se fundó la FAI?",
+   "options": [
+    "1910",
+    "1927",
+    "1931",
+    "1936"
+   ],
+   "correctIndex": 1,
+   "category": "Historia y Geografía",
+   "difficulty": "muy difícil",
+   "explanation": "La Federación Anarquista Ibérica nació en Valencia en 1927.",
+   "source": "historia_de_espana_del_siglo_xx.json",
+   "createdAt": "2026-11-21T16:01:09Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-aros-simbolo-olimpico",
+   "text": "¿Cuántos aros tiene el símbolo olímpico?",
+   "options": [
+    "Cinco",
+    "Cuatro",
+    "Seis",
+    "Siete"
+   ],
+   "correctIndex": 0,
+   "category": "Deportes",
+   "difficulty": "muy fácil",
+   "explanation": "El símbolo olímpico tiene cinco aros entrelazados, que representan los cinco continentes unidos por el deporte. Lo diseñó Pierre de Coubertin en 1913 y se usó por primera vez en los Juegos de 1920.",
+   "source": "historia_del_deporte_en_los_siglos_xx_y_xxi.json",
+   "createdAt": "2026-11-22T11:21:38Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-cada-anos-celebran-juegos",
+   "text": "¿Cada cuántos años se celebran los Juegos de verano?",
+   "options": [
+    "Cada dos años",
+    "Cada cinco años",
+    "Cada tres años",
+    "Cada cuatro años"
+   ],
+   "correctIndex": 3,
+   "category": "Deportes",
+   "difficulty": "muy fácil",
+   "explanation": "Los Juegos Olímpicos de verano se celebran cada cuatro años, un periodo llamado olimpiada, igual que en la Grecia antigua. Los de Tokio se aplazaron un año por la pandemia, pero siguieron llamándose Tokio 2020.",
+   "source": "historia_del_deporte_en_los_siglos_xx_y_xxi.json",
+   "createdAt": "2026-11-22T11:21:38Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-cada-anos-juega-mundial",
+   "text": "¿Cada cuántos años se juega el Mundial de fútbol?",
+   "options": [
+    "Cada cinco años",
+    "Cada dos años",
+    "Cada cuatro años",
+    "Cada tres años"
+   ],
+   "correctIndex": 2,
+   "category": "Deportes",
+   "difficulty": "muy fácil",
+   "explanation": "Tanto el Mundial masculino como el femenino se celebran cada cuatro años. El masculino empezó en 1930 y el femenino, en 1991.",
+   "source": "mundiales_de_futbol_masculinos_y_femeninos.json",
+   "createdAt": "2026-11-24T12:32:38Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-capitan-levanto-copa-argentina",
+   "text": "¿Qué capitán levantó la copa con Argentina en 2022?",
+   "options": [
+    "Ángel Di María",
+    "Lautaro Martínez",
+    "Lionel Messi",
+    "Julián Álvarez"
+   ],
+   "correctIndex": 2,
+   "category": "Deportes",
+   "difficulty": "muy fácil",
+   "explanation": "Messi capitaneó a Argentina en Catar 2022 y ganó el único gran título que le faltaba, tras vencer a Francia en los penaltis.",
+   "source": "mundiales_de_futbol_masculinos_y_femeninos.json",
+   "createdAt": "2026-11-24T12:32:38Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-anillos-bandera-olimpica",
+   "text": "¿Cuántos anillos tiene la bandera olímpica?",
+   "options": [
+    "Tres",
+    "Cuatro",
+    "Cinco",
+    "Seis"
+   ],
+   "correctIndex": 2,
+   "category": "Deportes",
+   "difficulty": "fácil",
+   "explanation": "Los cinco anillos entrelazados (azul, amarillo, negro, verde y rojo) representan las «cinco partes del mundo» unidas por el movimiento olímpico.",
+   "source": "Olimpiadas_Historia_Records_Atletas.pdf, p. 8",
+   "createdAt": "2026-11-20T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-ano-celebro-primer-tour",
+   "text": "¿En qué año se celebró el primer Tour de Francia?",
+   "options": [
+    "1896",
+    "1913",
+    "1903",
+    "1924"
+   ],
+   "correctIndex": 2,
+   "category": "Deportes",
+   "difficulty": "fácil",
+   "explanation": "El primer Tour de Francia se disputó en 1903, organizado por el periódico L'Auto para aumentar sus ventas. Lo ganó Maurice Garin en una carrera de seis etapas muy largas.",
+   "source": "historia_del_deporte_en_los_siglos_xx_y_xxi.json",
+   "createdAt": "2026-11-22T11:21:38Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-ano-disputaron-juegos-tokio",
+   "text": "¿En qué año se disputaron los Juegos de Tokio 2020?",
+   "options": [
+    "2019",
+    "2022",
+    "2020",
+    "2021"
+   ],
+   "correctIndex": 3,
+   "category": "Deportes",
+   "difficulty": "fácil",
+   "explanation": "Los Juegos de Tokio, previstos para 2020, se aplazaron un año por la pandemia de covid-19 y se celebraron en el verano de 2021, casi sin público, con el nombre oficial de Tokio 2020.",
+   "source": "historia_del_deporte_en_los_siglos_xx_y_xxi.json",
+   "createdAt": "2026-11-22T11:21:38Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-anoto-100-puntos-partido",
+   "text": "¿Quién anotó 100 puntos en un partido de la NBA en 1962?",
+   "options": [
+    "Kareem Abdul-Jabbar",
+    "Oscar Robertson",
+    "Wilt Chamberlain",
+    "Bill Russell"
+   ],
+   "correctIndex": 2,
+   "category": "Deportes",
+   "difficulty": "fácil",
+   "explanation": "Wilt Chamberlain anotó 100 puntos con los Philadelphia Warriors contra los Knicks en Hershey en 1962. Sigue siendo la mayor anotación individual de un partido de la historia de la NBA.",
+   "source": "historia_del_deporte_en_los_siglos_xx_y_xxi.json",
+   "createdAt": "2026-11-22T11:21:38Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-anfitrion-gano-mundial-1978",
+   "text": "¿Qué anfitrión ganó el Mundial de 1978?",
+   "options": [
+    "Argentina",
+    "Países Bajos",
+    "Italia",
+    "Brasil"
+   ],
+   "correctIndex": 0,
+   "category": "Deportes",
+   "difficulty": "medio",
+   "explanation": "Argentina ganó su primer Mundial como anfitriona, al vencer 3-1 a Países Bajos en la prórroga de la final de Buenos Aires.",
+   "source": "mundiales_de_futbol_masculinos_y_femeninos.json",
+   "createdAt": "2026-11-24T12:32:38Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-anillos-gano-bill-russell",
+   "text": "¿Cuántos anillos ganó Bill Russell con los Celtics?",
+   "options": [
+    "13",
+    "11",
+    "15",
+    "9"
+   ],
+   "correctIndex": 1,
+   "category": "Deportes",
+   "difficulty": "medio",
+   "explanation": "Bill Russell ganó 11 anillos de la NBA con los Boston Celtics entre 1957 y 1969, ocho de ellos consecutivos. Es el jugador con más títulos en la historia de la liga.",
+   "source": "historia_del_deporte_en_los_siglos_xx_y_xxi.json",
+   "createdAt": "2026-11-22T11:21:38Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-ano-celebro-primera-vuelta",
+   "text": "¿En qué año se celebró la primera Vuelta a España?",
+   "options": [
+    "1925",
+    "1935",
+    "1955",
+    "1945"
+   ],
+   "correctIndex": 1,
+   "category": "Deportes",
+   "difficulty": "medio",
+   "explanation": "La primera Vuelta a España se disputó en 1935 y la ganó el belga Gustaaf Deloor. La Guerra Civil y la Segunda Guerra Mundial interrumpieron la carrera durante varios años.",
+   "source": "historia_del_deporte_en_los_siglos_xx_y_xxi.json",
+   "createdAt": "2026-11-22T11:21:38Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-ano-empezo-era-open",
+   "text": "¿En qué año empezó la Era Open del tenis?",
+   "options": [
+    "1958",
+    "1970",
+    "1968",
+    "1975"
+   ],
+   "correctIndex": 2,
+   "category": "Deportes",
+   "difficulty": "medio",
+   "explanation": "La Era Open comenzó en 1968, cuando los torneos de Grand Slam admitieron por fin a jugadores profesionales junto a los aficionados. Hasta entonces el tenis profesional estaba separado.",
+   "source": "historia_del_deporte_en_los_siglos_xx_y_xxi.json",
+   "createdAt": "2026-11-22T11:21:38Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-anfitrion-perdio-final-1958",
+   "text": "¿Qué anfitrión perdió la final de 1958 ante Brasil?",
+   "options": [
+    "Gales",
+    "Suecia",
+    "Hungría",
+    "Francia"
+   ],
+   "correctIndex": 1,
+   "category": "Deportes",
+   "difficulty": "difícil",
+   "explanation": "Suecia perdió 5-2 ante Brasil en 1958. Es, junto con Brasil en 1950, uno de los dos anfitriones que han perdido una final.",
+   "source": "mundiales_de_futbol_masculinos_y_femeninos.json",
+   "createdAt": "2026-11-24T12:32:38Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-bolt-100m-berlin-2009",
+   "text": "¿Qué marca logró Bolt en los 100 m del Mundial de Berlín 2009?",
+   "options": [
+    "9,58 s",
+    "9,63 s",
+    "9,69 s",
+    "9,72 s"
+   ],
+   "correctIndex": 0,
+   "category": "Deportes",
+   "difficulty": "difícil",
+   "explanation": "Bolt corrió en 9,58 s, el récord mundial. Su récord olímpico es de 9,63 s (Londres 2012) y en Pekín 2008 hizo 9,69 s.",
+   "source": "Olimpiadas_Historia_Records_Atletas.pdf, p. 12",
+   "createdAt": "2026-11-20T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-campeona-marco-solo-12",
+   "text": "¿Qué campeona marcó solo 12 goles en todo un Mundial?",
+   "options": [
+    "Alemania",
+    "Japón",
+    "Noruega",
+    "España"
+   ],
+   "correctIndex": 1,
+   "category": "Deportes",
+   "difficulty": "difícil",
+   "explanation": "Japón ganó en 2011 con solo 12 goles, la campeona con menos goles de la historia de un Mundial.",
+   "source": "mundiales_de_futbol_masculinos_y_femeninos.json",
+   "createdAt": "2026-11-24T12:32:38Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-celebro-primer-mundial-atletismo",
+   "text": "¿Dónde se celebró el primer Mundial de atletismo (1983)?",
+   "options": [
+    "Gotemburgo",
+    "Roma",
+    "Tokio",
+    "Helsinki"
+   ],
+   "correctIndex": 3,
+   "category": "Deportes",
+   "difficulty": "difícil",
+   "explanation": "El primer Mundial de atletismo se celebró en Helsinki en 1983, organizado por la federación internacional. Nació para tener un gran campeonato propio, además de los Juegos Olímpicos, cada pocos años.",
+   "source": "historia_del_deporte_en_los_siglos_xx_y_xxi.json",
+   "createdAt": "2026-11-22T11:21:38Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-asobal-2000-01-ademar",
+   "text": "¿Qué club ganó la Liga Asobal 2000-01?",
+   "options": [
+    "FC Barcelona",
+    "Portland San Antonio",
+    "Caja España Ademar",
+    "BM Ciudad Real"
+   ],
+   "correctIndex": 2,
+   "category": "Deportes",
+   "difficulty": "muy difícil",
+   "explanation": "El Caja España Ademar de León ganó 2000-01 y el Barcelona fue segundo. San Antonio ganó al año siguiente y Ciudad Real en 2003-04.",
+   "source": "Palmares_Torneos_Deportivos.pdf, p. 24",
+   "createdAt": "2026-11-20T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-bronces-italia-milano-cortina",
+   "text": "¿Cuántos bronces ganó Italia en Milano Cortina 2026?",
+   "options": [
+    "16",
+    "14",
+    "12",
+    "10"
+   ],
+   "correctIndex": 1,
+   "category": "Deportes",
+   "difficulty": "muy difícil",
+   "explanation": "Italia sumó 30 medallas (10 oros, seis platas y 14 bronces), el mayor número de bronces de la competición.",
+   "source": "Olimpiadas_Historia_Records_Atletas.pdf, p. 14",
+   "createdAt": "2026-11-20T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-gano-maraton-juegos-atenas",
+   "text": "¿Quién ganó el maratón de los Juegos de Atenas 1896?",
+   "options": [
+    "Thomas Hicks",
+    "Spyridon Louis",
+    "Edwin Flack",
+    "Charilaos Vasilakos"
+   ],
+   "correctIndex": 1,
+   "category": "Deportes",
+   "difficulty": "muy difícil",
+   "explanation": "El pastor griego Spyridon Louis ganó el primer maratón olímpico en Atenas 1896, entrando en el estadio Panathinaiko con el público en pie. Fue un héroe nacional por la victoria local.",
+   "source": "historia_del_deporte_en_los_siglos_xx_y_xxi.json",
+   "createdAt": "2026-11-22T11:21:38Z",
+   "status": "active"
+  },
+  {
+   "id": "dep-gano-primer-torneo-wimbledon",
+   "text": "¿Quién ganó el primer torneo de Wimbledon, en 1877?",
+   "options": [
+    "Spencer Gore",
+    "William Renshaw",
+    "Frank Hadow",
+    "Herbert Lawford"
+   ],
+   "correctIndex": 0,
+   "category": "Deportes",
+   "difficulty": "muy difícil",
+   "explanation": "Spencer Gore ganó el primer torneo de Wimbledon en 1877, jugado sobre hierba en Londres con apenas 22 participantes. Al año siguiente lo ganó Frank Hadow, que inventó el globo.",
+   "source": "historia_del_deporte_en_los_siglos_xx_y_xxi.json",
+   "createdAt": "2026-11-22T11:21:38Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-cadena-fue-primera-television",
+   "text": "¿Qué cadena fue la primera televisión de España?",
+   "options": [
+    "Telecinco España",
+    "Canal Sur Televisión",
+    "Antena 3 Televisión",
+    "TVE (Televisión Española)"
+   ],
+   "correctIndex": 3,
+   "category": "Cine y televisión",
+   "difficulty": "muy fácil",
+   "explanation": "Televisión Española, conocida como TVE, comenzó sus emisiones regulares el 28 de octubre de 1956. Durante más de treinta años fue la única cadena de televisión del país.",
+   "source": "cine_y_television_en_espana.json",
+   "createdAt": "2026-11-22T10:35:43Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-cantante-gano-eurovision-1968",
+   "text": "¿Qué cantante ganó Eurovisión en 1968 con La, la, la?",
+   "options": [
+    "Rocío Jurado",
+    "Salomé",
+    "Massiel",
+    "Karina"
+   ],
+   "correctIndex": 2,
+   "category": "Cine y televisión",
+   "difficulty": "muy fácil",
+   "explanation": "Massiel ganó el Festival de Eurovisión de 1968 en Londres con La, la, la. Fue la primera victoria de España en el concurso, retransmitido por la televisión española.",
+   "source": "cine_y_television_en_espana.json",
+   "createdAt": "2026-11-22T10:35:43Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-ciudad-entrega-concha-oro",
+   "text": "¿En qué ciudad se entrega la Concha de Oro?",
+   "options": [
+    "Zaragoza",
+    "San Sebastián",
+    "Valladolid",
+    "Sevilla"
+   ],
+   "correctIndex": 1,
+   "category": "Cine y televisión",
+   "difficulty": "muy fácil",
+   "explanation": "La Concha de Oro es el máximo premio del Festival de Cine de San Sebastián. El certamen se celebra cada septiembre en la ciudad vasca y nació en el año 1953.",
+   "source": "cine_y_television_en_espana.json",
+   "createdAt": "2026-11-22T10:35:43Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-dirigio-pelicula-miedo-otros",
+   "text": "¿Quién dirigió la película de miedo Los otros?",
+   "options": [
+    "Alejandro Amenábar",
+    "Pedro Almodóvar",
+    "Santiago Segura",
+    "J. A. Bayona"
+   ],
+   "correctIndex": 0,
+   "category": "Cine y televisión",
+   "difficulty": "muy fácil",
+   "explanation": "Alejandro Amenábar dirigió Los otros en 2001, una historia de fantasmas protagonizada por Nicole Kidman. Fue un enorme éxito de taquilla dentro y fuera de nuestro país.",
+   "source": "cine_y_television_en_espana.json",
+   "createdAt": "2026-11-22T10:35:43Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-actor-dio-vida-curro",
+   "text": "¿Qué actor dio vida a Curro Jiménez?",
+   "options": [
+    "Álvaro de Luna",
+    "Pepe Sancho",
+    "Imanol Arias",
+    "Sancho Gracia"
+   ],
+   "correctIndex": 3,
+   "category": "Cine y televisión",
+   "difficulty": "fácil",
+   "explanation": "Sancho Gracia interpretó a Curro Jiménez, mientras que Pepe Sancho era el Estudiante y Álvaro de Luna el Algarrobo, los otros miembros de la partida de bandoleros.",
+   "source": "cine_y_television_en_espana.json",
+   "createdAt": "2026-11-22T10:35:43Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-actor-gano-oscar-pais",
+   "text": "¿Qué actor ganó el Óscar por No es país para viejos?",
+   "options": [
+    "Luis Tosar",
+    "José Coronado",
+    "Javier Bardem",
+    "Antonio Banderas"
+   ],
+   "correctIndex": 2,
+   "category": "Cine y televisión",
+   "difficulty": "fácil",
+   "explanation": "Javier Bardem ganó el Óscar al mejor actor de reparto por interpretar al asesino Anton Chigurh en la película de los hermanos Coen. Fue el primer español en ganar un Óscar de interpretación.",
+   "source": "cine_y_television_en_espana.json",
+   "createdAt": "2026-11-22T10:35:43Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-actor-interpreta-antonio-alcantara",
+   "text": "¿Qué actor interpreta a Antonio Alcántara en Cuéntame?",
+   "options": [
+    "Imanol Arias",
+    "Carlos Hipólito",
+    "Pepón Nieto",
+    "Santiago Segura"
+   ],
+   "correctIndex": 0,
+   "category": "Cine y televisión",
+   "difficulty": "fácil",
+   "explanation": "Imanol Arias dio vida a Antonio Alcántara, el cabeza de familia de Cuéntame cómo pasó. Su compañera en la ficción, Mercedes, está interpretada por la actriz Ana Duato.",
+   "source": "cine_y_television_en_espana.json",
+   "createdAt": "2026-11-22T10:35:43Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-ano-empezo-emitir-tve",
+   "text": "¿En qué año empezó a emitir TVE de forma regular?",
+   "options": [
+    "1975",
+    "1946",
+    "1966",
+    "1956"
+   ],
+   "correctIndex": 3,
+   "category": "Cine y televisión",
+   "difficulty": "fácil",
+   "explanation": "Televisión Española inició sus emisiones regulares el 28 de octubre de 1956, desde unos modestos estudios del Paseo de la Habana de Madrid, y al principio llegaba solo a unos pocos hogares.",
+   "source": "cine_y_television_en_espana.json",
+   "createdAt": "2026-11-22T10:35:43Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-actriz-le-dio-almodovar",
+   "text": "¿Qué actriz le dio a Almodóvar el Óscar de 2000?",
+   "options": [
+    "Victoria Abril",
+    "Penélope Cruz",
+    "Marisa Paredes",
+    "Carmen Maura"
+   ],
+   "correctIndex": 1,
+   "category": "Cine y televisión",
+   "difficulty": "medio",
+   "explanation": "Penélope Cruz entregó a Pedro Almodóvar el Óscar a la mejor película de habla no inglesa por Todo sobre mi madre, en la gala de marzo de 2000. Fue un momento histórico.",
+   "source": "cine_y_television_en_espana.json",
+   "createdAt": "2026-11-22T10:35:43Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-ano-arranca-accion-cuentame",
+   "text": "¿En qué año arranca la acción de Cuéntame cómo pasó?",
+   "options": [
+    "1968",
+    "1982",
+    "1960",
+    "1975"
+   ],
+   "correctIndex": 0,
+   "category": "Cine y televisión",
+   "difficulty": "medio",
+   "explanation": "Cuéntame cómo pasó arranca en 1968, en los últimos años del franquismo, y avanza por la historia de España. Se emitió en La 1 de TVE desde 2001 hasta 2023.",
+   "source": "cine_y_television_en_espana.json",
+   "createdAt": "2026-11-22T10:35:43Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-ano-celebro-primer-festival",
+   "text": "¿En qué año se celebró el primer Festival de San Sebastián?",
+   "options": [
+    "1947",
+    "1957",
+    "1963",
+    "1953"
+   ],
+   "correctIndex": 3,
+   "category": "Cine y televisión",
+   "difficulty": "medio",
+   "explanation": "El Festival de San Sebastián se celebró por primera vez el 21 de septiembre de 1953. Nació por iniciativa de un grupo de comerciantes que querían alargar la temporada de verano.",
+   "source": "cine_y_television_en_espana.json",
+   "createdAt": "2026-11-22T10:35:43Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-ano-celebro-primera-gala",
+   "text": "¿En qué año se celebró la primera gala de los Feroz?",
+   "options": [
+    "2014",
+    "2012",
+    "2010",
+    "2016"
+   ],
+   "correctIndex": 0,
+   "category": "Cine y televisión",
+   "difficulty": "medio",
+   "explanation": "La primera gala de los Premios Feroz se celebró el 27 de enero de 2014 en los Cines Callao de Madrid, presentada por la actriz Alexandra Jiménez.",
+   "source": "cine_y_television_en_espana.json",
+   "createdAt": "2026-11-22T10:35:43Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-actriz-presidio-jurado-venecia",
+   "text": "¿Qué actriz presidió el jurado de Venecia en 2024?",
+   "options": [
+    "Isabelle Huppert",
+    "Tilda Swinton",
+    "Cate Blanchett",
+    "Juliette Binoche"
+   ],
+   "correctIndex": 0,
+   "category": "Cine y televisión",
+   "difficulty": "difícil",
+   "explanation": "Isabelle Huppert presidió el jurado del Festival de Venecia de 2024, que concedió el León de Oro a La habitación de al lado, de Pedro Almodóvar. Fue la primera película española en lograrlo.",
+   "source": "cine_y_television_en_espana.json",
+   "createdAt": "2026-11-22T10:35:43Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-bunuel-palma-oro-1961",
+   "text": "¿Qué película de Buñuel ganó la Palma de Oro de Cannes en 1961?",
+   "options": [
+    "El ángel exterminador",
+    "Viridiana",
+    "Belle de jour",
+    "Tristana"
+   ],
+   "correctIndex": 1,
+   "category": "Cine y televisión",
+   "difficulty": "difícil",
+   "explanation": "«Viridiana» compartió la Palma de Oro con «Una larga ausencia».",
+   "createdAt": "2026-11-16T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-direccion-el-discurso-del-rey-y-cats",
+   "text": "¿Quién dirigió «El discurso del rey» y «Cats»?",
+   "options": [
+    "Tom Hooper",
+    "Ron Howard",
+    "Danny Boyle",
+    "Sam Mendes"
+   ],
+   "correctIndex": 0,
+   "category": "Cine y televisión",
+   "difficulty": "difícil",
+   "explanation": "Tom Hooper ganó el Oscar a mejor director por «El discurso del rey» y el Razzie a peor dirección por «Cats».",
+   "source": "Ganadores_Oscar_Goya_Globos_Razzie.pdf, pp. 9, 43",
+   "createdAt": "2026-11-20T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-dirigio-telecinco-estreno-estilo",
+   "text": "¿Quién dirigió Telecinco en su estreno, al estilo Canale 5?",
+   "options": [
+    "Jesús de Polanco",
+    "Valerio Lazarov",
+    "Silvio Berlusconi",
+    "Antonio Asensio"
+   ],
+   "correctIndex": 1,
+   "category": "Cine y televisión",
+   "difficulty": "difícil",
+   "explanation": "Valerio Lazarov dirigió Telecinco en su estreno, cuando Fininvest, de Berlusconi, tomó la gestión del canal siguiendo el modelo de Canale 5, la cadena italiana del grupo.",
+   "source": "cine_y_television_en_espana.json",
+   "createdAt": "2026-11-22T10:35:43Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-espanol-gano-oscar-nicolas",
+   "text": "¿Qué español ganó el Óscar por Nicolás y Alejandra?",
+   "options": [
+    "Néstor Almendros",
+    "Paco Delgado",
+    "Gil Parrondo",
+    "Alberto Iglesias"
+   ],
+   "correctIndex": 2,
+   "category": "Cine y televisión",
+   "difficulty": "muy difícil",
+   "explanation": "Gil Parrondo ganó el Óscar a la mejor dirección artística por Nicolás y Alejandra, película sobre el último zar de Rusia, que también ganó el Óscar de vestuario.",
+   "source": "cine_y_television_en_espana.json",
+   "createdAt": "2026-11-22T10:35:43Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-globo-oro-empate-foster-maclaine-weaver",
+   "text": "¿Quién empató con Foster y MacLaine en el Globo de Oro?",
+   "options": [
+    "Glenn Close",
+    "Michelle Pfeiffer",
+    "Meryl Streep",
+    "Sigourney Weaver"
+   ],
+   "correctIndex": 3,
+   "category": "Cine y televisión",
+   "difficulty": "muy difícil",
+   "explanation": "Sigourney Weaver, por «Gorilas en la niebla», compartió con Jodie Foster y Shirley MacLaine el Globo a mejor actriz de drama de 1988.",
+   "source": "Ganadores_Oscar_Goya_Globos_Razzie.pdf, p. 37",
+   "createdAt": "2026-11-20T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-goya-primera-actriz-amparo-rivelles",
+   "text": "¿Quién ganó el primer Goya a mejor actriz protagonista?",
+   "options": [
+    "Verónica Forqué",
+    "Carmen Maura",
+    "Amparo Rivelles",
+    "Rafaela Aparicio"
+   ],
+   "correctIndex": 2,
+   "category": "Cine y televisión",
+   "difficulty": "muy difícil",
+   "explanation": "Amparo Rivelles lo ganó en la primera edición por «Hay que deshacer la casa»; Forqué, Maura y Aparicio, en las tres siguientes.",
+   "source": "Ganadores_Oscar_Goya_Globos_Razzie.pdf, p. 23",
+   "createdAt": "2026-11-20T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "cine-goya-primera-mejor-pelicula",
+   "text": "¿Qué película ganó el primer Goya a mejor película?",
+   "options": [
+    "El bosque animado",
+    "¡Ay, Carmela!",
+    "Amantes",
+    "El viaje a ninguna parte"
+   ],
+   "correctIndex": 3,
+   "category": "Cine y televisión",
+   "difficulty": "muy difícil",
+   "explanation": "«El viaje a ninguna parte» ganó en 1987, en la primera edición; «El bosque animado» ganó la siguiente.",
+   "source": "Ganadores_Oscar_Goya_Globos_Razzie.pdf, p. 20",
+   "createdAt": "2026-11-20T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-crece-cabeza-corta",
+   "text": "¿Qué crece en la cabeza y se corta?",
+   "options": [
+    "El pelo",
+    "El talón",
+    "El hígado",
+    "La rodilla"
+   ],
+   "correctIndex": 0,
+   "category": "Ciencias",
+   "difficulty": "muy fácil",
+   "explanation": "El pelo crece desde la piel de la cabeza y puede cortarse sin dolor.",
+   "source": "preguntas_cuerpo_humano.json",
+   "createdAt": "2026-11-21T14:39:35Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-cubre-todo-cuerpo-fuera",
+   "text": "¿Qué cubre todo el cuerpo por fuera?",
+   "options": [
+    "El corazón",
+    "El estómago",
+    "El hueso",
+    "La piel"
+   ],
+   "correctIndex": 3,
+   "category": "Ciencias",
+   "difficulty": "muy fácil",
+   "explanation": "La piel es la cubierta exterior del cuerpo.",
+   "source": "preguntas_cuerpo_humano.json",
+   "createdAt": "2026-11-21T14:39:35Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-cuerpo-sistema-solar-cola",
+   "text": "¿Qué cuerpo del sistema solar tiene una cola brillante?",
+   "options": [
+    "Un cometa",
+    "Un planeta",
+    "Un satélite",
+    "Una estrella"
+   ],
+   "correctIndex": 0,
+   "category": "Ciencias",
+   "difficulty": "muy fácil",
+   "explanation": "Los cometas son bolas de hielo y polvo. Al acercarse al Sol se calientan y desprenden gas y polvo que forman una cola brillante.",
+   "source": "sistema_solar.json",
+   "createdAt": "2026-11-24T12:32:38Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-dedos-mano-normal",
+   "text": "¿Cuántos dedos tiene una mano normal?",
+   "options": [
+    "Cuatro",
+    "Tres",
+    "Seis",
+    "Cinco"
+   ],
+   "correctIndex": 3,
+   "category": "Ciencias",
+   "difficulty": "muy fácil",
+   "explanation": "Una mano tiene cinco dedos: pulgar, índice, corazón, anular y meñique.",
+   "source": "preguntas_cuerpo_humano.json",
+   "createdAt": "2026-11-21T14:39:35Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-aceite-dieta-mediterranea",
+   "text": "¿Qué aceite es típico de la dieta mediterránea?",
+   "options": [
+    "Aceite de oliva",
+    "Aceite de girasol",
+    "Aceite de palma",
+    "Aceite de coco"
+   ],
+   "correctIndex": 0,
+   "category": "Ciencias",
+   "difficulty": "fácil",
+   "explanation": "La dieta mediterránea se basa en verduras, frutas, legumbres, cereales integrales, frutos secos y aceite de oliva.",
+   "source": "Microbioma_humano.pdf, p. 20",
+   "createdAt": "2026-11-20T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-acido-esta-presente-limon",
+   "text": "¿Qué ácido está presente en el limón?",
+   "options": [
+    "Ácido acético",
+    "Ácido nítrico",
+    "Ácido sulfúrico",
+    "Ácido cítrico"
+   ],
+   "correctIndex": 3,
+   "category": "Ciencias",
+   "difficulty": "fácil",
+   "explanation": "El ácido cítrico es el responsable del sabor ácido de los cítricos. El acético es el del vinagre, mientras que el sulfúrico y el nítrico son ácidos minerales fuertes.",
+   "source": "fisica_y_quimica.json",
+   "createdAt": "2026-11-24T12:32:38Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-ano-dejo-pluton-ser",
+   "text": "¿En qué año dejó Plutón de ser considerado planeta?",
+   "options": [
+    "2006",
+    "2016",
+    "1996",
+    "1930"
+   ],
+   "correctIndex": 0,
+   "category": "Ciencias",
+   "difficulty": "fácil",
+   "explanation": "En 2006 la Unión Astronómica Internacional aprobó una definición de planeta que dejó a Plutón como planeta enano, porque no ha despejado su órbita.",
+   "source": "sistema_solar.json",
+   "createdAt": "2026-11-24T12:32:38Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-ano-llego-ser-humano",
+   "text": "¿En qué año llegó el ser humano a la Luna?",
+   "options": [
+    "1979",
+    "1959",
+    "1972",
+    "1969"
+   ],
+   "correctIndex": 3,
+   "category": "Ciencias",
+   "difficulty": "fácil",
+   "explanation": "La misión Apolo 11 aterrizó en la Luna el 20 de julio de 1969. Fue la primera vez que personas pisaron otro mundo.",
+   "source": "sistema_solar.json",
+   "createdAt": "2026-11-24T12:32:38Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-absorbe-sobre-todo-intestino",
+   "text": "¿Qué absorbe sobre todo el intestino grueso?",
+   "options": [
+    "Grasas",
+    "Azúcares",
+    "Proteínas",
+    "Agua y sales"
+   ],
+   "correctIndex": 3,
+   "category": "Ciencias",
+   "difficulty": "medio",
+   "explanation": "El intestino grueso reabsorbe agua y electrolitos y forma las heces.",
+   "source": "preguntas_cuerpo_humano.json",
+   "createdAt": "2026-11-21T14:39:35Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-absorben-nutrientes",
+   "text": "¿Dónde se absorben más nutrientes?",
+   "options": [
+    "Estómago",
+    "Intestino delgado",
+    "Intestino grueso",
+    "Esófago"
+   ],
+   "correctIndex": 1,
+   "category": "Ciencias",
+   "difficulty": "medio",
+   "explanation": "El intestino delgado absorbe la mayor parte de los nutrientes.",
+   "source": "preguntas_cuerpo_humano.json",
+   "createdAt": "2026-11-21T14:39:35Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-acido-contiene-jugo-gastrico",
+   "text": "¿Qué ácido contiene el jugo gástrico?",
+   "options": [
+    "Sulfúrico",
+    "Nítrico",
+    "Clorhídrico",
+    "Acético"
+   ],
+   "correctIndex": 2,
+   "category": "Ciencias",
+   "difficulty": "medio",
+   "explanation": "El ácido clorhídrico del estómago ayuda a digerir y mata microbios.",
+   "source": "preguntas_cuerpo_humano.json",
+   "createdAt": "2026-11-21T14:39:35Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-afecta-daltonismo",
+   "text": "¿Qué afecta el daltonismo?",
+   "options": [
+    "El olfato",
+    "El oído",
+    "La visión de colores",
+    "El equilibrio"
+   ],
+   "correctIndex": 2,
+   "category": "Ciencias",
+   "difficulty": "medio",
+   "explanation": "El daltonismo es una dificultad para distinguir ciertos colores.",
+   "source": "preguntas_cuerpo_humano.json",
+   "createdAt": "2026-11-21T14:39:35Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-agcc-ejemplo",
+   "text": "¿Cuál de estos es un ácido graso de cadena corta?",
+   "options": [
+    "Oleato",
+    "Palmitato",
+    "Linoleato",
+    "Butirato"
+   ],
+   "correctIndex": 3,
+   "category": "Ciencias",
+   "difficulty": "difícil",
+   "explanation": "El butirato, el acetato y el propionato son los principales AGCC; oleato, palmitato y linoleato son ácidos grasos de cadena larga.",
+   "source": "Microbioma_humano.pdf, p. 16",
+   "createdAt": "2026-11-20T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-antigeno-define-rh-positivo",
+   "text": "¿Qué antígeno define el Rh positivo?",
+   "options": [
+    "B",
+    "A",
+    "D",
+    "C"
+   ],
+   "correctIndex": 2,
+   "category": "Ciencias",
+   "difficulty": "difícil",
+   "explanation": "El Rh positivo significa tener el antígeno D en los glóbulos rojos.",
+   "source": "preguntas_cuerpo_humano.json",
+   "createdAt": "2026-11-21T14:39:35Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-area-cerebral-controla-habla",
+   "text": "¿Qué área cerebral controla el habla?",
+   "options": [
+    "Área de Rolando",
+    "Área de Broca",
+    "Área de Wernicke",
+    "Área de Heschl"
+   ],
+   "correctIndex": 1,
+   "category": "Ciencias",
+   "difficulty": "difícil",
+   "explanation": "El área de Broca, en el lóbulo frontal, controla la producción del habla.",
+   "source": "preguntas_cuerpo_humano.json",
+   "createdAt": "2026-11-21T14:39:35Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-arteria-nacen-coronarias",
+   "text": "¿De qué arteria nacen las coronarias?",
+   "options": [
+    "Carótida",
+    "Arteria pulmonar",
+    "Aorta",
+    "Subclavia"
+   ],
+   "correctIndex": 2,
+   "category": "Ciencias",
+   "difficulty": "difícil",
+   "explanation": "Las coronarias salen de la raíz de la aorta.",
+   "source": "preguntas_cuerpo_humano.json",
+   "createdAt": "2026-11-21T14:39:35Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-agcc-mas-abundante",
+   "text": "¿Qué AGCC es el más abundante en el colon?",
+   "options": [
+    "Acetato",
+    "Butirato",
+    "Propionato",
+    "Valerato"
+   ],
+   "correctIndex": 0,
+   "category": "Ciencias",
+   "difficulty": "muy difícil",
+   "explanation": "Los AGCC principales (acetato, propionato y butirato) están en el colon en una proporción aproximada de 3:1:1.",
+   "source": "Microbioma_humano.pdf, p. 16",
+   "createdAt": "2026-11-20T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-akkermansia-filo",
+   "text": "¿A qué filo pertenece Akkermansia muciniphila?",
+   "options": [
+    "Firmicutes",
+    "Bacteroidetes",
+    "Actinobacteria",
+    "Verrucomicrobia"
+   ],
+   "correctIndex": 3,
+   "category": "Ciencias",
+   "difficulty": "muy difícil",
+   "explanation": "Akkermansia muciniphila es el único representante conocido de Verrucomicrobia en el intestino humano.",
+   "source": "Microbioma_humano.pdf, p. 9",
+   "createdAt": "2026-11-20T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-aminoacido-precursor-serotonina",
+   "text": "¿Aminoácido precursor de la serotonina?",
+   "options": [
+    "Glutamina",
+    "Fenilalanina",
+    "Tirosina",
+    "Triptófano"
+   ],
+   "correctIndex": 3,
+   "category": "Ciencias",
+   "difficulty": "muy difícil",
+   "explanation": "El triptófano se convierte en serotonina; la tirosina, en dopamina.",
+   "source": "preguntas_cuerpo_humano.json",
+   "createdAt": "2026-11-21T14:39:35Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-arteria-irriga-nodo-sinusal",
+   "text": "¿Qué arteria irriga el nodo sinusal, a menudo?",
+   "options": [
+    "Circunfleja",
+    "Marginal izquierda",
+    "Coronaria derecha",
+    "Descendente anterior"
+   ],
+   "correctIndex": 2,
+   "category": "Ciencias",
+   "difficulty": "muy difícil",
+   "explanation": "En alrededor del 60 % de las personas, la coronaria derecha irriga el nodo sinusal.",
+   "source": "preguntas_cuerpo_humano.json",
+   "createdAt": "2026-11-21T14:39:35Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-autor-persona-real-relato",
+   "text": "¿Cómo se llama la persona real que escribe un relato?",
+   "options": [
+    "El editor",
+    "El autor",
+    "El protagonista",
+    "El narrador"
+   ],
+   "correctIndex": 1,
+   "category": "Lengua e Idiomas",
+   "difficulty": "muy fácil",
+   "explanation": "El autor es la persona real que escribe el relato; el narrador es, en cambio, un personaje más, creado para que cuente la historia.",
+   "source": "La narración: apuntes y libro de texto (texto proporcionado por el usuario)",
+   "createdAt": "2026-11-17T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-contrario-grande",
+   "text": "¿Cuál es el contrario de «grande»?",
+   "options": [
+    "Ancho",
+    "Alto",
+    "Fuerte",
+    "Pequeño"
+   ],
+   "correctIndex": 3,
+   "category": "Lengua e Idiomas",
+   "difficulty": "muy fácil",
+   "explanation": "Las palabras de significado contrario se llaman antónimos. El antónimo de «grande» es «pequeño». Los contrarios de las otras opciones son «bajo», «estrecho» y «débil».",
+   "source": "gramatica_y_ortografia_de_la_lengua_espanola.json",
+   "createdAt": "2026-11-21T17:12:24Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-dice-catalan-adios",
+   "text": "¿Cómo se dice en catalán «adiós»?",
+   "options": [
+    "gràcies",
+    "bon dia",
+    "perdó",
+    "adéu"
+   ],
+   "correctIndex": 3,
+   "category": "Lengua e Idiomas",
+   "difficulty": "muy fácil",
+   "explanation": "En catalán, «adiós» se dice «adéu». En catalán también se despide uno con «a reveure» o «fins aviat».",
+   "source": "vocabulario_espanol_ingles_aleman_y_catalan.json",
+   "createdAt": "2026-11-24T16:05:14Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-dice-ingles-hola",
+   "text": "¿Cómo se dice en inglés «hola»?",
+   "options": [
+    "hello",
+    "goodbye",
+    "please",
+    "sorry"
+   ],
+   "correctIndex": 0,
+   "category": "Lengua e Idiomas",
+   "difficulty": "muy fácil",
+   "explanation": "En inglés, «hola» se dice «hello». Es el saludo más habitual en inglés y vale a cualquier hora del día.",
+   "source": "vocabulario_espanol_ingles_aleman_y_catalan.json",
+   "createdAt": "2026-11-24T16:05:14Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-aumentativo-perro",
+   "text": "¿Cuál es el aumentativo de «perro»?",
+   "options": [
+    "Perrazo",
+    "Perruno",
+    "Perrera",
+    "Perrito"
+   ],
+   "correctIndex": 0,
+   "category": "Lengua e Idiomas",
+   "difficulty": "fácil",
+   "explanation": "Los aumentativos expresan mayor tamaño o intensidad y se forman con sufijos como -azo, -ote o -ón. «Perrazo» es aumentativo; «perrito» es diminutivo y «perruno» es un adjetivo.",
+   "source": "gramatica_y_ortografia_de_la_lengua_espanola.json",
+   "createdAt": "2026-11-21T17:12:24Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-clase-palabra",
+   "text": "¿Qué clase de palabra es «y»?",
+   "options": [
+    "Verbo",
+    "Adjetivo",
+    "Conjunción",
+    "Preposición"
+   ],
+   "correctIndex": 2,
+   "category": "Lengua e Idiomas",
+   "difficulty": "fácil",
+   "explanation": "«Y» une palabras o frases, como en «pan y queso». Las palabras que cumplen esa función se llaman conjunciones, y no cambian de forma nunca.",
+   "source": "gramatica_y_ortografia_de_la_lengua_espanola.json",
+   "createdAt": "2026-11-21T17:12:24Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-clase-palabra-ellos",
+   "text": "¿Qué clase de palabra es «ellos»?",
+   "options": [
+    "Nombre",
+    "Adjetivo",
+    "Verbo",
+    "Pronombre"
+   ],
+   "correctIndex": 3,
+   "category": "Lengua e Idiomas",
+   "difficulty": "fácil",
+   "explanation": "«Ellos» sustituye a un nombre o a un grupo de nombres, como «los niños». Las palabras que cumplen esa función se llaman pronombres; este es un pronombre personal de tercera persona.",
+   "source": "gramatica_y_ortografia_de_la_lengua_espanola.json",
+   "createdAt": "2026-11-21T17:12:24Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-completa-muchos-ninos-patio",
+   "text": "Completa: «___ muchos niños en el patio»",
+   "options": [
+    "Hay",
+    "Hai",
+    "Ay",
+    "Ahí"
+   ],
+   "correctIndex": 0,
+   "category": "Lengua e Idiomas",
+   "difficulty": "fácil",
+   "explanation": "«Hay» es una forma del verbo haber y sirve para decir que algo existe. «Ahí» es un adverbio de lugar y «ay» es una interjección que expresa dolor o sorpresa.",
+   "source": "gramatica_y_ortografia_de_la_lengua_espanola.json",
+   "createdAt": "2026-11-21T17:12:24Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-abrevia-etcetera",
+   "text": "¿Cómo se abrevia «etcétera»?",
+   "options": [
+    "ect.",
+    "etc",
+    "etc.",
+    "e.t.c."
+   ],
+   "correctIndex": 2,
+   "category": "Lengua e Idiomas",
+   "difficulty": "medio",
+   "explanation": "La abreviatura de «etcétera» es «etc.», con punto final. No se escribe «ect.» ni «e.t.c.», y debe llevar siempre el punto, porque es una abreviatura y no una sigla.",
+   "source": "gramatica_y_ortografia_de_la_lengua_espanola.json",
+   "createdAt": "2026-11-21T17:12:24Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-abrevia-palabra-pagina",
+   "text": "¿Cómo se abrevia la palabra «página»?",
+   "options": [
+    "págs",
+    "pag",
+    "pág.",
+    "pg."
+   ],
+   "correctIndex": 2,
+   "category": "Lengua e Idiomas",
+   "difficulty": "medio",
+   "explanation": "La abreviatura de «página» es «pág.»: conserva la tilde de la palabra completa y lleva punto final. «Págs.» es el plural y «pg.» no es una forma recomendada.",
+   "source": "gramatica_y_ortografia_de_la_lengua_espanola.json",
+   "createdAt": "2026-11-21T17:12:24Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-ana-medica-medica",
+   "text": "En «Ana es médica», ¿qué es «médica»?",
+   "options": [
+    "Atributo",
+    "Agente",
+    "Vocativo",
+    "Sujeto"
+   ],
+   "correctIndex": 0,
+   "category": "Lengua e Idiomas",
+   "difficulty": "medio",
+   "explanation": "Con verbos copulativos como «ser», el adjetivo o el nombre que describe al sujeto es el atributo. «Médica» concuerda con «Ana» y dice cómo o qué es.",
+   "source": "gramatica_y_ortografia_de_la_lengua_espanola.json",
+   "createdAt": "2026-11-21T17:12:24Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-buenos-dias-italiano",
+   "text": "¿Cómo se dice «buenos días» en italiano?",
+   "options": [
+    "Buonanotte",
+    "Buonasera",
+    "Arrivederci",
+    "Buongiorno"
+   ],
+   "correctIndex": 3,
+   "category": "Lengua e Idiomas",
+   "difficulty": "medio",
+   "explanation": "«Buongiorno» es «buenos días». «Buonasera» es «buenas tardes», «buonanotte» es «buenas noches» al irse a dormir y «arrivederci» es «adiós».",
+   "createdAt": "2026-11-16T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-ana-llego-cansada-cansada",
+   "text": "En «Ana llegó cansada», ¿qué es «cansada»?",
+   "options": [
+    "Agente",
+    "Predicativo",
+    "Atributo",
+    "Vocativo"
+   ],
+   "correctIndex": 1,
+   "category": "Lengua e Idiomas",
+   "difficulty": "difícil",
+   "explanation": "«Cansada» no acompaña a un verbo copulativo, sino que añade información sobre el sujeto a la vez que «llegó» expresa la acción. Esa función se llama complemento predicativo.",
+   "source": "gramatica_y_ortografia_de_la_lengua_espanola.json",
+   "createdAt": "2026-11-21T17:12:24Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-ano-publico-gramatica-nebrija",
+   "text": "¿En qué año se publicó la Gramática de Nebrija?",
+   "options": [
+    "1474",
+    "1517",
+    "1492",
+    "1501"
+   ],
+   "correctIndex": 2,
+   "category": "Lengua e Idiomas",
+   "difficulty": "difícil",
+   "explanation": "Antonio de Nebrija publicó en 1492 su «Gramática de la lengua castellana», considerada la primera gramática de una lengua romance moderna. Salió el mismo año en que Colón llegó a América.",
+   "source": "gramatica_y_ortografia_de_la_lengua_espanola.json",
+   "createdAt": "2026-11-21T17:12:24Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-completa-asi-quiso-venir",
+   "text": "Completa: «___ así, no quiso venir»",
+   "options": [
+    "Aún",
+    "Aun",
+    "Aunn",
+    "Aúm"
+   ],
+   "correctIndex": 1,
+   "category": "Lengua e Idiomas",
+   "difficulty": "difícil",
+   "explanation": "En «aun así», «aun» equivale a «incluso» y se escribe sin tilde porque es átono. Con tilde, «aún» significa «todavía», como en «aún no ha llegado».",
+   "source": "gramatica_y_ortografia_de_la_lengua_espanola.json",
+   "createdAt": "2026-11-21T17:12:24Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-completa-ha-llegado",
+   "text": "Completa: «No ha llegado ___»",
+   "options": [
+    "aún",
+    "ahún",
+    "aúm",
+    "aun"
+   ],
+   "correctIndex": 0,
+   "category": "Lengua e Idiomas",
+   "difficulty": "difícil",
+   "explanation": "«Aún» equivale a «todavía» y se tilda porque forma hiato: a-ún, con la u cerrada tónica. «Aun» sin tilde significa «incluso», como en «aun así».",
+   "source": "gramatica_y_ortografia_de_la_lengua_espanola.json",
+   "createdAt": "2026-11-21T17:12:24Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-alquilan-pisos-funcion",
+   "text": "En «Se alquilan pisos», ¿qué función tiene «se»?",
+   "options": [
+    "Pronombre reflexivo",
+    "Marca de pasiva refleja",
+    "Complemento indirecto",
+    "Marca de impersonalidad"
+   ],
+   "correctIndex": 1,
+   "category": "Lengua e Idiomas",
+   "difficulty": "muy difícil",
+   "explanation": "El verbo concuerda con «pisos»: «se alquilan» equivale a «son alquilados». Este «se» es marca de pasiva refleja. En una impersonal, el verbo iría en singular, como en «se vive bien».",
+   "source": "gramatica_y_ortografia_de_la_lengua_espanola.json",
+   "createdAt": "2026-11-21T17:12:24Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-anfibologia",
+   "text": "¿Qué es una anfibología?",
+   "options": [
+    "Uso de palabras de otra lengua",
+    "Cambio de significado por el tono",
+    "Repetición innecesaria de una idea",
+    "Doble sentido por la construcción"
+   ],
+   "correctIndex": 3,
+   "category": "Lengua e Idiomas",
+   "difficulty": "muy difícil",
+   "explanation": "La anfibología es el doble sentido que produce una construcción mal ordenada: «vi a Juan con el telescopio» no aclara quién lo tiene. Se resuelve reformulando la frase o con la puntuación.",
+   "source": "gramatica_y_ortografia_de_la_lengua_espanola.json",
+   "createdAt": "2026-11-21T17:12:24Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-ch-ll-abecedario-2010",
+   "text": "¿En qué año la RAE dejó de incluir «ch» y «ll» en el abecedario?",
+   "options": [
+    "1994",
+    "2003",
+    "2010",
+    "2014"
+   ],
+   "correctIndex": 2,
+   "category": "Lengua e Idiomas",
+   "difficulty": "muy difícil",
+   "explanation": "La Ortografía de 2010 dejó el abecedario en 27 letras: «ch» y «ll» pasaron a ser dígrafos. En 1994 solo cambió su ordenación alfabética: dejaron de ordenarse como letras aparte.",
+   "createdAt": "2026-11-16T09:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "leng-completa-agua-hielo",
+   "text": "Completa: «agua ___ hielo»",
+   "options": [
+    "e",
+    "o",
+    "y",
+    "u"
+   ],
+   "correctIndex": 2,
+   "category": "Lengua e Idiomas",
+   "difficulty": "muy difícil",
+   "explanation": "Ante palabras que empiezan por i- o hi-, «y» se convierte en «e», salvo ante «hie-» y «hia-», donde la i forma diptongo. Por eso se escribe «agua y hielo», pero «padres e hijos».",
+   "source": "gramatica_y_ortografia_de_la_lengua_espanola.json",
+   "createdAt": "2026-11-21T17:12:24Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-animal-da-nombre-ballet",
+   "text": "¿Qué animal da nombre al ballet «El lago de los…»?",
+   "options": [
+    "Águilas",
+    "Patos",
+    "Cisnes",
+    "Gallos"
+   ],
+   "correctIndex": 2,
+   "category": "Música",
+   "difficulty": "muy fácil",
+   "explanation": "«El lago de los cisnes» es un famoso ballet del compositor ruso Chaikovski. En él, una princesa es convertida en cisne por un hechizo.",
+   "source": "musica_clasica_y_musica_de_los_anos_50_60_y_70.json",
+   "createdAt": "2026-11-24T14:57:05Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-apodo-tenia-cantante-elvis",
+   "text": "¿Qué apodo tenía el cantante Elvis Presley?",
+   "options": [
+    "El Príncipe",
+    "El Rey",
+    "El Duque",
+    "El Conde"
+   ],
+   "correctIndex": 1,
+   "category": "Música",
+   "difficulty": "muy fácil",
+   "explanation": "A Elvis Presley lo llamaban «el Rey del Rock and Roll», o simplemente «el Rey», por su enorme éxito y su influencia en la música de los años cincuenta.",
+   "source": "musica_clasica_y_musica_de_los_anos_50_60_y_70.json",
+   "createdAt": "2026-11-24T14:57:05Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-banda-britanica-canta-viva",
+   "text": "¿Qué banda británica canta «Viva la Vida»?",
+   "options": [
+    "Radiohead",
+    "U2",
+    "Coldplay",
+    "Muse"
+   ],
+   "correctIndex": 2,
+   "category": "Música",
+   "difficulty": "muy fácil",
+   "explanation": "Coldplay lanzó «Viva la Vida» en 2008. Fue su primer número uno en Estados Unidos y da título a un álbum con Brian Eno como coproductor.",
+   "source": "musica_pop_y_rock_de_los_80_a_la_actualidad.json",
+   "createdAt": "2026-11-23T22:55:16Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-banda-britanica-canta-wonderwall",
+   "text": "¿Qué banda británica canta «Wonderwall»?",
+   "options": [
+    "Radiohead",
+    "Oasis",
+    "Coldplay",
+    "Blur"
+   ],
+   "correctIndex": 1,
+   "category": "Música",
+   "difficulty": "muy fácil",
+   "explanation": "Oasis publicó «Wonderwall» en 1995, del álbum (What's the Story) Morning Glory?. Compuesta por Noel Gallagher, es su canción más conocida.",
+   "source": "musica_pop_y_rock_de_los_80_a_la_actualidad.json",
+   "createdAt": "2026-11-23T22:55:16Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-abba-pais",
+   "text": "¿De qué país era el grupo ABBA?",
+   "options": [
+    "Noruega",
+    "Dinamarca",
+    "Suecia",
+    "Finlandia"
+   ],
+   "correctIndex": 2,
+   "category": "Música",
+   "difficulty": "fácil",
+   "explanation": "ABBA se formó en Estocolmo en 1972.",
+   "createdAt": "2026-11-23T12:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-album-gano-grammy-album",
+   "text": "¿Qué álbum ganó el Grammy al Álbum del año en 2024?",
+   "options": [
+    "Midnights",
+    "Folklore",
+    "Harry's House",
+    "Cowboy Carter"
+   ],
+   "correctIndex": 0,
+   "category": "Música",
+   "difficulty": "fácil",
+   "explanation": "Taylor Swift ganó en 2024 el Grammy al Álbum del año con «Midnights». Es la primera artista con cuatro victorias en esa categoría.",
+   "source": "musica_pop_y_rock_de_los_80_a_la_actualidad.json",
+   "createdAt": "2026-11-23T22:55:16Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-ano-salio-album-thriller",
+   "text": "¿En qué año salió el álbum «Thriller»?",
+   "options": [
+    "1982",
+    "1978",
+    "1990",
+    "1986"
+   ],
+   "correctIndex": 0,
+   "category": "Música",
+   "difficulty": "fácil",
+   "explanation": "Michael Jackson publicó «Thriller» el 30 de noviembre de 1982. En 1984 el Libro Guinness lo certificó como el álbum más vendido de la historia.",
+   "source": "musica_pop_y_rock_de_los_80_a_la_actualidad.json",
+   "createdAt": "2026-11-23T22:55:16Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-banda-britanica-canta-supermassive",
+   "text": "¿Qué banda británica canta «Supermassive Black Hole»?",
+   "options": [
+    "Radiohead",
+    "Muse",
+    "Coldplay",
+    "Keane"
+   ],
+   "correctIndex": 1,
+   "category": "Música",
+   "difficulty": "fácil",
+   "explanation": "Muse publicó «Supermassive Black Hole» en 2006, de su álbum Black Holes and Revelations. Su cantante, Matt Bellamy, mezcla rock alternativo y electrónica.",
+   "source": "musica_pop_y_rock_de_los_80_a_la_actualidad.json",
+   "createdAt": "2026-11-23T22:55:16Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-actuo-descanso-super-bowl",
+   "text": "¿Quién actuó en el descanso de la Super Bowl de 2021?",
+   "options": [
+    "Bruno Mars",
+    "Shakira",
+    "Rihanna",
+    "The Weeknd"
+   ],
+   "correctIndex": 3,
+   "category": "Música",
+   "difficulty": "medio",
+   "explanation": "The Weeknd actuó en el descanso de la Super Bowl de 2021, celebrada en Tampa, con un espectáculo adaptado a la pandemia y con aforo reducido.",
+   "source": "musica_pop_y_rock_de_los_80_a_la_actualidad.json",
+   "createdAt": "2026-11-23T22:55:16Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-album-amaral-aparece-sin",
+   "text": "¿En qué álbum de Amaral aparece «Sin ti no soy nada»?",
+   "options": [
+    "Estrella de mar",
+    "Hacia lo salvaje",
+    "Gato negro, dragón rojo",
+    "Pájaros en la cabeza"
+   ],
+   "correctIndex": 0,
+   "category": "Música",
+   "difficulty": "medio",
+   "explanation": "«Sin ti no soy nada» forma parte de «Estrella de mar» (2002), el álbum que convirtió a Amaral en uno de los grupos más importantes del pop rock español.",
+   "source": "musica_pop_y_rock_de_los_80_a_la_actualidad.json",
+   "createdAt": "2026-11-23T22:55:16Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-album-bon-jovi-esta",
+   "text": "¿En qué álbum de Bon Jovi está «Livin' on a Prayer»?",
+   "options": [
+    "These Days",
+    "Keep the Faith",
+    "Slippery When Wet",
+    "New Jersey"
+   ],
+   "correctIndex": 2,
+   "category": "Música",
+   "difficulty": "medio",
+   "explanation": "«Livin' on a Prayer» está en «Slippery When Wet» (1986). Es el álbum más vendido de Bon Jovi y consolidó su fama mundial.",
+   "source": "musica_pop_y_rock_de_los_80_a_la_actualidad.json",
+   "createdAt": "2026-11-23T22:55:16Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-album-coldplay-incluye-yellow",
+   "text": "¿Qué álbum de Coldplay incluye «Yellow»?",
+   "options": [
+    "Ghost Stories",
+    "Parachutes",
+    "Mylo Xyloto",
+    "Everyday Life"
+   ],
+   "correctIndex": 1,
+   "category": "Música",
+   "difficulty": "medio",
+   "explanation": "«Yellow» está en «Parachutes», el álbum debut de Coldplay, publicado en 2000. Con él la banda alcanzó fama internacional y ganó un Grammy.",
+   "source": "musica_pop_y_rock_de_los_80_a_la_actualidad.json",
+   "createdAt": "2026-11-23T22:55:16Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-album-entre-dos-tierras",
+   "text": "¿De qué álbum es «Entre dos tierras» (Héroes del Silencio)?",
+   "options": [
+    "Héroe de leyenda",
+    "Senderos de traición",
+    "Parasiempre",
+    "El espíritu del vino"
+   ],
+   "correctIndex": 1,
+   "category": "Música",
+   "difficulty": "difícil",
+   "explanation": "«Entre dos tierras» está en «Senderos de traición» (1990), el álbum que consolidó a Héroes del Silencio en España y Latinoamérica.",
+   "source": "musica_pop_y_rock_de_los_80_a_la_actualidad.json",
+   "createdAt": "2026-11-23T22:55:16Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-ano-grabo-elvis-that",
+   "text": "¿En qué año grabó Elvis «That's All Right» en Sun Records?",
+   "options": [
+    "1954",
+    "1958",
+    "1956",
+    "1952"
+   ],
+   "correctIndex": 0,
+   "category": "Música",
+   "difficulty": "difícil",
+   "explanation": "Elvis Presley grabó «That's All Right» en los estudios Sun, en Memphis, el 5 de julio de 1954. Fue el comienzo de su carrera discográfica.",
+   "source": "musica_clasica_y_musica_de_los_anos_50_60_y_70.json",
+   "createdAt": "2026-11-24T14:57:05Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-ano-prince-adopto-simbolo",
+   "text": "¿En qué año Prince adoptó un símbolo como nombre?",
+   "options": [
+    "1999",
+    "1996",
+    "1993",
+    "1989"
+   ],
+   "correctIndex": 2,
+   "category": "Música",
+   "difficulty": "difícil",
+   "explanation": "Prince adoptó en 1993 un símbolo impronunciable como nombre, en conflicto con su discográfica Warner. Quedó conocido como «el artista antes conocido como Prince».",
+   "source": "musica_pop_y_rock_de_los_80_a_la_actualidad.json",
+   "createdAt": "2026-11-23T22:55:16Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-ano-publico-the-dark",
+   "text": "¿En qué año se publicó «The Dark Side of the Moon»?",
+   "options": [
+    "1975",
+    "1971",
+    "1973",
+    "1977"
+   ],
+   "correctIndex": 2,
+   "category": "Música",
+   "difficulty": "difícil",
+   "explanation": "Pink Floyd publicó «The Dark Side of the Moon» el 1 de marzo de 1973. El álbum permaneció en la lista Billboard 200 durante casi mil semanas, un récord.",
+   "source": "musica_clasica_y_musica_de_los_anos_50_60_y_70.json",
+   "createdAt": "2026-11-24T14:57:05Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-abrio-live-aid-filadelfia",
+   "text": "¿Quién abrió el Live Aid en Filadelfia?",
+   "options": [
+    "Joan Baez",
+    "Patti LaBelle",
+    "Bryan Adams",
+    "Madonna"
+   ],
+   "correctIndex": 0,
+   "category": "Música",
+   "difficulty": "muy difícil",
+   "explanation": "Joan Baez abrió el concierto de Filadelfia del Live Aid en 1985, ante unos noventa mil espectadores en el estadio JFK.",
+   "source": "musica_pop_y_rock_de_los_80_a_la_actualidad.json",
+   "createdAt": "2026-11-23T22:55:16Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-ano-nacio-johann-sebastian",
+   "text": "¿En qué año nació Johann Sebastian Bach?",
+   "options": [
+    "1685",
+    "1670",
+    "1678",
+    "1693"
+   ],
+   "correctIndex": 0,
+   "category": "Música",
+   "difficulty": "muy difícil",
+   "explanation": "Johann Sebastian Bach nació en Eisenach en 1685 y murió en Leipzig en 1750. Perteneció a una amplia dinastía de músicos alemanes durante generaciones.",
+   "source": "musica_clasica_y_musica_de_los_anos_50_60_y_70.json",
+   "createdAt": "2026-11-24T14:57:05Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-britten-peter-grimes",
+   "text": "¿Quién compuso la ópera «Peter Grimes»?",
+   "options": [
+    "Elgar",
+    "Holst",
+    "Vaughan Williams",
+    "Britten"
+   ],
+   "correctIndex": 3,
+   "category": "Música",
+   "difficulty": "muy difícil",
+   "explanation": "Benjamin Britten estrenó la ópera «Peter Grimes» en Londres en 1945.",
+   "createdAt": "2026-11-23T12:00:00Z",
+   "status": "active"
+  },
+  {
+   "id": "mus-ciudad-nacio-freddie-mercury",
+   "text": "¿En qué ciudad nació Freddie Mercury?",
+   "options": [
+    "Nairobi",
+    "Stone Town",
+    "Bombay",
+    "Londres"
+   ],
+   "correctIndex": 1,
+   "category": "Música",
+   "difficulty": "muy difícil",
+   "explanation": "Freddie Mercury nació como Farrokh Bulsara en Stone Town, en la isla de Zanzíbar, en 1946. Su familia se mudó a Inglaterra en 1964.",
+   "source": "musica_pop_y_rock_de_los_80_a_la_actualidad.json",
+   "createdAt": "2026-11-23T22:55:16Z",
+   "status": "active"
+  },
+  {
+   "id": "cien-51-pegasi-b-masa-jupiter",
+   "text": "¿Con qué planeta se comparó la masa de 51 Pegasi b?",
+   "options": [
+    "Júpiter",
+    "Mercurio",
+    "Marte",
+    "Venus"
+   ],
+   "correctIndex": 0,
+   "category": "Ciencias",
+   "difficulty": "medio",
+   "explanation": "51 Pegasi b tiene una masa similar a la de Júpiter y orbita una estrella de tipo solar.",
+   "source": "El_universo_observable.pdf, p. 16",
+   "createdAt": "2026-11-20T09:00:00Z",
+   "status": "disabled"
+  },
+  {
+   "id": "cien-agujero-negro-primera-imagen-galaxia",
+   "text": "¿En qué galaxia está el agujero negro de la primera imagen?",
+   "options": [
+    "Andrómeda",
+    "La Vía Láctea",
+    "M87",
+    "El Triángulo"
+   ],
+   "correctIndex": 2,
+   "category": "Ciencias",
+   "difficulty": "difícil",
+   "explanation": "En 2019 el Telescopio del Horizonte de Sucesos obtuvo la imagen de la sombra del agujero negro supermasivo de la galaxia elíptica gigante M87.",
+   "source": "El_universo_observable.pdf, p. 14",
+   "createdAt": "2026-11-20T09:00:00Z",
+   "status": "disabled"
+  },
+  {
+   "id": "arte-amaba-don-quijote",
+   "text": "¿A quién amaba Don Quijote?",
+   "options": [
+    "Celestina",
+    "Dulcinea",
+    "Penélope",
+    "Melibea"
+   ],
+   "correctIndex": 1,
+   "category": "Arte y Literatura",
+   "difficulty": "muy fácil",
+   "explanation": "Dulcinea del Toboso es la dama a quien Don Quijote dedica sus hazañas, aunque solo existe en su imaginación. Todo caballero andante debía tener una dama a quien servir.",
+   "source": "siglo_de_oro_de_la_literatura_espanola.json",
+   "createdAt": "2026-11-21T16:26:21Z",
+   "status": "active"
+  }
+ ],
+ "seen": {
+  "arte-amaba-don-quijote": 1,
+  "arte-animal-platero-platero-yo": 2,
+  "arte-campos-castilla-antonio-machado": 3,
+  "arte-ciudad-esta-museo-prado": 1,
+  "arte-buscaban-captar-impresionistas": 2,
+  "arte-ciudad-era-sorolla": 3,
+  "arte-ciudad-era-velazquez": 1,
+  "arte-ciudad-estaba-residencia-estudiantes": 2,
+  "arte-acaba-capitan-deshonra-hija": 3,
+  "arte-alcalde-zalamea": 1,
+  "arte-amantes-protagonizan-celestina": 2,
+  "arte-amo-lazarillo-pasa-hambre": 3,
+  "arte-ano-exilio-goya-francia": 1,
+  "arte-ano-imprimio-burlador-sevilla": 2,
+  "arte-ano-murio-ramon-valle": 3,
+  "arte-ano-publico-persiles": 1,
+  "arte-ano-aparecio-tercera-parte": 2,
+  "arte-ano-nacio-pintora-isabel": 3,
+  "arte-ano-publicaron-suenos-quevedo": 1,
+  "arte-ano-publico-agudeza-arte": 2,
+  "hist-acuerdo-detuvo-combates-noviembre": 3,
+  "hist-ano-empezo-primera-guerra": 1,
+  "hist-ano-termino-primera-guerra": 2,
+  "hist-anos-duro-aproximadamente-guerra": 3,
+  "geo-peninsula-nacimiento-islam": 1,
+  "hist-animal-llevaba-mensajes-frente": 2,
+  "hist-ano-acabo-guerra-civil": 3,
+  "hist-ano-aprobo-constitucion-actual": 1,
+  "geo-capital-australia": 2,
+  "hist-abrio-expo-sevilla": 3
+ }
+}

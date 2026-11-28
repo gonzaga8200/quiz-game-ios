@@ -1,0 +1,1234 @@
+{
+ "generatedFrom": "47a0607d519f48bb39eb7590a5c8326a930ca5f9",
+ "cases": [
+  {
+   "points": 0,
+   "duration": 60,
+   "tier": "try",
+   "emojis": [
+    "💪"
+   ],
+   "particleCount": 30
+  },
+  {
+   "points": 7,
+   "duration": 60,
+   "tier": "try",
+   "emojis": [
+    "💪"
+   ],
+   "particleCount": 30
+  },
+  {
+   "points": 14,
+   "duration": 60,
+   "tier": "try",
+   "emojis": [
+    "💪"
+   ],
+   "particleCount": 30
+  },
+  {
+   "points": 21,
+   "duration": 60,
+   "tier": "thumbs",
+   "emojis": [
+    "👍",
+    "🙂"
+   ],
+   "particleCount": 60
+  },
+  {
+   "points": 28,
+   "duration": 60,
+   "tier": "thumbs",
+   "emojis": [
+    "👍",
+    "🙂"
+   ],
+   "particleCount": 60
+  },
+  {
+   "points": 35,
+   "duration": 60,
+   "tier": "thumbs",
+   "emojis": [
+    "👍",
+    "🙂"
+   ],
+   "particleCount": 60
+  },
+  {
+   "points": 42,
+   "duration": 60,
+   "tier": "thumbs",
+   "emojis": [
+    "👍",
+    "🙂"
+   ],
+   "particleCount": 60
+  },
+  {
+   "points": 49,
+   "duration": 60,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 56,
+   "duration": 60,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 63,
+   "duration": 60,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 70,
+   "duration": 60,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 77,
+   "duration": 60,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 84,
+   "duration": 60,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 91,
+   "duration": 60,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 98,
+   "duration": 60,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 105,
+   "duration": 60,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 112,
+   "duration": 60,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 119,
+   "duration": 60,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 126,
+   "duration": 60,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 133,
+   "duration": 60,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 140,
+   "duration": 60,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 147,
+   "duration": 60,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 154,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 161,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 168,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 175,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 182,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 189,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 196,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 203,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 210,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 217,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 224,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 231,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 238,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 245,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 252,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 259,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 266,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 273,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 280,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 287,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 294,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 301,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 308,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 315,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 322,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 329,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 336,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 343,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 350,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 357,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 364,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 371,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 378,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 385,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 392,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 399,
+   "duration": 60,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 0,
+   "duration": 120,
+   "tier": "try",
+   "emojis": [
+    "💪"
+   ],
+   "particleCount": 30
+  },
+  {
+   "points": 7,
+   "duration": 120,
+   "tier": "try",
+   "emojis": [
+    "💪"
+   ],
+   "particleCount": 30
+  },
+  {
+   "points": 14,
+   "duration": 120,
+   "tier": "try",
+   "emojis": [
+    "💪"
+   ],
+   "particleCount": 30
+  },
+  {
+   "points": 21,
+   "duration": 120,
+   "tier": "try",
+   "emojis": [
+    "💪"
+   ],
+   "particleCount": 30
+  },
+  {
+   "points": 28,
+   "duration": 120,
+   "tier": "try",
+   "emojis": [
+    "💪"
+   ],
+   "particleCount": 30
+  },
+  {
+   "points": 35,
+   "duration": 120,
+   "tier": "thumbs",
+   "emojis": [
+    "👍",
+    "🙂"
+   ],
+   "particleCount": 60
+  },
+  {
+   "points": 42,
+   "duration": 120,
+   "tier": "thumbs",
+   "emojis": [
+    "👍",
+    "🙂"
+   ],
+   "particleCount": 60
+  },
+  {
+   "points": 49,
+   "duration": 120,
+   "tier": "thumbs",
+   "emojis": [
+    "👍",
+    "🙂"
+   ],
+   "particleCount": 60
+  },
+  {
+   "points": 56,
+   "duration": 120,
+   "tier": "thumbs",
+   "emojis": [
+    "👍",
+    "🙂"
+   ],
+   "particleCount": 60
+  },
+  {
+   "points": 63,
+   "duration": 120,
+   "tier": "thumbs",
+   "emojis": [
+    "👍",
+    "🙂"
+   ],
+   "particleCount": 60
+  },
+  {
+   "points": 70,
+   "duration": 120,
+   "tier": "thumbs",
+   "emojis": [
+    "👍",
+    "🙂"
+   ],
+   "particleCount": 60
+  },
+  {
+   "points": 77,
+   "duration": 120,
+   "tier": "thumbs",
+   "emojis": [
+    "👍",
+    "🙂"
+   ],
+   "particleCount": 60
+  },
+  {
+   "points": 84,
+   "duration": 120,
+   "tier": "thumbs",
+   "emojis": [
+    "👍",
+    "🙂"
+   ],
+   "particleCount": 60
+  },
+  {
+   "points": 91,
+   "duration": 120,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 98,
+   "duration": 120,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 105,
+   "duration": 120,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 112,
+   "duration": 120,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 119,
+   "duration": 120,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 126,
+   "duration": 120,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 133,
+   "duration": 120,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 140,
+   "duration": 120,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 147,
+   "duration": 120,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 154,
+   "duration": 120,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 161,
+   "duration": 120,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 168,
+   "duration": 120,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 175,
+   "duration": 120,
+   "tier": "clap",
+   "emojis": [
+    "👏",
+    "🙌"
+   ],
+   "particleCount": 110
+  },
+  {
+   "points": 182,
+   "duration": 120,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 189,
+   "duration": 120,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 196,
+   "duration": 120,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 203,
+   "duration": 120,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 210,
+   "duration": 120,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 217,
+   "duration": 120,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 224,
+   "duration": 120,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 231,
+   "duration": 120,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 238,
+   "duration": 120,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 245,
+   "duration": 120,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 252,
+   "duration": 120,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 259,
+   "duration": 120,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 266,
+   "duration": 120,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 273,
+   "duration": 120,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 280,
+   "duration": 120,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 287,
+   "duration": 120,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 294,
+   "duration": 120,
+   "tier": "party",
+   "emojis": [
+    "🎉",
+    "🥳",
+    "✨"
+   ],
+   "particleCount": 170
+  },
+  {
+   "points": 301,
+   "duration": 120,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 308,
+   "duration": 120,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 315,
+   "duration": 120,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 322,
+   "duration": 120,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 329,
+   "duration": 120,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 336,
+   "duration": 120,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 343,
+   "duration": 120,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 350,
+   "duration": 120,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 357,
+   "duration": 120,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 364,
+   "duration": 120,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 371,
+   "duration": 120,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 378,
+   "duration": 120,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 385,
+   "duration": 120,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 392,
+   "duration": 120,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  },
+  {
+   "points": 399,
+   "duration": 120,
+   "tier": "trophy",
+   "emojis": [
+    "🏆",
+    "🥇",
+    "✨"
+   ],
+   "particleCount": 240
+  }
+ ]
+}
