@@ -99,8 +99,9 @@ final class GameFlowTests: XCTestCase {
         for id in ["answer.0", "answer.1", "answer.2", "answer.3", "skip"] {
             let element = app.buttons[id].waitToAppear()
             var swipes = 0
-            while !element.isHittable && swipes < 6 {
-                app.swipeUp()
+            // Short, slow drags: on a small screen a fast swipe scrolls past a whole answer.
+            while !element.isHittable && swipes < 12 {
+                app.scrollViews.firstMatch.swipeUp(velocity: .slow)
                 swipes += 1
             }
             XCTAssertTrue(element.isHittable, "\(id) is not reachable at the largest text size")
