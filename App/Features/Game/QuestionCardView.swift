@@ -33,7 +33,8 @@ struct QuestionCardView: View {
 
             ZStack(alignment: .top) {
                 Text(verbatim: question.text)
-                    .font(.display(.title2, weight: .heavy, italic: true))
+                    .font(.question(.title2))
+                    .lineSpacing(2)
                     .fixedSize(horizontal: false, vertical: true)
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: .infinity)

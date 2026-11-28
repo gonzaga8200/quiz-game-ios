@@ -10,6 +10,7 @@
 		03022ADCE2926A3FE8393704 /* RankingIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E442C11105FE654D397E74A9 /* RankingIntegrationTests.swift */; };
 		0354A8775793EF7983FF27A1 /* Timeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFEA8218A3655A4127A724 /* Timeout.swift */; };
 		03ACDBDC2F9D05497885ADDD /* UITestBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A8D04AB1464A740B2BEEE /* UITestBank.swift */; };
+		04AF6A5817C7D855106BE2EF /* OFL-Newsreader.txt in Resources */ = {isa = PBXBuildFile; fileRef = CFBD6A24EFD8B5296572EFDE /* OFL-Newsreader.txt */; };
 		06F346DDE5858C7EB9AD4362 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21E4D4F99FF82C168216DEC /* AuthService.swift */; };
 		0A4BE7701A6F55EAFDB79E5D /* HiddenPlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B274CF811A8CD93AEF9DB27A /* HiddenPlayers.swift */; };
 		0C8C6E7F40E096A189AF9669 /* PocketWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C1618BE9C361B2F092549 /* PocketWatch.swift */; };
@@ -19,6 +20,7 @@
 		11B89062C63A733B9AD9994E /* RankingServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCB1CD705D70F35832170C5 /* RankingServiceTests.swift */; };
 		12CC25B0557B70D2F8DD1727 /* AuthErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252CC1ACFD7CCAF9E0BECA1A /* AuthErrors.swift */; };
 		14685E38524E94DD1FA1A961 /* ReportRowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22F5E0F39EEF83D86C846A6 /* ReportRowsView.swift */; };
+		179D0235FA6DD0FC98D90B52 /* NewsreaderDisplay-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2A7BCFA6D1AF79CAE34C6F4 /* NewsreaderDisplay-SemiBold.ttf */; };
 		18678C4DAC41FCB5A53428DE /* AnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F996F1EBD3F5E4E50946A223 /* AnswerButton.swift */; };
 		1A3462EA4AA3268DDE52A6E5 /* Confetti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E068A61698631B3F0931789 /* Confetti.swift */; };
 		1B6939655113138A99FE61C8 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04EF6436BD1E0EA90BCDEB7 /* Haptics.swift */; };
@@ -305,6 +307,7 @@
 		CAA343DBA55E105A8F8AF35E /* HiddenPlayersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenPlayersScreen.swift; sourceTree = "<group>"; };
 		CC4D2A0EBAA01C33D4BEFCB1 /* SignInSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInSheet.swift; sourceTree = "<group>"; };
 		CE44498EB0E5293B1BBA84E4 /* ReportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTests.swift; sourceTree = "<group>"; };
+		CFBD6A24EFD8B5296572EFDE /* OFL-Newsreader.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "OFL-Newsreader.txt"; sourceTree = "<group>"; };
 		CFF2ED51125AD9B523B97BDB /* AuthErrorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthErrorsTests.swift; sourceTree = "<group>"; };
 		D0F485224128E0A67AD8C616 /* ReportQuestionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportQuestionSheet.swift; sourceTree = "<group>"; };
 		D4FCEEE9F0743E71630BDFF9 /* PlayfairDisplay-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -327,6 +330,7 @@
 		EEEADEF21ED5FACC4ACC3F4E /* AccountDeleter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDeleter.swift; sourceTree = "<group>"; };
 		F084C4361B8E9F84DC2E16E8 /* QuestionBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBankTests.swift; sourceTree = "<group>"; };
 		F21E4D4F99FF82C168216DEC /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		F2A7BCFA6D1AF79CAE34C6F4 /* NewsreaderDisplay-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewsreaderDisplay-SemiBold.ttf"; sourceTree = "<group>"; };
 		F367E2396AD83601596C3A47 /* ReportTextsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTextsTests.swift; sourceTree = "<group>"; };
 		F3A954A25815C93B44FED89E /* FirestoreMappingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreMappingTests.swift; sourceTree = "<group>"; };
 		F4B75A99661F54491E6A46E4 /* ContrarrelojIntegrationTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ContrarrelojIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -373,7 +377,9 @@
 				13DFE1737A0B46A8F375AD18 /* AtkinsonHyperlegibleNext-BoldItalic.ttf */,
 				B2ED38D357EB5C5411E21B8A /* AtkinsonHyperlegibleNext-Italic.ttf */,
 				D8E6CEBA1EFF10287DD45F09 /* AtkinsonHyperlegibleNext-Regular.ttf */,
+				F2A7BCFA6D1AF79CAE34C6F4 /* NewsreaderDisplay-SemiBold.ttf */,
 				0B353FF468FFEB983046F02D /* OFL-AtkinsonHyperlegibleNext.txt */,
+				CFBD6A24EFD8B5296572EFDE /* OFL-Newsreader.txt */,
 				6553484030752632C9F2A765 /* OFL-PlayfairDisplay.txt */,
 				88D438DD8A03516B3C6EF0CA /* PlayfairDisplay-Bold.ttf */,
 				8585CFBF12668B7DBBD28DD0 /* PlayfairDisplay-BoldItalic.ttf */,
@@ -1025,7 +1031,9 @@
 				301B5739AAD6668F4E7A3976 /* AtkinsonHyperlegibleNext-Italic.ttf in Resources */,
 				C1328821256623ABF1103F49 /* AtkinsonHyperlegibleNext-Regular.ttf in Resources */,
 				588AB865B60153D85ED8EF3E /* Localizable.xcstrings in Resources */,
+				179D0235FA6DD0FC98D90B52 /* NewsreaderDisplay-SemiBold.ttf in Resources */,
 				D8DE42D2BEFD9A31080854F4 /* OFL-AtkinsonHyperlegibleNext.txt in Resources */,
+				04AF6A5817C7D855106BE2EF /* OFL-Newsreader.txt in Resources */,
 				FBD7C7943717A5038158389D /* OFL-PlayfairDisplay.txt in Resources */,
 				6D6A086589CB77AB1F8DDA74 /* PlayfairDisplay-Bold.ttf in Resources */,
 				7400A2730A6E676DC96A109F /* PlayfairDisplay-BoldItalic.ttf in Resources */,

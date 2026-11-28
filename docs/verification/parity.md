@@ -58,6 +58,12 @@ comprobado. Al final está lo que no se ha podido verificar y por qué.
 - **Copia incluida de las preguntas.** Sale de `data/questions` de la web e incluye 209 preguntas
   activas que no están en Firestore (199 de Deportes y 10 de Música). Solo se usan si la app no
   puede descargar el banco. Se arregla importándolas a Firestore o regenerando la copia.
+- **Letra de las preguntas.** La web escribe la pregunta en Playfair Display ExtraBold cursiva; la
+  app usa Newsreader Display SemiBold, porque la «Q» mayúscula de esa cursiva se leía como un «2»
+  («¿Qué…»). Los títulos, el reloj y los números siguen en Playfair.
+- **Acciones del informe.** En la web van al final del informe; en la app están en una barra fija
+  abajo («Jugar de nuevo» y, con iconos, compartir y volver al menú), siempre al alcance sin
+  desplazarse. Con el texto muy grande, «Jugar de nuevo» pasa a su propia fila.
 
 ## Producción (solo lectura)
 
